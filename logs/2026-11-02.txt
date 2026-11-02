@@ -1,0 +1,63 @@
+Live, 2:38 CT
+
+Raised TXN stop $306.19 -> $306.69. The old stop order is cancelled and the new one is resting.
+
+Day P&L: $0 realized. AMZN (stop $253.26) and TXN are still held.
+
+Time (CT)	Call	Seconds since previous
+2:37:58	get_equity_orders ×2 (stops)	—
+2:38:04	get_equity_positions	~6
+2:38:22	get_equity_historicals ×4	~18
+2:38:29	cancel_equity_order (old TXN stop)	~7
+2:38:35	get_equity_orders (cancelled)	~6
+2:38:43	place_equity_order (new stop)	~8
+
+The 2:38:29 and 2:38:43 times come from Robinhood. The others are estimates because the log records several calls at once.
+
+Live, 2:43 CT
+
+Raised TXN stop $306.69 -> $307.48. The old stop order is cancelled and the new one is resting. TXN was bought at $307.89, so this stop now caps the loss at about $2.50.
+
+Day P&L: $0 realized. AMZN’s stop is unchanged at $253.26.
+
+Time (CT)	Call	Seconds since previous
+2:42:58	get_equity_orders ×2 (stops)	—
+2:43:04	get_equity_positions	~6
+2:43:22	get_equity_historicals ×4	~18
+2:43:27	cancel_equity_order	~5
+2:43:32	get_equity_orders (cancelled)	~5
+2:43:38	place_equity_order (new stop)	~6
+
+The cancel and place times come from Robinhood. The rest are estimates.
+
+Live, 2:58 CT
+
+The AMZN stop filled at 2:55 CT: sold 7 shares at $253.28, a loss of $3.34 after fees.
+Placed a buy for 4 ADI with a limit of $424.88. It has not filled yet. The order is good for the day, so if it does not fill before the 3:00 close it expires and nothing is bought. If it fills, ADI is held overnight with a stop order.
+TXN is still held with its stop at $307.48.
+
+Day P&L: -$3.34 realized.
+
+Time (CT)	Call	Seconds since previous
+2:58:02	get_equity_orders (stops)	—
+2:58:07	get_equity_positions	5.2
+2:58:25	get_equity_historicals ×4	18.4
+2:58:43	place_equity_order (ADI buy)	17.4
+2:58:51	get_equity_orders (ADI check)	8.2
+
+Live, 3:03 CT (last pass today)
+
+The 2:58 ADI buy did not fill before the close, so I cancelled it. Nothing was bought.
+After the close, the script printed a second ADI buy for 4 shares at a $425.67 limit in after-hours trading. It was not placed because a permission check blocked it, and I did not retry. I logged it in errors.csv and cleared it from the bot’s state, so no position is open.
+TXN (6 shares) is held overnight with its stop at $307.48.
+
+Day P&L: -$3.34 realized (AMZN stop).
+
+Do you want after-hours buys at all? A buy after the close has no working stop until 8:30 tomorrow. My recommendation is to make the script stop buying after 2:55 CT. Tell me if you agree and I’ll change it.
+
+Time (CT)	Call	Seconds since previous
+3:02:58	get_equity_orders ×2	—
+3:03:01	cancel_equity_order (ADI)	~3
+3:03:05	get_equity_orders (cancelled)	~4
+3:03:14	get_equity_positions	~9
+3:03:30	get_equity_historicals ×4	16.6

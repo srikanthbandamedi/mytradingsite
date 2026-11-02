@@ -59,3 +59,19 @@ footer { border-top:1px solid var(--border); margin-top:48px; padding-top:16px; 
   #day-list { display:none; }
   #day-select { display:block; }
 }
+
+/* Text log entries */
+.trade p { margin:8px 0 0; }
+.trade p.note { font-size:.85rem; color:var(--muted); }
+.trade p.day-pnl { font-weight:600; }
+.trade p.question { background:var(--card); border-left:3px solid var(--accent); padding:8px 10px; border-radius:4px; }
+.badge.ORDER { background:var(--card); color:var(--accent); border:1px solid var(--border); }
+.badge.STOP { background:var(--card); color:var(--muted); border:1px solid var(--border); }
+.badge.WARN { background:#fff4d6; color:#8a5a00; }
+@media (prefers-color-scheme: dark) { .badge.WARN { background:#3a2e10; color:#f0c050; } }
+.calls { margin-top:10px; font-size:.85rem; }
+.calls summary { cursor:pointer; color:var(--muted); }
+.table-scroll { overflow-x:auto; }
+.calls table { border-collapse:collapse; margin-top:6px; width:100%; }
+.calls th, .calls td { text-align:left; padding:4px 10px 4px 0; border-bottom:1px solid var(--border); white-space:nowrap; font-variant-numeric: tabular-nums; }
+.calls th { color:var(--muted); font-weight:600; }
