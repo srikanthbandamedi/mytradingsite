@@ -1,0 +1,11 @@
+Live, 8:36 CT
+
+First live pass on the new list (GEHC ADP PAYX EXC MDLZ CSGP CEG BKR TMUS AMZN), 2 slots x $2,000.
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:36:20	get_equity_positions	—
+8:36:45	get_equity_historicals (10 symbols)	25.2
+8:36:45	get_equity_historicals (QQQ)	0.1
