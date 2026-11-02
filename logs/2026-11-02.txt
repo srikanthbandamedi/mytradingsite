@@ -324,3 +324,16 @@ Time (CT)	Call	Seconds since previous
 10:37:23	get_equity_positions (positions)	0.1
 10:37:34	get_equity_historicals (10 symbols)	11.5
 10:37:35	get_equity_historicals (QQQ)	0.1
+
+Live, 10:42 CT
+
+Sold AMZN 7 at $251.36 (+$7.72, trailing stop hit at 10:37)
+Holding GEHC, stop $79.24.
+
+Day P&L: $18.63 realized.
+
+Time (CT)	Call	Seconds since previous
+10:42:24	get_equity_orders (stops checked, AMZN stop filled)	—
+10:42:24	get_equity_positions (positions)	0.1
+10:42:35	get_equity_historicals (10 symbols)	11.2
+10:42:35	get_equity_historicals (QQQ)	0.1
