@@ -74,3 +74,15 @@ Time (CT)	Call	Seconds since previous
 9:01:20	get_equity_positions (positions)	5.4
 9:01:25	get_equity_historicals (10 symbols (file))	5.3
 9:01:30	get_equity_historicals (QQQ (inline))	5.3
+
+Live, 9:06 CT
+
+No trades. Holding AMZN stop $247.88, CEG stop $263.06.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:06:14	get_equity_orders (stops resting)	—
+9:06:20	get_equity_positions (positions)	5.5
+9:06:24	get_equity_historicals (10 symbols)	4.7
+9:07:28	get_equity_historicals (QQQ)	63.9
