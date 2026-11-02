@@ -421,3 +421,15 @@ Time (CT)	Call	Seconds since previous
 11:17:22	get_equity_positions (positions)	0.1
 11:17:38	get_equity_historicals (10 symbols)	15.8
 11:17:38	get_equity_historicals (QQQ)	0.1
+
+Live, 11:22 CT
+
+No trades. Holding GEHC, stop $79.24.
+
+Day P&L: $18.63 realized.
+
+Time (CT)	Call	Seconds since previous
+11:22:21	get_equity_orders (stop resting)	—
+11:22:21	get_equity_positions (positions)	0.1
+11:22:32	get_equity_historicals (10 symbols)	10.7
+11:22:32	get_equity_historicals (QQQ)	0.1
