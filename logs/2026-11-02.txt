@@ -498,3 +498,20 @@ Time (CT)	Call	Seconds since previous
 11:47:24	get_equity_positions (positions)	0.1
 11:47:35	get_equity_historicals (10 symbols)	11.3
 11:47:35	get_equity_historicals (QQQ)	0.1
+
+Live, 11:52 CT
+
+Sold GEHC 25 at $79.67 (-$4.95, below VWAP)
+Holding: none.
+
+Day P&L: $13.68 realized.
+
+Time (CT)	Call	Seconds since previous
+11:52:24	get_equity_orders (stop resting)	—
+11:52:24	get_equity_positions (positions)	0.1
+11:52:35	get_equity_historicals (10 symbols)	11.1
+11:52:35	get_equity_historicals (QQQ)	0.0
+11:53:02	cancel_equity_order (GEHC stop)	26.7
+11:53:02	get_equity_orders (GEHC cancel confirmed)	0.1
+11:53:02	place_equity_order (GEHC sell)	0.1
+11:53:02	get_equity_orders (GEHC sell check)	0.1
