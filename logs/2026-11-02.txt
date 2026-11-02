@@ -550,3 +550,14 @@ Time (CT)	Call	Seconds since previous
 12:08:52	get_equity_orders (orders since 11:55)	0.1
 12:09:07	get_equity_historicals (10 symbols)	14.7
 12:09:07	get_equity_historicals (QQQ)	0.1
+
+Live, 12:12 CT
+
+No trades. Holding: none. QQQ back above VWAP? checked; no entries fired.
+
+Day P&L: $13.68 realized.
+
+Time (CT)	Call	Seconds since previous
+12:12:03	get_equity_positions (positions)	—
+12:13:00	get_equity_historicals (10 symbols)	56.3
+12:13:00	get_equity_historicals (QQQ)	0.1
