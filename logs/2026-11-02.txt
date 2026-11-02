@@ -485,3 +485,16 @@ Time (CT)	Call	Seconds since previous
 11:42:23	get_equity_positions (positions)	0.1
 11:42:35	get_equity_historicals (10 symbols)	12.2
 11:42:35	get_equity_historicals (QQQ)	0.1
+
+Live, 11:47 CT
+
+No trades. Holding GEHC, stop $79.24.
+Price now: GEHC $79.69 at 11:45 CT (bought 25 at $79.87, stop $79.24, open -$4.43).
+
+Day P&L: $18.63 realized.
+
+Time (CT)	Call	Seconds since previous
+11:47:24	get_equity_orders (stop resting)	—
+11:47:24	get_equity_positions (positions)	0.1
+11:47:35	get_equity_historicals (10 symbols)	11.3
+11:47:35	get_equity_historicals (QQQ)	0.1
