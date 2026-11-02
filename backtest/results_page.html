@@ -1,0 +1,342 @@
+<title>T-V3 Backtest Library</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Fraunces:opsz,wght@9..144,600&display=swap">
+<style>
+/* Layout: a ledger. Left rail of sections on wide screens, one column on phones; tables are the content. */
+:root {
+  --bg: #f6f7f4; --surface: #ffffff; --fg: #1d2421; --muted: #5d6963; --line: #d9ded8;
+  --accent: #1f6f5c; --up: #1c7a46; --down: #b23a2e; --chip: #e7efe9;
+  --display: "Fraunces", Georgia, serif; --body: "IBM Plex Sans", system-ui, sans-serif; --mono: "IBM Plex Mono", ui-monospace, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #121715; --surface: #1a201d; --fg: #e3e8e4; --muted: #9aa7a0; --line: #2c3531;
+  --accent: #5cc3a5; --up: #5fd08f; --down: #f08273; --chip: #22302a; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #121715; --surface: #1a201d; --fg: #e3e8e4; --muted: #9aa7a0; --line: #2c3531;
+  --accent: #5cc3a5; --up: #5fd08f; --down: #f08273; --chip: #22302a; color-scheme: dark }
+body { background: var(--bg); color: var(--fg); font: 15px/1.55 var(--body); }
+.wrap { max-width: 1120px; margin: 0 auto; padding-block: 28px 64px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; }
+nav { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 20px); align-self: start; display: flex; flex-direction: column; gap: 4px; font-size: 13.5px; }
+nav a { color: var(--muted); text-decoration: none; padding: 4px 8px; border-radius: 4px; }
+nav a:hover, nav a:focus-visible { color: var(--fg); background: var(--chip); outline: none; }
+nav .navhead { font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); padding: 0 8px 6px; }
+main { min-width: 0; display: flex; flex-direction: column; gap: 44px; }
+header h1 { font: 600 clamp(28px, 4vw, 38px)/1.15 var(--display); margin: 0 0 8px; text-wrap: balance; }
+header p { margin: 0; color: var(--muted); max-width: 65ch; }
+.status { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
+.pill { font: 500 12px var(--mono); padding: 4px 10px; border-radius: 999px; background: var(--chip); color: var(--fg); }
+.pill.warn { color: var(--down); }
+section { display: flex; flex-direction: column; gap: 12px; scroll-margin-top: 20px; }
+h2 { font: 600 22px/1.25 var(--display); margin: 0; text-wrap: balance; }
+h3 { font: 600 15px/1.3 var(--body); margin: 8px 0 0; }
+.eyebrow { font: 500 11px var(--mono); letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+p, li { max-width: 72ch; margin: 0; }
+ul, ol { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+.note { color: var(--muted); font-size: 13.5px; }
+.tbl { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; }
+th, td { padding: 8px 12px; text-align: right; border-bottom: 1px solid var(--line); white-space: nowrap; font-variant-numeric: tabular-nums; }
+th:first-child, td:first-child { text-align: left; white-space: normal; min-width: 180px; }
+thead th { font: 500 11.5px var(--mono); letter-spacing: .04em; text-transform: uppercase; color: var(--muted); background: var(--bg); position: sticky; top: 0; }
+tbody tr:last-child td { border-bottom: 0; }
+tr.best td { background: var(--chip); font-weight: 600; }
+td.up { color: var(--up); } td.down { color: var(--down); }
+.verdict { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.card .k { font: 500 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.card .v { font: 600 17px/1.3 var(--body); }
+a { color: var(--accent); }
+.links { display: flex; flex-direction: column; gap: 8px; }
+@media (max-width: 760px) {
+  .wrap { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  nav { position: static; flex-direction: row; flex-wrap: wrap; }
+  nav .navhead { width: 100%; }
+}
+</style>
+
+<div class="wrap">
+<nav aria-label="Sections">
+  <div class="navhead">Sections</div>
+  <a href="#now">Bot today</a>
+  <a href="#verdict">Best options</a>
+  <a href="#lists">Daily stock lists</a>
+  <a href="#ten-k">With $10,000</a>
+  <a href="#behaviors">Stock behaviors</a>
+  <a href="#filters">Extra filters tested</a>
+  <a href="#spmid">S&amp;P 101–300</a>
+  <a href="#ndx">Nasdaq 100 &amp; slots</a>
+  <a href="#overnight">Overnight holds</a>
+  <a href="#leveraged">Leveraged ETFs</a>
+  <a href="#rules">Earlier rule tests</a>
+  <a href="#docs">Write-ups</a>
+</nav>
+
+<main>
+<header>
+  <div class="eyebrow">T-V3 trading bot · backtests</div>
+  <h1>T-V3 Backtest Library</h1>
+  <p>Every backtest of the live T-V3 rule in one place. 5-minute Robinhood bars, $2,000 per buy unless noted. Updated Nov 2, 2026.</p>
+  <div class="status">
+    <span class="pill warn">Dry run only, no real orders</span>
+    <span class="pill">Account Agentic (…5185)</span>
+    <span class="pill">2 slots × $2,000</span>
+  </div>
+</header>
+
+<section id="now">
+  <div class="eyebrow">Current setup</div>
+  <h2>What the bot runs today</h2>
+  <ul>
+    <li><b>Stocks:</b> SNDK, ARM, AMD, PANW, TSLA, CSCO, MRVL, MU, NBIS (fixed list).</li>
+    <li><b>Buy:</b> MACD above signal, +DI above −DI, ADX ≥ 20, close above VWAP and above the 8:30–8:45 opening range high. When more stocks signal than free slots, the combined score (ADX, relative volume, closeness to VWAP) picks.</li>
+    <li><b>No new buys</b> while QQQ is below its VWAP, or after 2:55 PM CT.</li>
+    <li><b>Sell:</b> below VWAP, below opening range low, trend fade (MACD histogram down 2 bars and ADX &lt; 25), or the resting stop order.</li>
+    <li><b>Stop:</b> placed with every buy. It trails the high close only after the price is 1% above the buy.</li>
+    <li>Positions can be held overnight.</li>
+  </ul>
+</section>
+
+<section id="verdict">
+  <div class="eyebrow">Summary</div>
+  <h2>Best options found so far</h2>
+  <div class="verdict">
+    <div class="card"><span class="k">2 slots</span><span class="v">ADX then momentum list</span><span class="note">+$2,206, smallest drawdown (−$427), best Jul–Oct of the no-hindsight lists.</span></div>
+    <div class="card"><span class="k">5 slots</span><span class="v">20-day momentum list</span><span class="note">+$3,611 and the highest win rate (37.5%) of the daily lists.</span></div>
+    <div class="card"><span class="k">5 slots, recent months</span><span class="v">Half of 98 by time above VWAP</span><span class="note">+$3,394, best Jul–Oct of any rule (+$1,866).</span></div>
+  </div>
+  <p class="note">The fixed 9 often scores highest, but that list was picked after seeing part of this same period, so its numbers are flattered. None of the new lists are in the bot yet.</p>
+</section>
+
+<section id="lists">
+  <div class="eyebrow">Mar 23 – Oct 30, 2026 · 98 Nasdaq 100 stocks</div>
+  <h2>Daily stock lists</h2>
+  <p>Each morning the bot ranks all 98 stocks using finished days only and may buy only that day's list of 10. Stocks it already holds keep their normal exits.</p>
+  <ul>
+    <li><b>20-day momentum:</b> the 10 stocks that rose the most over the last 20 trading days.</li>
+    <li><b>ADX then momentum:</b> the 20 stocks with the highest 20-day average ADX, then the 10 of those that rose the most.</li>
+    <li><b>Momentum + ADX ranks:</b> rank on both, add the ranks, keep the best 10.</li>
+    <li><b>Average ADX only:</b> the 10 highest average ADX over 10 or 20 days.</li>
+  </ul>
+  <div class="tbl"><table>
+    <thead><tr><th>Daily list rule</th><th>5 slots win</th><th>5 slots trades</th><th>5 slots total</th><th>2 slots win</th><th>2 slots trades</th><th>2 slots total</th><th>2 slots drawdown</th></tr></thead>
+    <tbody>
+      <tr><td>20-day momentum</td><td>37.5%</td><td>1,208</td><td class="up">+$3,611</td><td>37.8%</td><td>777</td><td class="up">+$1,456</td><td class="down">−$761</td></tr>
+      <tr class="best"><td>ADX then momentum</td><td>35.7%</td><td>1,235</td><td class="up">+$3,069</td><td>35.3%</td><td>811</td><td class="up">+$2,206</td><td class="down">−$427</td></tr>
+      <tr><td>Momentum + ADX ranks</td><td>35.6%</td><td>1,215</td><td class="up">+$2,923</td><td>35.7%</td><td>790</td><td class="up">+$1,816</td><td class="down">−$497</td></tr>
+      <tr><td>10-day average ADX only</td><td>36.2%</td><td>1,161</td><td class="up">+$2,885</td><td>36.1%</td><td>804</td><td class="up">+$1,563</td><td class="down">−$496</td></tr>
+      <tr><td>20-day average ADX only</td><td>34.6%</td><td>1,135</td><td class="up">+$2,259</td><td>33.2%</td><td>790</td><td class="up">+$560</td><td class="down">−$639</td></tr>
+      <tr><td>20-day return ÷ volatility</td><td>37.6%</td><td>1,137</td><td class="up">+$3,390</td><td>37.9%</td><td>776</td><td class="up">+$1,488</td><td class="down">−$459</td></tr>
+      <tr><td>All 98, no list</td><td>34.0%</td><td>2,793</td><td class="up">+$1,019</td><td>33.2%</td><td>1,117</td><td class="up">+$105</td><td class="down">−$669</td></tr>
+      <tr><td>Random 10 each day (3 tries)</td><td>34–35%</td><td>~1,100</td><td class="up">+$600 to +$1,409</td><td>–</td><td>–</td><td>–</td><td>–</td></tr>
+      <tr><td>Fixed 9 (hindsight)</td><td>38.3%</td><td>1,224</td><td class="up">+$3,970</td><td>38.1%</td><td>787</td><td class="up">+$2,520</td><td class="down">−$517</td></tr>
+    </tbody></table></div>
+  <h3>Consistency, 2 slots</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Measure</th><th>Momentum</th><th>ADX then momentum</th></tr></thead>
+    <tbody>
+      <tr><td>Average per trade</td><td>+$1.87</td><td>+$2.72</td></tr>
+      <tr><td>Worst month</td><td class="down">−$408 (Jun)</td><td class="down">−$107 (Oct)</td></tr>
+      <tr><td>Total without April</td><td class="up">+$405</td><td class="up">+$1,281</td></tr>
+      <tr><td>Jul–Oct</td><td class="up">+$537</td><td class="up">+$1,042</td></tr>
+    </tbody></table></div>
+  <h3>List size, 5 slots</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Stocks on the list</th><th>Momentum</th><th>Return ÷ volatility</th></tr></thead>
+    <tbody>
+      <tr><td>Top 5</td><td class="up">+$1,506</td><td class="up">+$1,003</td></tr>
+      <tr class="best"><td>Top 10</td><td class="up">+$3,611</td><td class="up">+$3,390</td></tr>
+      <tr><td>Top 15</td><td class="up">+$2,842</td><td class="up">+$3,504</td></tr>
+      <tr><td>Top 20</td><td class="up">+$3,047</td><td class="up">+$3,552</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="ten-k">
+  <div class="eyebrow">Same tests, $10,000 account</div>
+  <h2>With $10,000</h2>
+  <p>2 slots = 2 × $5,000 (the $2,000 results × 2.5). 5 slots = 5 × $2,000.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Daily list rule</th><th>2×$5k profit</th><th>Return</th><th>Drawdown</th><th>Jul–Oct</th><th>5×$2k profit</th><th>Return</th><th>Drawdown</th><th>Jul–Oct</th></tr></thead>
+    <tbody>
+      <tr><td>Fixed 9 (hindsight)</td><td class="up">+$6,300</td><td>63%</td><td class="down">−$1,293</td><td class="up">+$1,663</td><td class="up">+$3,970</td><td>40%</td><td class="down">−$617</td><td class="up">+$475</td></tr>
+      <tr class="best"><td>ADX then momentum</td><td class="up">+$5,515</td><td>55%</td><td class="down">−$1,068</td><td class="up">+$2,605</td><td class="up">+$3,069</td><td>31%</td><td class="down">−$670</td><td class="up">+$971</td></tr>
+      <tr><td>20-day momentum</td><td class="up">+$3,640</td><td>36%</td><td class="down">−$1,903</td><td class="up">+$1,343</td><td class="up">+$3,611</td><td>36%</td><td class="down">−$754</td><td class="up">+$1,325</td></tr>
+      <tr><td>Half of 98 by time above VWAP</td><td class="up">+$2,853</td><td>29%</td><td class="down">−$1,593</td><td class="up">+$3,248</td><td class="up">+$3,394</td><td>34%</td><td class="down">−$1,166</td><td class="up">+$1,866</td></tr>
+      <tr><td>All 98, no list</td><td class="up">+$263</td><td>3%</td><td class="down">−$1,673</td><td class="up">+$635</td><td class="up">+$1,019</td><td>10%</td><td class="down">−$1,082</td><td class="up">+$387</td></tr>
+    </tbody></table></div>
+  <p class="note">About 7 months with a very strong April. Real fills may be a little worse, especially at $5,000 a trade.</p>
+</section>
+
+<section id="behaviors">
+  <div class="eyebrow">Mar 2 – Oct 30 · each stock traded alone</div>
+  <h2>How the stocks that work behave</h2>
+  <p>The algo works on a stock while it is in a steady uptrend that does not chop around VWAP. Example: AMD rose 192% in Mar–Jun (algo +$666), then fell 7% in Jul–Oct (algo −$134). Scores are rank correlations with algo profit in the same half (+1 = perfectly lined up, 0 = no link).</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Behavior</th><th>Mar–Jun</th><th>Jul–Oct</th><th>Top 20</th><th>Middle 58</th><th>Bottom 20</th></tr></thead>
+    <tbody>
+      <tr><td>Average ADX (trend strength)</td><td>+0.46</td><td>+0.43</td><td>26.0</td><td>25.6</td><td>25.2</td></tr>
+      <tr><td>Price change over the period</td><td>+0.33</td><td>+0.38</td><td>+20%</td><td>+2%</td><td>+6%</td></tr>
+      <tr><td>Days closed above 50-day average</td><td>+0.29</td><td>+0.25</td><td>69%</td><td>42%</td><td>47%</td></tr>
+      <tr><td>30-minute follow-through</td><td>+0.27</td><td>+0.18</td><td colspan="3">slightly higher for top 20</td></tr>
+      <tr><td>Share of day above VWAP</td><td>+0.22</td><td>+0.15</td><td>51%</td><td>50%</td><td>50%</td></tr>
+      <tr><td>VWAP crosses per day</td><td>−0.18</td><td>−0.22</td><td>5.1</td><td>5.3</td><td>5.3</td></tr>
+      <tr><td>Daily volatility (one half only)</td><td>+0.47</td><td>+0.13</td><td colspan="3">only mattered in Mar–Jun</td></tr>
+    </tbody></table></div>
+  <h3>Where the money is made, by exit reason</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Exit</th><th>Top 20</th><th>Middle 58</th><th>Bottom 20</th></tr></thead>
+    <tbody>
+      <tr><td>Profit protect (trailing win)</td><td class="up">+$9,283</td><td class="up">+$13,633</td><td class="up">+$3,477</td></tr>
+      <tr><td>Stop order</td><td class="up">+$1,087</td><td class="down">−$4,827</td><td class="down">−$3,925</td></tr>
+      <tr><td>Below VWAP</td><td class="up">+$198</td><td class="down">−$581</td><td class="down">−$1,451</td></tr>
+      <tr><td>Trend fade</td><td class="down">−$2,352</td><td class="down">−$6,183</td><td class="down">−$2,206</td></tr>
+      <tr class="best"><td>Total</td><td class="up">+$8,274</td><td class="up">+$2,006</td><td class="down">−$4,142</td></tr>
+    </tbody></table></div>
+  <p class="note">Top 20: TEAM, PANW, WDAY, ZS, TSLA, AXON, CSCO, AMD, SHOP, META, ON, ARM, CRWD, DDOG, BIIB, LRCX, ASML, AMZN, KLAC, NFLX. Bottom 20: TMUS, VRSK, GILD, IDXX, LULU, DXCM, MNST, ROST, PEP, LIN, XEL, DASH, QCOM, REGN, MRVL, CDW, PAYX, NXPI, AMAT, AVGO.</p>
+  <p class="note">Traits measured in Mar–Jun did not predict Jul–Oct profit; a stock's good behavior lasts weeks to months, so lists must be refreshed.</p>
+</section>
+
+<section id="filters">
+  <div class="eyebrow">Mar 23 – Oct 30</div>
+  <h2>Extra filters tested</h2>
+  <h3>Buy only above the 50-day (or 20-day) average</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>List</th><th>5 slots none</th><th>50-day</th><th>20-day</th><th>2 slots none</th><th>50-day</th><th>20-day</th></tr></thead>
+    <tbody>
+      <tr><td>All 98</td><td>+$1,019</td><td class="up">+$2,650</td><td>+$2,473</td><td>+$105</td><td class="up">+$1,317</td><td>+$417</td></tr>
+      <tr><td>Fixed 9</td><td class="up">+$3,970</td><td>+$2,583</td><td>+$3,156</td><td class="up">+$2,520</td><td>+$1,221</td><td>+$1,919</td></tr>
+      <tr><td>20-day momentum</td><td class="up">+$3,611</td><td>+$3,355</td><td>+$3,204</td><td>+$1,456</td><td class="up">+$1,557</td><td>+$1,168</td></tr>
+      <tr><td>ADX then momentum</td><td class="up">+$3,069</td><td>+$1,829</td><td>+$1,834</td><td class="up">+$2,206</td><td>+$1,270</td><td>+$790</td></tr>
+    </tbody></table></div>
+  <p class="note">Helps only an unscreened list. On a good list it is redundant or blocks profitable rebounds.</p>
+  <h3>30-minute follow-through and VWAP behavior</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Daily list rule</th><th>5 slots</th><th>5 slots Jul–Oct</th><th>2 slots</th><th>2 slots Jul–Oct</th></tr></thead>
+    <tbody>
+      <tr class="best"><td>All 98, keep half with most time above VWAP</td><td class="up">+$3,394</td><td class="up">+$1,866</td><td class="up">+$1,141</td><td class="up">+$1,299</td></tr>
+      <tr><td>Top 10 by time above VWAP</td><td class="up">+$2,264</td><td class="up">+$822</td><td class="up">+$1,422</td><td class="up">+$660</td></tr>
+      <tr><td>Top 20 momentum, then 10 fewest VWAP crosses</td><td class="up">+$3,181</td><td class="up">+$920</td><td class="up">+$1,497</td><td class="up">+$726</td></tr>
+      <tr><td>Top 20 momentum, then 10 most time above VWAP</td><td class="up">+$2,272</td><td class="up">+$994</td><td class="up">+$1,144</td><td class="up">+$617</td></tr>
+      <tr><td>Top 10 fewest VWAP crosses</td><td class="up">+$1,364</td><td class="up">+$53</td><td class="up">+$861</td><td class="up">+$309</td></tr>
+      <tr><td>All 98, calmer half (fewest crosses)</td><td class="up">+$2,189</td><td class="up">+$808</td><td class="down">−$54</td><td class="down">−$678</td></tr>
+      <tr><td>Top 20 momentum, then top 10 follow-through</td><td class="up">+$2,231</td><td class="up">+$1,382</td><td class="up">+$1,116</td><td class="up">+$938</td></tr>
+      <tr><td>Top 10 follow-through</td><td class="up">+$321</td><td class="down">−$297</td><td class="up">+$714</td><td class="down">−$72</td></tr>
+      <tr><td>All 98, top half by follow-through</td><td class="up">+$1,365</td><td class="up">+$72</td><td class="up">+$566</td><td class="up">+$16</td></tr>
+    </tbody></table></div>
+  <h3>Combining ADX then momentum with the VWAP half</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Rule</th><th>5 slots</th><th>2 slots</th><th>2 slots drawdown</th></tr></thead>
+    <tbody>
+      <tr><td>ADX then momentum, alone</td><td class="up">+$3,069</td><td class="up">+$2,206</td><td class="down">−$427</td></tr>
+      <tr><td>VWAP half, alone</td><td class="up">+$3,394</td><td class="up">+$1,141</td><td class="down">−$637</td></tr>
+      <tr><td>VWAP half → top 20 ADX → top 10 momentum</td><td class="up">+$1,708</td><td class="up">+$442</td><td class="down">−$815</td></tr>
+      <tr><td>VWAP half → top 10 momentum</td><td class="up">+$2,599</td><td class="up">+$329</td><td class="down">−$895</td></tr>
+    </tbody></table></div>
+  <p class="note">Stacking filters leaves only the most stretched stocks, which are often near a short-term top.</p>
+  <h3>9/20 EMA cross (5-minute bars)</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Version</th><th>Fixed 9, 5 slots</th><th>Fixed 9, 2 slots</th><th>ADX→mom, 2 slots</th><th>Momentum, 5 slots</th><th>All 98, 5 slots</th></tr></thead>
+    <tbody>
+      <tr class="best"><td>Our rule, no EMA</td><td class="up">+$3,970</td><td class="up">+$2,520</td><td class="up">+$2,206</td><td class="up">+$3,611</td><td class="up">+$1,019</td></tr>
+      <tr><td>EMA cross on its own</td><td class="up">+$604</td><td class="up">+$1,059</td><td class="up">+$1,002</td><td class="up">+$1,972</td><td class="up">+$165</td></tr>
+      <tr><td>EMA cross, above VWAP only</td><td class="up">+$1,499</td><td class="up">+$1,660</td><td class="up">+$1,106</td><td class="up">+$1,614</td><td class="up">+$1,092</td></tr>
+      <tr><td>Our rule, buy only if 9 &gt; 20</td><td class="up">+$3,381</td><td class="up">+$2,017</td><td class="up">+$2,100</td><td class="up">+$3,238</td><td class="up">+$1,293</td></tr>
+      <tr><td>Our rule, sell when 9 crosses below 20</td><td class="up">+$3,654</td><td class="up">+$2,124</td><td class="up">+$1,931</td><td class="up">+$3,223</td><td class="up">+$1,196</td></tr>
+    </tbody></table></div>
+  <p class="note">EMA cross alone won 28–31% of trades vs 35–38% for our rule. MACD already covers it.</p>
+</section>
+
+<section id="spmid">
+  <div class="eyebrow">Mar 23 – Oct 30 · no QQQ rule · $2,000 per buy</div>
+  <h2>S&amp;P 500 ranks 101–200 and 201–300</h2>
+  <p class="note">Each morning the picker takes the 20 stocks with the highest 20-day average ADX, then keeps the 10 with the best 20-day price gain. Only those 10 can be bought that day. Ranks use market caps from Nov 2, 2026.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Group</th><th>Stock list</th><th>2 slots</th><th>Drawdown</th><th>5 slots</th><th>Drawdown</th></tr></thead>
+    <tbody>
+      <tr><td>Ranks 101–200</td><td>ADX then momentum top 10</td><td class="up">+$630</td><td>−$416</td><td class="up">+$1,328</td><td>−$397</td></tr>
+      <tr><td>Ranks 101–200</td><td>All 100, no picker</td><td class="up">+$366</td><td>−$1,149</td><td class="up">+$1,564</td><td>−$1,737</td></tr>
+      <tr class="best"><td>Ranks 201–300</td><td>ADX then momentum top 10</td><td class="up">+$2,207</td><td>−$568</td><td class="up">+$3,516</td><td>−$653</td></tr>
+      <tr><td>Ranks 201–300</td><td>All 100, no picker</td><td class="down">−$69</td><td>−$1,007</td><td class="down">−$728</td><td>−$2,063</td></tr>
+    </tbody></table></div>
+  <p class="note">By month, 2 slots. 101–200: Mar +19, Apr −12, May −87, Jun −95, Jul +295, Aug +420, Sep +4, Oct +86. 201–300: Mar −34, Apr +743, May +587, Jun −356, Jul +38, Aug +1,027, Sep +151, Oct +50.</p>
+  <p class="note">Top stocks with the picker, 5 slots. 101–200: HPE +$744, MRSH +$236, SLB +$224 (worst FCX −$160). 201–300: WDAY +$775, CTSH +$441, MCHP +$386 (worst KHC −$106). For comparison, the same picker on the Nasdaq 100 (with the QQQ rule) made +$2,206 with 2 slots and +$3,069 with 5.</p>
+</section>
+
+<section id="ndx">
+  <div class="eyebrow">Mar 2 – Oct 30 · fixed lists</div>
+  <h2>Nasdaq 100 and slot counts</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>List</th><th>2 slots</th><th>5 slots</th><th>10 slots</th><th>Unlimited</th><th>Most money in use (unlimited)</th></tr></thead>
+    <tbody>
+      <tr class="best"><td>Fixed 9</td><td class="up">+$2,658</td><td class="up">+$4,326</td><td class="up">+$4,234</td><td class="up">+$4,234</td><td>$18,000</td></tr>
+      <tr><td>Nasdaq top 30 (by market cap)</td><td>–</td><td class="up">+$1,161</td><td class="up">+$2,304</td><td class="up">+$2,512</td><td>$50,000</td></tr>
+      <tr><td>Nasdaq top 50</td><td>–</td><td class="up">+$2,095</td><td class="up">+$3,145</td><td class="up">+$3,747</td><td>$84,000</td></tr>
+      <tr><td>Nasdaq 100 (98)</td><td class="down">−$268</td><td class="up">+$667</td><td class="up">+$2,039</td><td class="up">+$5,918</td><td>$148,000</td></tr>
+    </tbody></table></div>
+  <p class="note">Drawdowns, 5 slots: fixed 9 −$617, top 30 −$1,389, top 50 −$1,033, all 98 −$1,202. Market-cap order is approximate; EA and WBD are not on Robinhood.</p>
+  <h3>Best and worst single stocks (each alone, 1 slot)</h3>
+  <p class="note">Best: TEAM +$773, PANW +$767, AXON +$609, ZS +$600, WDAY +$596, TSLA +$545, CSCO +$538, META +$502, AMD +$449. Worst: AVGO −$447, AMAT −$408, NXPI −$405, MRVL −$386. 55 of 98 made money.</p>
+</section>
+
+<section id="overnight">
+  <div class="eyebrow">Mar 2 – Oct 30</div>
+  <h2>Overnight holds</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Fixed 9, 2 slots</th><th>Trades</th><th>P&amp;L</th></tr></thead>
+    <tbody>
+      <tr><td>Sold the same day</td><td>745</td><td class="up">+$367</td></tr>
+      <tr class="best"><td>Held overnight</td><td>110</td><td class="up">+$2,290</td></tr>
+      <tr><td>Overnight winners</td><td>56</td><td class="up">+$3,969</td></tr>
+      <tr><td>Overnight losers</td><td>54</td><td class="down">−$1,679</td></tr>
+    </tbody></table></div>
+  <p class="note">The gap itself (3:00 PM close to 8:30 AM open) netted only +$379 (up gaps +$2,399, down gaps −$2,020). Most of the overnight profit came after the open. Nasdaq 100, 2 slots: same-day −$1,902, overnight +$1,634.</p>
+</section>
+
+<section id="leveraged">
+  <div class="eyebrow">Mar 2 – Oct 30</div>
+  <h2>Leveraged ETFs</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Run</th><th>Total</th><th>Drawdown</th></tr></thead>
+    <tbody>
+      <tr class="best"><td>Fixed 9, 2 slots (reference)</td><td class="up">+$2,702</td><td class="down">−$517</td></tr>
+      <tr><td>6 ETFs, 2 slots</td><td class="up">+$2,018</td><td class="down">−$1,215</td></tr>
+      <tr><td>6 ETFs, 6 slots</td><td class="up">+$3,286</td><td>–</td></tr>
+      <tr><td>SNXX alone</td><td class="up">+$1,854</td><td class="down">−$363</td></tr>
+      <tr><td>SOXL alone</td><td class="up">+$538</td><td>–</td></tr>
+      <tr><td>MUU alone</td><td class="up">+$485</td><td class="down">−$794</td></tr>
+      <tr><td>SNDQ alone (from Apr 23)</td><td class="up">+$287</td><td>–</td></tr>
+      <tr><td>SOXS alone</td><td class="up">+$167</td><td>–</td></tr>
+      <tr><td>MUZ alone (from Jun 9)</td><td class="down">−$46</td><td>–</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="rules">
+  <div class="eyebrow">Oct 2026</div>
+  <h2>Earlier rule tests</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Test (fixed list, 2 × $2,000, Mar 2 – Oct 20)</th><th>Result</th><th>Kept?</th></tr></thead>
+    <tbody>
+      <tr><td>Trail stop only after +1% gain</td><td class="up">+$2,829 vs fixed stop +$2,768 vs trail every bar +$2,257</td><td>Yes (live)</td></tr>
+      <tr><td>Pause new buys while QQQ is below VWAP</td><td class="up">+$3,763 vs +$3,244 with no filter</td><td>Yes (live)</td></tr>
+      <tr><td>Also sell all positions when QQQ drops below VWAP</td><td>+$2,358</td><td>No</td></tr>
+      <tr><td>Swap into a stronger stock when slots are full</td><td>+$3,796 to +$4,140 vs +$3,995</td><td>No</td></tr>
+      <tr><td>QQQ above its 20-day or 50-day average</td><td>+$2,040 / +$2,338 vs +$3,244</td><td>No</td></tr>
+      <tr><td>ADX ≥ 30 for trend buys (33 stocks, 6 slots, Jul–Oct)</td><td>+$2,995 vs +$2,916</td><td>No (mixed)</td></tr>
+      <tr><td>Trend score minimum 85 (33 stocks, 6 slots)</td><td>+$1,931 vs +$2,916</td><td>No</td></tr>
+      <tr><td>Remove RSI from the trend score</td><td>about even</td><td>Yes (live)</td></tr>
+    </tbody></table></div>
+</section>
+
+<section id="docs">
+  <div class="eyebrow">Full write-ups</div>
+  <h2>Write-ups</h2>
+  <div class="links">
+    <a href="https://claude.ai/artifact/UZraD9YyTmmtrtiHUMbesk" target="_blank" rel="noopener">How the stocks that work with the algo behave</a>
+    <a href="https://claude.ai/artifact/CqGnryKY4DENJaYeaTXoKG" target="_blank" rel="noopener">Stock picking: what makes the best stocks different</a>
+  </div>
+  <p class="note">Scripts and data live in the project folder T-V3-investing-com/backtest/. Backtests use one ~8-month period; treat every result as promising, not proven.</p>
+</section>
+</main>
+</div>
