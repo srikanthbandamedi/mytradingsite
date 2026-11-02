@@ -3,54 +3,34 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>My Trading Site</title>
-<meta name="description" content="A simple starter website.">
+<title>Trade Log</title>
+<meta name="description" content="Daily buy and sell log from my trading algorithm.">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="site-header">
   <div class="wrap">
-    <a class="logo" href="#top">My Trading Site</a>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <a class="logo" href="#">Trade Log</a>
+    <span class="tagline">Daily activity from my trading algorithm</span>
   </div>
 </header>
 
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <h1>Welcome to my website</h1>
-      <p>A short sentence that says who you are and what you offer.</p>
-      <a class="btn" href="#contact">Get in touch</a>
-    </div>
-  </section>
+<div class="wrap layout">
+  <aside class="days" aria-label="Trading days">
+    <h2>Days</h2>
+    <select id="day-select" aria-label="Choose a day"></select>
+    <ul id="day-list"></ul>
+  </aside>
 
-  <section id="about" class="wrap">
-    <h2>About</h2>
-    <p>Tell visitors a little about yourself or your business here. This placeholder text will be replaced once we know what the site is for.</p>
-  </section>
-
-  <section id="services" class="wrap">
-    <h2>Services</h2>
-    <div class="cards">
-      <div class="card"><h3>Service one</h3><p>A short description of what you do.</p></div>
-      <div class="card"><h3>Service two</h3><p>A short description of what you do.</p></div>
-      <div class="card"><h3>Service three</h3><p>A short description of what you do.</p></div>
-    </div>
-  </section>
-
-  <section id="contact" class="wrap">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hello@example.com">hello@example.com</a></p>
-  </section>
-</main>
+  <main id="day-view">
+    <p class="muted">Loading logs…</p>
+  </main>
+</div>
 
 <footer class="wrap">
-  <p>&copy; <span id="year"></span> My Trading Site</p>
+  <p class="muted">Logs are published by the algorithm. Times are shown in your local time zone.</p>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script src="app.js"></script>
 </body>
 </html>

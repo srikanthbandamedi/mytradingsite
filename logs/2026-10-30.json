@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-30",
+  "trades": [
+    { "time": "2026-10-30T09:35:12-04:00", "action": "BUY", "symbol": "AAPL", "quantity": 10, "price": 228.15,
+      "reason": "SAMPLE DATA. Price crossed above the 20-day moving average on rising volume." },
+    { "time": "2026-10-30T10:02:47-04:00", "action": "BUY", "symbol": "MSFT", "quantity": 5, "price": 431.60,
+      "reason": "SAMPLE DATA. RSI bounced from 32, oversold signal." },
+    { "time": "2026-10-30T15:41:03-04:00", "action": "SELL", "symbol": "AAPL", "quantity": 10, "price": 230.02, "pnl": 18.70,
+      "reason": "SAMPLE DATA. Hit the +0.8% take-profit target before the close." }
+  ]
+}
