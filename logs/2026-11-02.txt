@@ -9,3 +9,14 @@ Time (CT)	Call	Seconds since previous
 8:36:20	get_equity_positions	—
 8:36:45	get_equity_historicals (10 symbols)	25.2
 8:36:45	get_equity_historicals (QQQ)	0.1
+
+Live, 8:41 CT
+
+No trades. Holding: none. Waiting for the 8:30-8:45 opening range.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:41:20	get_equity_positions	—
+8:41:30	get_equity_historicals (10 symbols)	~10
+8:41:30	get_equity_historicals (QQQ)	~0
