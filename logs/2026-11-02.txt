@@ -197,3 +197,21 @@ Time (CT)	Call	Seconds since previous
 9:47:01	get_equity_orders (AMZN cancel confirmed)	0.1
 9:47:01	place_equity_order (AMZN new stop)	0.1
 9:47:01	get_equity_orders (AMZN new stop check)	0.1
+
+Live, 9:51 CT
+
+Sold CEG 7 at $266.15 (+$10.91, trailing stop hit at 9:48)
+Bought GEHC 25 shares at $79.87, stop order at $79.24
+Holding AMZN stop $251.36, GEHC stop $79.24.
+
+Day P&L: $10.91 realized.
+
+Time (CT)	Call	Seconds since previous
+9:51:21	get_equity_orders (stops checked, CEG stop filled)	—
+9:51:21	get_equity_positions (positions)	0.1
+9:51:31	get_equity_historicals (10 symbols)	10.3
+9:51:31	get_equity_historicals (QQQ)	0.1
+9:51:57	place_equity_order (GEHC buy)	25.6
+9:51:57	get_equity_orders (GEHC buy check)	0.1
+9:52:17	place_equity_order (GEHC stop)	20.0
+9:52:17	get_equity_orders (GEHC stop check)	0.1
