@@ -31,3 +31,22 @@ Time (CT)	Call	Seconds since previous
 8:46:19	get_equity_positions	—
 8:46:25	get_equity_historicals (10 symbols)	5.4
 8:46:32	get_equity_historicals (QQQ)	7.1
+
+Live, 8:51 CT
+
+Bought AMZN 7 shares at $250.26, stop order at $247.88.
+Bought CEG 7 shares at $264.59, stop order at $263.06.
+Both slots are full, about $3,604 in use.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:51:17	get_equity_positions	—
+8:51:23	get_equity_historicals (10 symbols)	5.5
+8:51:31	get_equity_historicals (QQQ)	8.6
+8:51:46	place_equity_order (AMZN buy)	~15
+8:51:57	place_equity_order (CEG buy)	~11
+8:52:08	get_equity_orders x2 (both filled)	~11
+8:52:20	place_equity_order (AMZN stop)	~12
+8:52:21	place_equity_order (CEG stop)	~1
+8:52:33	get_equity_orders (stops resting)	~12
