@@ -239,3 +239,15 @@ Time (CT)	Call	Seconds since previous
 10:01:18	get_equity_positions (positions)	0.1
 10:01:30	get_equity_historicals (10 symbols)	11.3
 10:01:30	get_equity_historicals (QQQ)	0.1
+
+Live, 10:06 CT
+
+No trades. Holding AMZN stop $251.36, GEHC stop $79.24.
+
+Day P&L: $10.91 realized.
+
+Time (CT)	Call	Seconds since previous
+10:06:19	get_equity_orders (stops resting)	—
+10:06:19	get_equity_positions (positions)	0.1
+10:06:31	get_equity_historicals (10 symbols)	11.7
+10:06:31	get_equity_historicals (QQQ)	0.1
