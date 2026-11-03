@@ -49,7 +49,7 @@
 
   function renderDayList() {
     listEl.innerHTML = days.map((d) =>
-      `<li><a href="#${esc(d.date)}" data-date="${esc(d.date)}">${esc(d.date)}<span class="count ${pnlClass(d.pnl)}">${esc(d.pnl ?? d.entries ?? d.trades ?? '')}</span></a></li>`
+      `<li><a href="#${esc(d.date)}" data-date="${esc(d.date)}">${esc(d.date)}${d.tabs ? `<span class="count" title="S&amp;P 201-300 / Nasdaq 100">${esc(Object.values(d.tabs).join(' / '))}</span>` : `<span class="count ${pnlClass(d.pnl)}">${esc(d.pnl ?? d.entries ?? d.trades ?? '')}</span>`}</a></li>`
     ).join('');
     selectEl.innerHTML = days.map((d) => `<option value="${esc(d.date)}">${esc(d.date)}</option>`).join('');
   }
@@ -131,7 +131,7 @@
       const prose = blocks.filter((b) => b.type !== 'table').map((b) => b.text).join(' ');
       const tags = [];
       if (/\bsold\b/i.test(prose)) tags.push(['SELL', 'Sold']);
-      if (/\bbought \d+/i.test(prose)) tags.push(['BUY', 'Bought']);
+      if (/\bbought ([A-Z.]+ )?\d+/i.test(prose)) tags.push(['BUY', 'Bought']);
       if (/placed a buy/i.test(prose)) tags.push(['ORDER', 'Buy order']);
       if (/raised .*stop/i.test(prose)) tags.push(['STOP', 'Stop raised']);
       if (/blocked|error/i.test(prose)) tags.push(['WARN', 'Issue']);
@@ -151,12 +151,34 @@
       </table></div></details>`;
   }
 
-  function renderTextDay(date, entries) {
+  // Tabs (2026-11-03): entries titled "H:MM CT (dry run, S&P 201-300)" or "(..., Nasdaq 100)" go in their own tab.
+  const TABS = ['S&P 201-300', 'Nasdaq 100'];
+  let tab = null;
+  function tabOf(e) { return TABS.find((t) => e.title.includes(t)) || 'Other'; }
+
+  function renderTextDay(date, all) {
+    const names = [...TABS, 'Other'].filter((t) => all.some((e) => tabOf(e) === t));
+    if (names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
+    if (!names.includes(tab)) tab = names[0];
+    const tabBar = `<div class="tabs" role="tablist">${names.map((t) => {
+      const es = all.filter((e) => tabOf(e) === t);
+      const p = [...es].reverse().find((e) => e.pnl)?.pnl;
+      return `<button role="tab" aria-selected="${t === tab}" data-tab="${esc(t)}" class="${t === tab ? 'on' : ''}">${esc(t === 'Other' ? 'Main bot' : t)}${p ? ` <span class="${pnlClass(p)}">${esc(p)}</span>` : ''}</button>`;
+    }).join('')}</div>`;
+    renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
+    viewEl.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
+      tab = b.dataset.tab;
+      renderTextDay(date, all);
+    }));
+  }
+
+  function renderEntries(date, entries, tabBar) {
     const last = entries[entries.length - 1];
     const pnl = [...entries].reverse().find((e) => e.pnl)?.pnl;
     const count = (k) => entries.filter((e) => e.tags.some((t) => t[0] === k)).length;
     viewEl.innerHTML = `
       <h1>${esc(fmtDate(date))}</h1>
+      ${tabBar}
       <p class="muted">${entries.length} update${entries.length === 1 ? '' : 's'}, newest first</p>
       <div class="summary">
         ${pnl ? `<div class="stat"><div class="label">Realized P/L</div><div class="value ${pnlClass(pnl)}">${esc(pnl)}</div></div>` : ''}

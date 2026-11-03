@@ -30,9 +30,21 @@ for f in LOGS.iterdir():
     else:
         text = f.read_text(encoding="utf-8")
         entry["entries"] = len(re.findall(r"^Live,", text, re.M))
-        pnls = PNL.findall(text)
-        if pnls:
-            entry["pnl"] = pnls[-1]
+        # Separate dry-run lists (one tab each on the site): last P&L per list.
+        tabs = {}
+        for sec in re.split(r"^Live,", text, flags=re.M)[1:]:
+            head = sec.split("\n", 1)[0]
+            name = next((t for t in ("S&P 201-300", "Nasdaq 100") if t in head), None)
+            p = PNL.findall(sec)
+            if name and p:
+                tabs[name] = p[-1]
+        if tabs:
+            entry["tabs"] = tabs
+            entry["pnl"] = " | ".join("%s %s" % ("S&P" if k.startswith("S&P") else "NDX", v) for k, v in tabs.items())
+        else:
+            pnls = PNL.findall(text)
+            if pnls:
+                entry["pnl"] = pnls[-1]
     # If a day has both .txt and .json, prefer the text log.
     if date not in days or ext != "json":
         days[date] = entry
