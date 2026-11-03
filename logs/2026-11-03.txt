@@ -549,3 +549,15 @@ Time (CT)	Call	Seconds since previous
 10:32:05	get_equity_positions (CEG 7, PAYX 17)	0.1
 10:32:05	get_equity_historicals (10 list symbols)	0.1
 10:32:05	get_equity_historicals (QQQ)	0.1
+
+Live, 10:34 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding WEC, stop $115.77; PAYX, stop $114.00.
+Price now: PAYX $114.97 at 10:30 CT (bought 17 at $114.75, stop $114.00, open +$3.91).
+Price now: WEC $116.43 at 10:30 CT (bought 17 at $116.36, stop $115.77, open +$1.19).
+
+Day P&L: -$4.50 realized.
+
+Time (CT)	Call	Seconds since previous
+10:34:00	get_equity_historicals (SP 10)	—
