@@ -930,3 +930,13 @@ Day P&L: -$2.97 realized.
 
 Time (CT)	Call	Seconds since previous
 12:03:59	get_equity_historicals (SP 10)	—
+
+Live, 12:07 CT (Nasdaq 100)
+
+Bought AMZN 8 @ 250.04, stop order 248.71. Holding: AMZN.
+Price now: AMZN $249.97 at 12:05 CT (bought 8 at $250.04, stop $248.71, open -$0.60).
+
+Day P&L: -$14.57 realized.
+
+Time (CT)	Call	Seconds since previous
+12:07:39	get_equity_orders (AMZN stop check)	—
