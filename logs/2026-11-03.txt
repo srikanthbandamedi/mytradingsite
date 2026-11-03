@@ -968,3 +968,14 @@ No trades. Holding: none.
 Day P&L: -$2.97 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:17 CT (Nasdaq 100)
+
+Bought PAYX 17 @ 115.66, stop order 115.02. Holding: AMZN, PAYX.
+Price now: AMZN $251.10 at 12:15 CT (bought 8 at $250.04, stop $248.71, open +$8.48).
+Price now: PAYX $115.60 at 12:15 CT (bought 17 at $115.66, stop $115.02, open -$1.02).
+
+Day P&L: -$14.57 realized.
+
+Time (CT)	Call	Seconds since previous
+12:17:38	get_equity_orders (PAYX stop check)	—
