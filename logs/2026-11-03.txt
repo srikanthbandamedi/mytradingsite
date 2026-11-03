@@ -1389,3 +1389,14 @@ Day P&L: -$12.81 realized.
 
 Time (CT)	Call	Seconds since previous
 13:54:00	get_equity_historicals (SP 10)	—
+
+Live, 1:55 CT (Nasdaq 100)
+
+No trades. Holding: none.
+
+Day P&L: -$9.37 realized.
+
+Time (CT)	Call	Seconds since previous
+13:56:53	get_equity_positions (positions: none)	—
+13:56:53	get_equity_historicals (10 NDX)	0.1
+13:56:53	get_equity_historicals (QQQ)	0.1
