@@ -1217,3 +1217,14 @@ Day P&L: -$5.85 realized.
 
 Time (CT)	Call	Seconds since previous
 13:17:44	get_equity_orders (GEHC stop check)	—
+
+Live, 13:19 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Simulated buy GEHC 24 @ 80.55, stop 80.14. Holding: GEHC, PAYX.
+Price now: GEHC $80.55 at 1:15 CT (bought 24 at $80.55, stop $80.14, open +$0.00).
+Price now: PAYX $116.08 at 1:15 CT (bought 17 at $115.60, stop $115.02, open +$8.08).
+
+Day P&L: -$2.97 realized.
+
+Time (CT)	Call	Seconds since previous
