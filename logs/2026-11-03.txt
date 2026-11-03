@@ -158,3 +158,14 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 9:11:58	get_equity_historicals (10 list symbols)	—
 9:11:58	get_equity_historicals (QQQ)	0.1
+
+Live, 9:14 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding GEHC, stop $79.33.
+Price now: GEHC $79.52 at 9:10 CT (bought 25 at $79.81, stop $79.33, open -$7.25).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:13:59	get_equity_historicals (SP 10)	—
