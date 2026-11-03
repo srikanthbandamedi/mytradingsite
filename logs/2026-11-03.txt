@@ -280,3 +280,16 @@ Day P&L: -$4.50 realized.
 
 Time (CT)	Call	Seconds since previous
 9:38:59	get_equity_historicals (SP 10)	—
+
+Live, 9:41 CT (Nasdaq 100)
+
+No trades. Holding CEG, stop $262.76.
+Price now: CEG $266.09 at 9:40 CT (bought 7 at $265.41, stop $262.76, open +$4.76).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:42:04	get_equity_orders (CEG stop resting)	—
+9:42:04	get_equity_positions (CEG 7)	0.0
+9:42:04	get_equity_historicals (10 list symbols)	0.1
+9:42:04	get_equity_historicals (QQQ)	0.1
