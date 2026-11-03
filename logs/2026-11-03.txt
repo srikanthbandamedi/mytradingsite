@@ -634,3 +634,14 @@ Time (CT)	Call	Seconds since previous
 10:47:37	get_equity_orders (PAYX stop cancelled)	0.1
 10:47:37	place_equity_order (PAYX sell 17 lim 114.90)	0.0
 10:47:51	get_equity_orders (PAYX sell filled 115.039)	14.6
+
+Live, 10:49 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold PAYX 17 at $115.02 (+$4.68, trend fade)
+Sold WEC 17 at $116.18 (-$3.15, trend fade)
+
+Day P&L: -$2.97 realized.
+
+Time (CT)	Call	Seconds since previous
+10:49:01	get_equity_historicals (SP 10)	—
