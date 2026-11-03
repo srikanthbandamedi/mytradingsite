@@ -382,3 +382,18 @@ Day P&L: -$4.50 realized.
 
 Time (CT)	Call	Seconds since previous
 9:59:01	get_equity_historicals (SP 10)	—
+
+Live, 10:01 CT (Nasdaq 100)
+
+Sold MDLZ 30 at $65.56 (-$11.04, stop order)
+Holding CEG, stop $262.76.
+Price now: CEG $266.25 at 10:00 CT (bought 7 at $265.41, stop $262.76, open +$5.85).
+
+Day P&L: -$11.04 realized.
+
+Time (CT)	Call	Seconds since previous
+10:01:59	get_equity_orders (CEG stop resting)	—
+10:01:59	get_equity_orders (MDLZ stop FILLED 65.5619)	0.1
+10:02:00	get_equity_positions (CEG 7)	0.1
+10:02:15	get_equity_historicals (10 list symbols)	15.8
+10:02:15	get_equity_historicals (QQQ)	0.1
