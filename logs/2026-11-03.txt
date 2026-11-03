@@ -320,3 +320,13 @@ Time (CT)	Call	Seconds since previous
 9:47:02	get_equity_historicals (QQQ)	0.1
 9:47:18	place_equity_order (MDLZ buy 30 lim 65.93)	15.2
 9:47:28	get_equity_orders (MDLZ buy open (confirmed))	10.7
+
+Live, 9:49 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$4.50 realized.
+
+Time (CT)	Call	Seconds since previous
+9:49:00	get_equity_historicals (SP 10)	—
