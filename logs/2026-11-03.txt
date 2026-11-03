@@ -1259,3 +1259,13 @@ Price now: PAYX $116.17 at 1:25 CT (bought 17 at $115.66, stop $115.95, open +$8
 Day P&L: -$5.85 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:30 CT (Nasdaq 100)
+
+No trades. Holding: GEHC, PAYX.
+Price now: GEHC $80.42 at 1:30 CT (bought 24 at $80.48, stop $80.14, open -$1.44).
+Price now: PAYX $116.06 at 1:30 CT (bought 17 at $115.66, stop $115.95, open +$6.80).
+
+Day P&L: -$5.85 realized.
+
+Time (CT)	Call	Seconds since previous
