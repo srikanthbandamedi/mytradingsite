@@ -1362,3 +1362,18 @@ Day P&L: -$2.97 realized.
 
 Time (CT)	Call	Seconds since previous
 13:49:00	get_equity_historicals (SP 10)	—
+
+Live, 1:50 CT (Nasdaq 100)
+
+PAYX sold 17 at $115.93 by your stop (+$4.59).
+GEHC sold 24 at $80.14 by its stop (-$8.11).
+Holding: none. Day realized -$9.37.
+
+Day P&L: -$9.37 realized.
+
+Time (CT)	Call	Seconds since previous
+13:52:04	get_equity_orders (PAYX stop check: filled 115.93)	—
+13:52:04	get_equity_orders (GEHC stop check: filled 80.1419)	0.1
+13:52:04	get_equity_positions (positions: none)	0.1
+13:52:04	get_equity_historicals (10 NDX)	0.1
+13:52:04	get_equity_historicals (QQQ)	0.1
