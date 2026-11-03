@@ -817,3 +817,13 @@ No trades. Holding: none.
 Day P&L: -$14.57 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:34 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$2.97 realized.
+
+Time (CT)	Call	Seconds since previous
+11:34:00	get_equity_historicals (SP 10)	—
