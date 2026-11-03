@@ -1009,3 +1009,13 @@ Price now: PAYX $115.69 at 12:20 CT (bought 17 at $115.60, stop $115.02, open +$
 Day P&L: -$2.97 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:26 CT (Nasdaq 100)
+
+No trades. Holding: AMZN, PAYX.
+Price now: AMZN $250.87 at 12:25 CT (bought 8 at $250.04, stop $248.71, open +$6.64).
+Price now: PAYX $115.67 at 12:25 CT (bought 17 at $115.66, stop $115.02, open +$0.26).
+
+Day P&L: -$14.57 realized.
+
+Time (CT)	Call	Seconds since previous
