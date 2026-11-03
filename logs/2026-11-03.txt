@@ -1691,3 +1691,14 @@ Time (CT)	Call	Seconds since previous
 15:01:51	get_equity_positions (positions: none)	—
 15:01:51	get_equity_historicals (10 NDX)	0.1
 15:01:52	get_equity_historicals (QQQ)	0.0
+
+Live, 3:00 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Market closed. Holding PAYX overnight, stop $115.02. Day -$14.97.
+Price now: PAYX $115.65 at 3:00 CT (bought 17 at $115.60, stop $115.02, open +$0.85).
+
+Day P&L: -$14.97 realized.
+
+Time (CT)	Call	Seconds since previous
+15:04:00	get_equity_historicals (SP 10)	—
