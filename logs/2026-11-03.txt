@@ -1099,3 +1099,13 @@ Price now: PAYX $116.00 at 12:45 CT (bought 17 at $115.66, stop $115.02, open +$
 Day P&L: -$14.57 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:49 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: PAYX.
+Price now: PAYX $116.00 at 12:45 CT (bought 17 at $115.60, stop $115.02, open +$6.80).
+
+Day P&L: -$2.97 realized.
+
+Time (CT)	Call	Seconds since previous
