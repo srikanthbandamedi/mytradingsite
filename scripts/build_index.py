@@ -49,6 +49,14 @@ for f in LOGS.iterdir():
     if date not in days or ext != "json":
         days[date] = entry
 
+# Morning top-10 lists (logs/lists/YYYY-MM-DD.json) show as extra tabs; a day may have only its lists so far.
+LISTS = LOGS / "lists"
+if LISTS.is_dir():
+    for f in LISTS.iterdir():
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})\.json$", f.name)
+        if m:
+            days.setdefault(m.group(1), {"date": m.group(1), "file": None, "entries": 0})["lists"] = "lists/" + f.name
+
 ordered = [days[d] for d in sorted(days, reverse=True)]
 (LOGS / "index.json").write_text(json.dumps({"days": ordered}, indent=2) + "\n")
 print(f"Indexed {len(ordered)} day(s)")

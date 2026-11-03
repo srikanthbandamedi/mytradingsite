@@ -49,7 +49,7 @@
 
   function renderDayList() {
     listEl.innerHTML = days.map((d) =>
-      `<li><a href="#${esc(d.date)}" data-date="${esc(d.date)}">${esc(d.date)}${d.tabs ? `<span class="count" title="S&amp;P 201-300 / Nasdaq 100">${esc(Object.values(d.tabs).join(' / '))}</span>` : `<span class="count ${pnlClass(d.pnl)}">${esc(d.pnl ?? d.entries ?? d.trades ?? '')}</span>`}</a></li>`
+      `<li><a href="#${esc(d.date)}" data-date="${esc(d.date)}">${esc(d.date)}${d.tabs ? `<span class="count" title="S&amp;P 201-300 / Nasdaq 100">${esc(Object.values(d.tabs).join(' / '))}</span>` : `<span class="count ${pnlClass(d.pnl)}">${esc(d.pnl ?? (d.entries || d.trades || ''))}</span>`}</a></li>`
     ).join('');
     selectEl.innerHTML = days.map((d) => `<option value="${esc(d.date)}">${esc(d.date)}</option>`).join('');
   }
@@ -156,23 +156,42 @@
   let tab = null;
   function tabOf(e) { return TABS.find((t) => e.title.includes(t)) || 'Other'; }
 
-  function renderTextDay(date, all) {
+  // Top-10 tabs (2026-11-03): logs/lists/<date>.json from the 7:30 AM picker.
+  const LIST_TAB = (name) => 'Top 10: ' + name;
+
+  function renderTextDay(date, all, lists) {
     const names = [...TABS, 'Other'].filter((t) => all.some((e) => tabOf(e) === t));
-    if (names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
-    if (!names.includes(tab)) tab = names[0];
-    const tabBar = `<div class="tabs" role="tablist">${names.map((t) => {
+    const listNames = lists ? Object.keys(lists.lists || {}).map(LIST_TAB) : [];
+    if (!listNames.length && names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
+    const allNames = [...names, ...listNames];
+    if (!allNames.includes(tab)) tab = allNames[0];
+    const tabBar = `<div class="tabs" role="tablist">${allNames.map((t) => {
       const es = all.filter((e) => tabOf(e) === t);
       const p = [...es].reverse().find((e) => e.pnl)?.pnl;
       return `<button role="tab" aria-selected="${t === tab}" data-tab="${esc(t)}" class="${t === tab ? 'on' : ''}">${esc(t === 'Other' ? 'Main bot' : t)}${p ? ` <span class="${pnlClass(p)}">${esc(p)}</span>` : ''}</button>`;
     }).join('')}</div>`;
-    renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
+    if (listNames.includes(tab)) renderList(date, lists, tab.replace('Top 10: ', ''), tabBar);
+    else renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
     viewEl.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
       tab = b.dataset.tab;
-      renderTextDay(date, all);
+      renderTextDay(date, all, lists);
     }));
   }
 
+  function renderList(date, lists, name, tabBar) {
+    const L = lists.lists[name];
+    viewEl.innerHTML = `
+      <h1>${esc(fmtDate(date))}</h1>
+      ${tabBar}
+      <p class="muted">The ${esc(name)} stocks the bot may buy today. Each morning it takes the 20 stocks with the highest 20-day average ADX, then keeps the 10 with the biggest 20-day price gain. Data through ${esc(L.data_through)}; ${esc(L.stocks_ranked)} stocks ranked.</p>
+      <div class="table-scroll"><table class="toplist">
+        <thead><tr><th>#</th><th>Stock</th><th class="num">20-day avg ADX</th><th class="num">20-day gain</th></tr></thead>
+        <tbody>${L.top10.map((r) => `<tr><td>${r.rank}</td><td class="symbol">${esc(r.symbol)}</td><td class="num">${Number(r.adx20).toFixed(1)}</td><td class="num ${r.mom20_pct >= 0 ? 'pos' : 'neg'}">${r.mom20_pct > 0 ? '+' : ''}${Number(r.mom20_pct).toFixed(1)}%</td></tr>`).join('')}</tbody>
+      </table></div>`;
+  }
+
   function renderEntries(date, entries, tabBar) {
+    if (!entries.length) { viewEl.innerHTML = `<h1>${esc(fmtDate(date))}</h1>${tabBar}<p class="empty">No updates yet.</p>`; return; }
     const last = entries[entries.length - 1];
     const pnl = [...entries].reverse().find((e) => e.pnl)?.pnl;
     const count = (k) => entries.filter((e) => e.tags.some((t) => t[0] === k)).length;
@@ -205,13 +224,20 @@
     current = date;
     viewEl.innerHTML = '<p class="muted">Loading…</p>';
     try {
-      const file = days.find((d) => d.date === date)?.file || `${date}.json`;
-      if (!file.endsWith('.json')) {
-        const res = await fetch(`logs/${encodeURIComponent(file)}`, { cache: 'no-store' });
-        if (!res.ok) throw new Error(res.status);
-        const text = await res.text();
+      const day = days.find((d) => d.date === date) || {};
+      const lists = day.lists ? await getJSON(`logs/${day.lists}`).catch(() => null) : null;
+      const file = day.file === undefined ? `${date}.json` : day.file;
+      if (!file || !file.endsWith('.json')) {
+        let text = '';
+        if (file) {
+          const res = await fetch(`logs/${encodeURIComponent(file)}`, { cache: 'no-store' });
+          if (!res.ok) throw new Error(res.status);
+          text = await res.text();
+        }
         if (current !== date) return;
-        renderTextDay(date, parseText(text));
+        const entries = parseText(text);
+        if (!entries.length && !lists) throw new Error('empty');
+        renderTextDay(date, entries, lists);
         return;
       }
       const data = await getJSON(`logs/${encodeURIComponent(file)}`);
