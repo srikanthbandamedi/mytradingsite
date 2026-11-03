@@ -1,0 +1,12 @@
+Live, 8:36 CT (Nasdaq 100)
+
+First live pass on the Nasdaq 100 list (GEHC PAYX CSGP ADP EXC MDLZ AMZN TMUS BKNG CEG), 2 slots x $2,000.
+No trades. Holding: none. Waiting for the 8:30-8:45 opening range.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:37:07	get_equity_positions	—
+8:37:07	get_equity_historicals (10 symbols)	0.1
+8:37:07	get_equity_historicals (QQQ)	0.0
+8:37:07	get_equity_historicals (QQQ (refetch to file))	0.0

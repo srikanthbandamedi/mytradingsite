@@ -2,8 +2,12 @@
   "days": [
     {
       "date": "2026-11-03",
-      "file": null,
-      "entries": 0,
+      "file": "2026-11-03.txt",
+      "entries": 1,
+      "tabs": {
+        "Nasdaq 100": "$0"
+      },
+      "pnl": "NDX $0",
       "lists": "lists/2026-11-03.json"
     },
     {
