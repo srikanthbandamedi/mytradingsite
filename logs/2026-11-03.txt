@@ -211,3 +211,13 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 9:23:58	get_equity_historicals (SP 10)	—
+
+Live, 9:26 CT (Nasdaq 100)
+
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:26:58	get_equity_historicals (10 list symbols)	—
+9:26:58	get_equity_historicals (QQQ)	0.1
