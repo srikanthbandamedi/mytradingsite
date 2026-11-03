@@ -1400,3 +1400,16 @@ Time (CT)	Call	Seconds since previous
 13:56:53	get_equity_positions (positions: none)	—
 13:56:53	get_equity_historicals (10 NDX)	0.1
 13:56:53	get_equity_historicals (QQQ)	0.1
+
+Live, 1:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought GEHC 24 shares at $80.46, stop $80.05.
+Holding GEHC, PAYX. Day -$12.81.
+Price now: GEHC $80.46 at 1:55 CT (bought 24 at $80.46, stop $80.05, open +$0.00).
+Price now: PAYX $115.91 at 1:55 CT (bought 17 at $115.60, stop $115.02, open +$5.19).
+
+Day P&L: -$12.81 realized.
+
+Time (CT)	Call	Seconds since previous
+13:59:00	get_equity_historicals (SP 10)	—
