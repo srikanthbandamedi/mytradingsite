@@ -232,3 +232,17 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 9:29:02	get_equity_historicals (SP 10)	—
+
+Live, 9:31 CT (Nasdaq 100)
+
+Bought CEG 7 shares at $265.41, stop order at $262.76
+Price now: CEG $265.95 at 9:30 CT (bought 7 at $265.41, stop $262.76, open +$3.82).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:31:58	get_equity_historicals (10 list symbols)	—
+9:31:58	get_equity_historicals (QQQ)	0.1
+9:32:32	place_equity_order (CEG buy 7 lim 266.09)	34.4
+9:32:37	get_equity_orders (CEG buy filled 265.4099)	5.1
+9:33:00	place_equity_order (CEG stop 262.76)	23.0
