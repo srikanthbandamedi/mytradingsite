@@ -116,3 +116,14 @@ Time (CT)	Call	Seconds since previous
 9:01:49	get_equity_positions	—
 9:01:49	get_equity_historicals (10 symbols)	0.0
 9:01:49	get_equity_historicals (QQQ)	0.1
+
+Live, 9:04 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought GEHC 25 shares at $79.85, stop $79.33.
+Price now: GEHC $79.81 at 9:00 CT (bought 25 at $79.81, stop $79.33, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:03:59	get_equity_historicals (10 symbols)	—
