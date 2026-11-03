@@ -494,3 +494,16 @@ Time (CT)	Call	Seconds since previous
 10:22:24	place_equity_order (PAYX buy 17 lim 114.81)	17.7
 10:22:38	get_equity_orders (PAYX buy filled 114.81)	13.5
 10:22:54	place_equity_order (PAYX stop 114.00)	16.2
+
+Live, 10:24 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought WEC 17 shares at $116.42, stop $115.77.
+Bought PAYX 17 shares at $114.81, stop $114.00.
+Price now: PAYX $114.75 at 10:20 CT (bought 17 at $114.75, stop $114.00, open +$0.00).
+Price now: WEC $116.36 at 10:20 CT (bought 17 at $116.36, stop $115.77, open +$0.00).
+
+Day P&L: -$4.50 realized.
+
+Time (CT)	Call	Seconds since previous
+10:24:00	get_equity_historicals (SP 10)	—
