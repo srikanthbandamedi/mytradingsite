@@ -507,3 +507,18 @@ Day P&L: -$4.50 realized.
 
 Time (CT)	Call	Seconds since previous
 10:24:00	get_equity_historicals (SP 10)	—
+
+Live, 10:26 CT (Nasdaq 100)
+
+No trades. Holding CEG, stop $262.76; PAYX, stop $114.00.
+Price now: CEG $265.45 at 10:25 CT (bought 7 at $265.41, stop $262.76, open +$0.28).
+Price now: PAYX $114.84 at 10:25 CT (bought 17 at $114.81, stop $114.00, open +$0.51).
+
+Day P&L: -$11.04 realized.
+
+Time (CT)	Call	Seconds since previous
+10:27:07	get_equity_orders (CEG stop resting)	—
+10:27:07	get_equity_orders (PAYX stop resting)	0.1
+10:27:07	get_equity_positions (CEG 7, PAYX 17)	0.1
+10:27:07	get_equity_historicals (10 list symbols)	0.1
+10:27:07	get_equity_historicals (QQQ)	0.1
