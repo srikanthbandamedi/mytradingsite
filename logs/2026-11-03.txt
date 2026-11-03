@@ -719,3 +719,13 @@ Time (CT)	Call	Seconds since previous
 11:06:59	get_equity_positions (none)	—
 11:06:59	get_equity_historicals (10 list symbols)	0.1
 11:06:59	get_equity_historicals (QQQ)	0.1
+
+Live, 11:09 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$2.97 realized.
+
+Time (CT)	Call	Seconds since previous
+11:08:59	get_equity_historicals (SP 10)	—
