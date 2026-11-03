@@ -950,3 +950,12 @@ Day P&L: -$2.97 realized.
 
 Time (CT)	Call	Seconds since previous
 12:09:00	get_equity_historicals (SP 10)	—
+
+Live, 12:11 CT (Nasdaq 100)
+
+No trades. Holding: AMZN.
+Price now: AMZN $250.33 at 12:10 CT (bought 8 at $250.04, stop $248.71, open +$2.32).
+
+Day P&L: -$14.57 realized.
+
+Time (CT)	Call	Seconds since previous
