@@ -146,3 +146,16 @@ Time (CT)	Call	Seconds since previous
 9:06:34	get_equity_orders (KHC stop confirmed)	0.1
 9:06:34	get_equity_positions (CCI 21, KHC 77)	0.1
 9:06:34	get_equity_historicals (SP 10)	0.1
+
+Live, 9:05 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Dry run: AZN stop hit, sold 10 at $188.04 (-$12.90). Bought MSFT 3 at $554.58 (stop $548.04). Holding: MSFT, TTD.
+Price now: MSFT $554.29 at 9:05 CT (bought 3 at $554.29, stop $548.03, open +$0.00).
+Price now: TTD $13.66 at 9:05 CT (bought 147 at $13.54, stop $13.34, open +$17.64).
+
+Day P&L: -$12.90 realized.
+
+Time (CT)	Call	Seconds since previous
+9:08:36	get_equity_historicals (NDX 10)	—
+9:08:36	get_equity_historicals (QQQ)	0.1
