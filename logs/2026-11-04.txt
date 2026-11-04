@@ -1591,3 +1591,11 @@ No new trades. Flat. Day +0.03.
 Day P&L: $0.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:31 CT (S&P 201-300)
+
+No new trades. Flat. Day +11.52.
+
+Day P&L: $12.18 realized.
+
+Time (CT)	Call	Seconds since previous
