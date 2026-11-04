@@ -468,3 +468,14 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 10:08:40	get_equity_historicals (NDX 10)	—
 10:08:40	get_equity_historicals (QQQ)	0.1
+
+Live, 10:10 CT (S&P 201-300)
+
+PAYX stop filled: sold 16 at $118.81 (+$7.68). Bought GEHC 23 shares at $85.97, stop order at $85.09. Holding: ED, GEHC.
+Price now: ED $120.56 at 10:10 CT (bought 16 at $118.46, stop $120.07, open +$33.59).
+Price now: GEHC $85.97 at 10:10 CT (bought 23 at $85.97, stop $85.09, open +$0.00).
+
+Day P&L: -$39.84 realized.
+
+Time (CT)	Call	Seconds since previous
+10:12:13	place_equity_order (GEHC stop 85.09)	—
