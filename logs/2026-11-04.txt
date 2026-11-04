@@ -666,3 +666,14 @@ Price now: TTD $13.55 at 10:45 CT (bought 147 at $13.54, stop $13.34, open +$1.4
 Day P&L: -$12.90 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:51 CT (S&P 201-300)
+
+No new trades. Holding ED (stop 120.07) and GEHC (stop 85.09). Day -39.84 realized.
+Price now: ED $120.31 at 10:50 CT (bought 16 at $118.46, stop $120.07, open +$29.63).
+Price now: GEHC $86.73 at 10:50 CT (bought 23 at $85.97, stop $85.09, open +$17.60).
+
+Day P&L: -$39.84 realized.
+
+Time (CT)	Call	Seconds since previous
+10:51:35	get_equity_historicals (S&P bars)	—
