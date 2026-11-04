@@ -1707,3 +1707,12 @@ Market closed. Flat, nothing held overnight. Day +12.51 realized.
 Day P&L: $12.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 3:03 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Market closed. Flat. Day +0.03.
+
+Day P&L: $0.03 realized.
+
+Time (CT)	Call	Seconds since previous
