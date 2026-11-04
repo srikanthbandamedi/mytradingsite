@@ -377,3 +377,16 @@ Time (CT)	Call	Seconds since previous
 9:52:08	cancel_equity_order (PAYX stop 117.48)	—
 9:52:08	get_equity_orders (PAYX old stop cancelled)	0.1
 9:52:08	place_equity_order (PAYX stop 118.93)	0.1
+
+Live, 9:50 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding: MSFT, TTD.
+Price now: MSFT $552.65 at 9:50 CT (bought 3 at $554.29, stop $548.03, open -$4.92).
+Price now: TTD $13.61 at 9:50 CT (bought 147 at $13.54, stop $13.34, open +$9.55).
+
+Day P&L: -$12.90 realized.
+
+Time (CT)	Call	Seconds since previous
+9:53:37	get_equity_historicals (NDX 10)	—
+9:53:37	get_equity_historicals (QQQ)	0.1
