@@ -1636,3 +1636,12 @@ Price now: KR $69.41 at 2:40 CT (bought 28 at $69.36, stop $69.03, open +$1.26).
 Day P&L: $12.18 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:43 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Flat. Day +0.03.
+
+Day P&L: $0.03 realized.
+
+Time (CT)	Call	Seconds since previous
