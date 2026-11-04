@@ -57,3 +57,11 @@ No trades. Holding: none.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:50 CT (S&P 201-300)
+
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
