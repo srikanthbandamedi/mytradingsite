@@ -1608,3 +1608,12 @@ No new trades. Flat. Day +0.03.
 Day P&L: $0.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:37 CT (S&P 201-300)
+
+Bought KR 28 at $69.36, stop $69.03. Day +11.52.
+Price now: KR $69.39 at 2:35 CT (bought 28 at $69.36, stop $69.03, open +$0.70).
+
+Day P&L: $12.18 realized.
+
+Time (CT)	Call	Seconds since previous
