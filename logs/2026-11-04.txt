@@ -285,3 +285,15 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 9:33:36	get_equity_historicals (NDX 10)	—
 9:33:36	get_equity_historicals (QQQ)	0.1
+
+Live, 9:35 CT (S&P 201-300)
+
+No trades. Holding: ED, PAYX.
+Price now: ED $118.70 at 9:35 CT (bought 16 at $118.46, stop $117.77, open +$3.91).
+Price now: PAYX $118.53 at 9:35 CT (bought 16 at $118.33, stop $117.48, open +$3.20).
+
+Day P&L: -$47.52 realized.
+
+Time (CT)	Call	Seconds since previous
+9:36:35	get_equity_positions (PAYX 16, ED 16)	—
+9:36:35	get_equity_historicals (SP 10)	0.1
