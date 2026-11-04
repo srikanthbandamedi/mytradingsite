@@ -688,3 +688,16 @@ Price now: TTD $13.53 at 10:50 CT (bought 147 at $13.54, stop $13.34, open -$2.2
 Day P&L: -$12.90 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:56 CT (S&P 201-300)
+
+ED sold by raised stop at 120.06 (+25.60). Bought EXC 43 @ 46.23, stop 45.94. Holding GEHC (stop 85.09).
+Price now: EXC $46.24 at 10:55 CT (bought 43 at $46.23, stop $45.94, open +$0.43).
+Price now: GEHC $86.70 at 10:55 CT (bought 23 at $85.97, stop $85.09, open +$16.91).
+
+Day P&L: -$14.25 realized.
+
+Time (CT)	Call	Seconds since previous
+10:56:54	place_equity_order (EXC buy 43 @46.27)	—
+10:57:02	get_equity_orders (EXC buy check)	7.9
+10:57:15	place_equity_order (EXC stop 45.94)	12.6
