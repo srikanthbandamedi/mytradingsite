@@ -1480,3 +1480,12 @@ Price now: MSFT $557.43 at 1:55 CT (bought 3 at $554.29, stop $548.03, open +$9.
 Day P&L: -$18.78 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:02 CT (S&P 201-300)
+
+Sold EXC 43 at $46.44 (+$7.31, trend fade). Bought CCI 21 at $92.00, stop $91.55. Day +18.13.
+Price now: CCI $92.08 at 2:00 CT (bought 21 at $92.00, stop $91.55, open +$1.68).
+
+Day P&L: $19.41 realized.
+
+Time (CT)	Call	Seconds since previous
