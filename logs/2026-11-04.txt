@@ -183,3 +183,14 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 9:13:37	get_equity_historicals (NDX 10)	—
 9:13:37	get_equity_historicals (QQQ)	0.1
+
+Live, 9:15 CT (S&P 201-300)
+
+CCI stop filled: sold 21 at $90.13 (-$22.89). Bought PAYX 16 shares at $118.33, stop order at $117.48. Holding: KHC, PAYX.
+Price now: KHC $25.75 at 9:15 CT (bought 77 at $25.95, stop $25.63, open -$15.78).
+Price now: PAYX $118.41 at 9:15 CT (bought 16 at $118.33, stop $117.48, open +$1.28).
+
+Day P&L: -$22.89 realized.
+
+Time (CT)	Call	Seconds since previous
+9:17:13	place_equity_order (PAYX stop 117.48)	—
