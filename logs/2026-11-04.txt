@@ -1449,3 +1449,14 @@ Price now: EXC $46.48 at 1:50 CT (bought 43 at $46.23, stop $45.94, open +$10.75
 Day P&L: $10.37 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:53 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Holding EXC and MSFT. Day -18.78.
+Price now: EXC $46.48 at 1:50 CT (bought 43 at $46.24, stop $45.94, open +$10.32).
+Price now: MSFT $557.54 at 1:50 CT (bought 3 at $554.29, stop $548.03, open +$9.74).
+
+Day P&L: -$18.78 realized.
+
+Time (CT)	Call	Seconds since previous
