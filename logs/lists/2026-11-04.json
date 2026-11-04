@@ -1,0 +1,138 @@
+{
+ "day": "2026-11-04",
+ "built_at": "2026-11-04T13:38:54Z",
+ "lists": {
+  "S&P 201-300": {
+   "data_through": "2026-11-03",
+   "stocks_ranked": 100,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "CCI",
+     "adx20": 26.9,
+     "mom20_pct": 26.8
+    },
+    {
+     "rank": 2,
+     "symbol": "GEHC",
+     "adx20": 27.4,
+     "mom20_pct": 24.5
+    },
+    {
+     "rank": 3,
+     "symbol": "PAYX",
+     "adx20": 29.2,
+     "mom20_pct": 14.5
+    },
+    {
+     "rank": 4,
+     "symbol": "KR",
+     "adx20": 27.3,
+     "mom20_pct": 14.4
+    },
+    {
+     "rank": 5,
+     "symbol": "ACGL",
+     "adx20": 27.4,
+     "mom20_pct": 13.7
+    },
+    {
+     "rank": 6,
+     "symbol": "WEC",
+     "adx20": 27.3,
+     "mom20_pct": 11.8
+    },
+    {
+     "rank": 7,
+     "symbol": "KHC",
+     "adx20": 27.2,
+     "mom20_pct": 11.3
+    },
+    {
+     "rank": 8,
+     "symbol": "ED",
+     "adx20": 29.0,
+     "mom20_pct": 11.1
+    },
+    {
+     "rank": 9,
+     "symbol": "CCL",
+     "adx20": 27.9,
+     "mom20_pct": 9.9
+    },
+    {
+     "rank": 10,
+     "symbol": "EXC",
+     "adx20": 28.4,
+     "mom20_pct": 9.1
+    }
+   ]
+  },
+  "Nasdaq 100": {
+   "data_through": "2026-11-03",
+   "stocks_ranked": 98,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "AZN",
+     "adx20": 27.6,
+     "mom20_pct": 16.0
+    },
+    {
+     "rank": 2,
+     "symbol": "PAYX",
+     "adx20": 29.2,
+     "mom20_pct": 14.5
+    },
+    {
+     "rank": 3,
+     "symbol": "CSGP",
+     "adx20": 29.2,
+     "mom20_pct": 13.4
+    },
+    {
+     "rank": 4,
+     "symbol": "ADP",
+     "adx20": 28.4,
+     "mom20_pct": 12.8
+    },
+    {
+     "rank": 5,
+     "symbol": "MDLZ",
+     "adx20": 27.9,
+     "mom20_pct": 9.3
+    },
+    {
+     "rank": 6,
+     "symbol": "EXC",
+     "adx20": 28.4,
+     "mom20_pct": 9.1
+    },
+    {
+     "rank": 7,
+     "symbol": "TTD",
+     "adx20": 27.7,
+     "mom20_pct": 7.9
+    },
+    {
+     "rank": 8,
+     "symbol": "BKNG",
+     "adx20": 28.2,
+     "mom20_pct": -0.2
+    },
+    {
+     "rank": 9,
+     "symbol": "MSFT",
+     "adx20": 27.9,
+     "mom20_pct": -1.6
+    },
+    {
+     "rank": 10,
+     "symbol": "AMZN",
+     "adx20": 28.7,
+     "mom20_pct": -2.2
+    }
+   ]
+  }
+ }
+}
