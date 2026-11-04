@@ -1645,3 +1645,13 @@ No new trades. Flat. Day +0.03.
 Day P&L: $0.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:46 CT (S&P 201-300)
+
+No new trades. Holding KR and ACGL. Day +11.52.
+Price now: ACGL $110.61 at 2:45 CT (bought 18 at $110.61, stop $109.99, open +$0.00).
+Price now: KR $69.41 at 2:45 CT (bought 28 at $69.36, stop $69.03, open +$1.40).
+
+Day P&L: $12.18 realized.
+
+Time (CT)	Call	Seconds since previous
