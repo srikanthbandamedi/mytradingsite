@@ -95,3 +95,16 @@ Price now: TTD $13.54 at 8:55 CT (bought 147 at $13.54, stop $13.34, open +$0.00
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Dry run bought TTD 147 at $13.57 (stop $13.34) and AZN 10 at $189.43 (stop $188.04). Holding: AZN, TTD.
+Price now: AZN $189.33 at 8:55 CT (bought 10 at $189.33, stop $188.04, open +$0.00).
+Price now: TTD $13.54 at 8:55 CT (bought 147 at $13.54, stop $13.34, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:58:41	get_equity_historicals (QQQ)	—
+8:58:41	get_equity_historicals (NDX 10 (refetch))	0.1
