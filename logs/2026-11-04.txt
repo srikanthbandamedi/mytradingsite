@@ -1699,3 +1699,11 @@ No new trades. Flat. Day +0.03.
 Day P&L: $0.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 3:01 CT (S&P 201-300)
+
+Market closed. Flat, nothing held overnight. Day +12.51 realized.
+
+Day P&L: $12.52 realized.
+
+Time (CT)	Call	Seconds since previous
