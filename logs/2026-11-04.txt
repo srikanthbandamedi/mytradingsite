@@ -1690,3 +1690,12 @@ Sold ACGL 18 at $110.66 (+$0.90, trend fade). Flat for the day. Day +12.51 (from
 Day P&L: $12.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:58 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Flat. Day +0.03.
+
+Day P&L: $0.03 realized.
+
+Time (CT)	Call	Seconds since previous
