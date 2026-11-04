@@ -74,3 +74,13 @@ No trades. Holding: none.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:55 CT (S&P 201-300)
+
+Bought CCI 21 shares at $91.22, stop order at $90.19. Holding: CCI.
+Price now: CCI $91.25 at 8:55 CT (bought 21 at $91.22, stop $90.19, open +$0.63).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:57:12	place_equity_order (CCI stop 90.19)	—
