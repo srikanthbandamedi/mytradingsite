@@ -207,3 +207,14 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 9:18:37	get_equity_historicals (NDX 10)	—
 9:18:37	get_equity_historicals (QQQ)	0.1
+
+Live, 9:20 CT (S&P 201-300)
+
+KHC stop filled: sold 77 at $25.63 (-$24.63). Bought ED 16 shares at $118.46, stop order at $117.77. Holding: ED, PAYX.
+Price now: ED $118.48 at 9:20 CT (bought 16 at $118.46, stop $117.77, open +$0.39).
+Price now: PAYX $118.00 at 9:20 CT (bought 16 at $118.33, stop $117.48, open -$5.36).
+
+Day P&L: -$47.52 realized.
+
+Time (CT)	Call	Seconds since previous
+9:22:16	place_equity_order (ED stop 117.77)	—
