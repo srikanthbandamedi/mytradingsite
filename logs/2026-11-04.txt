@@ -108,3 +108,14 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 8:58:41	get_equity_historicals (QQQ)	—
 8:58:41	get_equity_historicals (NDX 10 (refetch))	0.1
+
+Live, 9:00 CT (S&P 201-300)
+
+Bought KHC 77 shares at $25.95, stop order at $25.63. Holding: CCI, KHC.
+Price now: CCI $90.93 at 9:00 CT (bought 21 at $91.22, stop $90.19, open -$6.09).
+Price now: KHC $25.96 at 9:00 CT (bought 77 at $25.95, stop $25.63, open +$0.78).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:02:03	place_equity_order (KHC stop 25.63)	—
