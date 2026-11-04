@@ -416,3 +416,16 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 9:58:37	get_equity_historicals (NDX 10)	—
 9:58:37	get_equity_historicals (QQQ)	0.1
+
+Live, 10:00 CT (S&P 201-300)
+
+Raised ED stop $119.14 -> $119.80. Holding: ED, PAYX.
+Price now: ED $120.49 at 10:00 CT (bought 16 at $118.46, stop $119.80, open +$32.47).
+Price now: PAYX $119.83 at 10:00 CT (bought 16 at $118.33, stop $118.93, open +$23.92).
+
+Day P&L: -$47.52 realized.
+
+Time (CT)	Call	Seconds since previous
+10:02:01	cancel_equity_order (ED stop 119.14)	—
+10:02:01	get_equity_orders (ED old stop cancelled)	0.1
+10:02:01	place_equity_order (ED stop 119.80)	0.0
