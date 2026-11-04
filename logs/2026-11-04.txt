@@ -159,3 +159,14 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 9:08:36	get_equity_historicals (NDX 10)	—
 9:08:36	get_equity_historicals (QQQ)	0.1
+
+Live, 9:10 CT (S&P 201-300)
+
+No trades. Holding: CCI, KHC.
+Price now: CCI $90.47 at 9:10 CT (bought 21 at $91.22, stop $90.19, open -$15.64).
+Price now: KHC $25.77 at 9:10 CT (bought 77 at $25.95, stop $25.63, open -$14.24).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:11:35	get_equity_historicals (SP 10)	—
