@@ -39,3 +39,12 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 8:44:15	get_equity_historicals (NDX 10)	—
 8:44:15	get_equity_historicals (QQQ)	0.1
+
+Live, 8:45 CT (S&P 201-300)
+
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:46:48	get_equity_historicals (SP 10)	—
