@@ -954,3 +954,14 @@ Day P&L: -$14.25 realized.
 
 Time (CT)	Call	Seconds since previous
 11:56:35	get_equity_historicals (S&P bars)	—
+
+Live, 11:58 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Holding EXC and MSFT. Day -18.78.
+Price now: EXC $46.42 at 11:55 CT (bought 43 at $46.24, stop $45.94, open +$7.95).
+Price now: MSFT $553.61 at 11:55 CT (bought 3 at $554.29, stop $548.03, open -$2.05).
+
+Day P&L: -$18.78 realized.
+
+Time (CT)	Call	Seconds since previous
