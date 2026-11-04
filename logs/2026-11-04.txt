@@ -599,3 +599,17 @@ Day P&L: -$12.90 realized.
 Time (CT)	Call	Seconds since previous
 10:33:36	get_equity_historicals (NDX 10)	—
 10:33:36	get_equity_historicals (QQQ)	0.1
+
+Live, 10:36 CT (S&P 201-300)
+
+No new trades. Holding ED (stop 120.07) and GEHC (stop 85.09). Day -39.84 realized.
+Price now: ED $120.36 at 10:35 CT (bought 16 at $118.46, stop $120.07, open +$30.39).
+Price now: GEHC $86.42 at 10:35 CT (bought 23 at $85.97, stop $85.09, open +$10.35).
+
+Day P&L: -$39.84 realized.
+
+Time (CT)	Call	Seconds since previous
+10:36:40	get_equity_orders (ED stop)	—
+10:36:40	get_equity_orders (GEHC stop)	0.1
+10:36:40	get_equity_positions (positions)	0.1
+10:36:40	get_equity_historicals (S&P bars)	0.2
