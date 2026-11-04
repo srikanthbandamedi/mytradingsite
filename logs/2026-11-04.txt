@@ -1400,3 +1400,12 @@ Price now: MSFT $554.34 at 1:35 CT (bought 3 at $554.29, stop $548.03, open +$0.
 Day P&L: -$18.78 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:41 CT (S&P 201-300)
+
+No new trades. Holding EXC. Day +10.37.
+Price now: EXC $46.43 at 1:40 CT (bought 43 at $46.23, stop $45.94, open +$8.60).
+
+Day P&L: $10.37 realized.
+
+Time (CT)	Call	Seconds since previous
