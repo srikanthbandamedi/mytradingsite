@@ -84,3 +84,14 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 8:57:12	place_equity_order (CCI stop 90.19)	—
+
+Live, 8:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding: none.
+Price now: AZN $189.33 at 8:55 CT (bought 10 at $189.33, stop $188.04, open +$0.00).
+Price now: TTD $13.54 at 8:55 CT (bought 147 at $13.54, stop $13.34, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
