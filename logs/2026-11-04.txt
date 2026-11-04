@@ -1071,3 +1071,14 @@ Price now: GEHC $87.31 at 12:20 CT (bought 23 at $85.97, stop $86.52, open +$30.
 Day P&L: -$14.25 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:23 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Holding EXC and MSFT. Day -18.78.
+Price now: EXC $46.44 at 12:20 CT (bought 43 at $46.24, stop $45.94, open +$8.39).
+Price now: MSFT $556.00 at 12:20 CT (bought 3 at $554.29, stop $548.03, open +$5.12).
+
+Day P&L: -$18.78 realized.
+
+Time (CT)	Call	Seconds since previous
