@@ -1,0 +1,9 @@
+Live, 8:35 CT (S&P 201-300)
+
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:36:37	get_equity_positions (positions: none)	—
+8:36:37	get_equity_historicals (10 S&P)	0.2
