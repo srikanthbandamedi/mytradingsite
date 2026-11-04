@@ -1682,3 +1682,11 @@ No new trades. Flat. Day +0.03.
 Day P&L: $0.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:57 CT (S&P 201-300)
+
+Sold ACGL 18 at $110.66 (+$0.90, trend fade). Flat for the day. Day +12.51 (from fills).
+
+Day P&L: $12.52 realized.
+
+Time (CT)	Call	Seconds since previous
