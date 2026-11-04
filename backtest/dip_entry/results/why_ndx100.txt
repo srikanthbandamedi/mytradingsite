@@ -1,0 +1,3 @@
+ndx100 2 slots: dipped >=0.25%: 585 trades -1826 ; never dipped: 226 trades +4031
+ndx100 2 slots: dipped >=0.5%: 449 trades -2495 ; never dipped: 362 trades +4701
+ndx100 2 slots: dipped >=1%: 279 trades -2570 ; never dipped: 532 trades +4776

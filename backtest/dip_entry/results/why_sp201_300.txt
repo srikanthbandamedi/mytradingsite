@@ -1,0 +1,3 @@
+sp201_300 2 slots: dipped >=0.25%: 685 trades -1971 ; never dipped: 292 trades +4178
+sp201_300 2 slots: dipped >=0.5%: 510 trades -3182 ; never dipped: 467 trades +5389
+sp201_300 2 slots: dipped >=1%: 278 trades -2322 ; never dipped: 699 trades +4529
