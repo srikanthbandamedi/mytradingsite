@@ -733,3 +733,13 @@ Price now: MSFT $557.51 at 11:00 CT (bought 3 at $554.29, stop $548.03, open +$9
 Day P&L: -$18.78 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:06 CT (S&P 201-300)
+
+No new trades. Holding EXC (stop 45.94) and GEHC (stop 85.09). Day -14.25 realized.
+Price now: EXC $46.35 at 11:05 CT (bought 43 at $46.23, stop $45.94, open +$5.16).
+Price now: GEHC $86.69 at 11:05 CT (bought 23 at $85.97, stop $85.09, open +$16.56).
+
+Day P&L: -$14.25 realized.
+
+Time (CT)	Call	Seconds since previous
