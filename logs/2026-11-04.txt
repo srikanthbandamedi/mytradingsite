@@ -701,3 +701,14 @@ Time (CT)	Call	Seconds since previous
 10:56:54	place_equity_order (EXC buy 43 @46.27)	—
 10:57:02	get_equity_orders (EXC buy check)	7.9
 10:57:15	place_equity_order (EXC stop 45.94)	12.6
+
+Live, 10:58 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold TTD 147 @ ~13.505 (-5.88, exit rule). Bought EXC 43 @ 46.24, stop 45.94. Holding MSFT. Day -18.78.
+Price now: EXC $46.24 at 10:55 CT (bought 43 at $46.24, stop $45.94, open +$0.00).
+Price now: MSFT $556.80 at 10:55 CT (bought 3 at $554.29, stop $548.03, open +$7.52).
+
+Day P&L: -$18.78 realized.
+
+Time (CT)	Call	Seconds since previous
