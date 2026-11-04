@@ -119,3 +119,16 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 9:02:03	place_equity_order (KHC stop 25.63)	—
+
+Live, 9:00 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding: AZN, TTD.
+Price now: AZN $188.86 at 9:00 CT (bought 10 at $189.33, stop $188.04, open -$4.70).
+Price now: TTD $13.57 at 9:00 CT (bought 147 at $13.54, stop $13.34, open +$4.41).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+9:03:35	get_equity_historicals (NDX 10)	—
+9:03:35	get_equity_historicals (QQQ)	0.1
