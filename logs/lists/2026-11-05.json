@@ -1,0 +1,138 @@
+{
+ "day": "2026-11-05",
+ "built_at": "2026-11-05T13:38:41Z",
+ "lists": {
+  "S&P 201-300": {
+   "data_through": "2026-11-04",
+   "stocks_ranked": 100,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "GEHC",
+     "adx20": 29.1,
+     "mom20_pct": 32.7
+    },
+    {
+     "rank": 2,
+     "symbol": "CCL",
+     "adx20": 28.0,
+     "mom20_pct": 19.8
+    },
+    {
+     "rank": 3,
+     "symbol": "ACGL",
+     "adx20": 28.1,
+     "mom20_pct": 17.3
+    },
+    {
+     "rank": 4,
+     "symbol": "PAYX",
+     "adx20": 29.0,
+     "mom20_pct": 16.9
+    },
+    {
+     "rank": 5,
+     "symbol": "KR",
+     "adx20": 27.3,
+     "mom20_pct": 16.4
+    },
+    {
+     "rank": 6,
+     "symbol": "DG",
+     "adx20": 27.4,
+     "mom20_pct": 16.0
+    },
+    {
+     "rank": 7,
+     "symbol": "KHC",
+     "adx20": 27.9,
+     "mom20_pct": 15.8
+    },
+    {
+     "rank": 8,
+     "symbol": "ED",
+     "adx20": 29.5,
+     "mom20_pct": 15.0
+    },
+    {
+     "rank": 9,
+     "symbol": "WEC",
+     "adx20": 27.5,
+     "mom20_pct": 14.5
+    },
+    {
+     "rank": 10,
+     "symbol": "EXC",
+     "adx20": 29.2,
+     "mom20_pct": 11.5
+    }
+   ]
+  },
+  "Nasdaq 100": {
+   "data_through": "2026-11-04",
+   "stocks_ranked": 98,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "GEHC",
+     "adx20": 29.1,
+     "mom20_pct": 32.7
+    },
+    {
+     "rank": 2,
+     "symbol": "CPRT",
+     "adx20": 27.9,
+     "mom20_pct": 22.5
+    },
+    {
+     "rank": 3,
+     "symbol": "CSGP",
+     "adx20": 29.6,
+     "mom20_pct": 18.1
+    },
+    {
+     "rank": 4,
+     "symbol": "PAYX",
+     "adx20": 29.0,
+     "mom20_pct": 16.9
+    },
+    {
+     "rank": 5,
+     "symbol": "KHC",
+     "adx20": 27.9,
+     "mom20_pct": 15.8
+    },
+    {
+     "rank": 6,
+     "symbol": "ADP",
+     "adx20": 28.6,
+     "mom20_pct": 15.0
+    },
+    {
+     "rank": 7,
+     "symbol": "MDLZ",
+     "adx20": 28.5,
+     "mom20_pct": 13.4
+    },
+    {
+     "rank": 8,
+     "symbol": "EXC",
+     "adx20": 29.2,
+     "mom20_pct": 11.5
+    },
+    {
+     "rank": 9,
+     "symbol": "BKNG",
+     "adx20": 28.7,
+     "mom20_pct": 9.7
+    },
+    {
+     "rank": 10,
+     "symbol": "MSFT",
+     "adx20": 28.6,
+     "mom20_pct": 5.0
+    }
+   ]
+  }
+ }
+}
