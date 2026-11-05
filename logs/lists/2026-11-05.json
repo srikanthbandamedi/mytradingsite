@@ -133,6 +133,72 @@
      "mom20_pct": 5.0
     }
    ]
+  },
+  "S&P 100": {
+   "data_through": "2026-11-04",
+   "stocks_ranked": 100,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "MDT",
+     "adx20": 28.5,
+     "mom20_pct": 22.9
+    },
+    {
+     "rank": 2,
+     "symbol": "WMT",
+     "adx20": 29.1,
+     "mom20_pct": 19.5
+    },
+    {
+     "rank": 3,
+     "symbol": "LMT",
+     "adx20": 28.5,
+     "mom20_pct": 19.1
+    },
+    {
+     "rank": 4,
+     "symbol": "ADP",
+     "adx20": 28.6,
+     "mom20_pct": 15.0
+    },
+    {
+     "rank": 5,
+     "symbol": "KO",
+     "adx20": 28.6,
+     "mom20_pct": 11.7
+    },
+    {
+     "rank": 6,
+     "symbol": "GE",
+     "adx20": 28.3,
+     "mom20_pct": 8.5
+    },
+    {
+     "rank": 7,
+     "symbol": "BMY",
+     "adx20": 28.8,
+     "mom20_pct": 7.6
+    },
+    {
+     "rank": 8,
+     "symbol": "JNJ",
+     "adx20": 30.4,
+     "mom20_pct": 7.0
+    },
+    {
+     "rank": 9,
+     "symbol": "CVX",
+     "adx20": 28.0,
+     "mom20_pct": 5.8
+    },
+    {
+     "rank": 10,
+     "symbol": "MRK",
+     "adx20": 30.6,
+     "mom20_pct": 5.3
+    }
+   ]
   }
  }
 }
