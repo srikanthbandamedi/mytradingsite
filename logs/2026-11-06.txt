@@ -323,3 +323,23 @@ No trades. Holding: none.
 Day P&L: -$10.97 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:13 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding AMZN (stop $261.34).
+Price now: AMZN $263.44 at 10:10 CT (bought 7 at $263.61, stop $261.34, open -$1.19).
+
+Day P&L: -$13.34 realized.
+
+Time (CT)	Call	Seconds since previous
+
+Live, 10:18 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding AMZN (stop $261.34).
+Price now: AMZN $263.26 at 10:15 CT (bought 7 at $263.61, stop $261.34, open -$2.45).
+
+Day P&L: -$13.34 realized.
+
+Time (CT)	Call	Seconds since previous
