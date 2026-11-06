@@ -260,3 +260,28 @@ Price now: KHC $24.80 at 9:45 CT (bought 80 at $24.88, stop $24.62, open -$6.72)
 Day P&L: -$5.02 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold GEHC 24 at $82.71 (+$1.20, trend fade).
+Bought AMZN 7 shares at $263.61, stop $261.34.
+Bought MSFT 3 shares at $535.44, stop $531.50.
+Holding AMZN (stop $261.34), MSFT (stop $531.50).
+Price now: AMZN $263.61 at 9:55 CT (bought 7 at $263.61, stop $261.34, open +$0.00).
+Price now: MSFT $535.44 at 9:55 CT (bought 3 at $535.44, stop $531.50, open +$0.00).
+
+Day P&L: -$13.70 realized.
+
+Time (CT)	Call	Seconds since previous
+
+Live, 9:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold GEHC 24 at $82.59 (-$1.63, trend fade).
+Sold KHC 80 at $24.82 (-$4.32, trend fade).
+Holding: none.
+
+Day P&L: -$10.97 realized.
+
+Time (CT)	Call	Seconds since previous
