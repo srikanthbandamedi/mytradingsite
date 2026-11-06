@@ -285,3 +285,14 @@ Holding: none.
 Day P&L: -$10.97 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:58 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding AMZN (stop $261.34), MSFT (stop $531.50).
+Price now: AMZN $263.61 at 9:55 CT (bought 7 at $263.61, stop $261.34, open +$0.00).
+Price now: MSFT $535.44 at 9:55 CT (bought 3 at $535.44, stop $531.50, open +$0.00).
+
+Day P&L: -$13.70 realized.
+
+Time (CT)	Call	Seconds since previous
