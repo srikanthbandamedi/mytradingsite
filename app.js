@@ -11,8 +11,22 @@
   const money = (n) => (n == null || isNaN(n)) ? '–' : Number(n).toLocaleString(undefined, { style: 'currency', currency: 'USD' });
   const signed = (n) => (n > 0 ? '+' : '') + money(n);
 
+  // Logs are read straight from the repo (2026-11-06), so a log push shows up within minutes
+  // without waiting for a GitHub Pages deploy. Falls back to the deployed copy if that fails.
+  const RAW = 'https://raw.githubusercontent.com/srikanthbandamedi/mytradingsite/main/';
+  async function fetchLog(path) {
+    const local = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+    if (!local) {
+      try {
+        const res = await fetch(`${RAW}${path}?t=${Date.now()}`, { cache: 'no-store' });
+        if (res.ok) return res;
+      } catch (e) { /* fall back below */ }
+    }
+    return fetch(path, { cache: 'no-store' });
+  }
+
   async function getJSON(path) {
-    const res = await fetch(path, { cache: 'no-store' });
+    const res = await fetchLog(path);
     if (!res.ok) throw new Error(`${path}: ${res.status}`);
     return res.json();
   }
@@ -230,7 +244,7 @@
       if (!file || !file.endsWith('.json')) {
         let text = '';
         if (file) {
-          const res = await fetch(`logs/${encodeURIComponent(file)}`, { cache: 'no-store' });
+          const res = await fetchLog(`logs/${encodeURIComponent(file)}`);
           if (!res.ok) throw new Error(res.status);
           text = await res.text();
         }
