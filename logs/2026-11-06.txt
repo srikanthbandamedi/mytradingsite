@@ -216,3 +216,14 @@ Price now: KHC $24.88 at 9:35 CT (bought 80 at $24.88, stop $24.62, open +$0.00)
 Day P&L: -$5.02 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:43 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding GEHC (stop $81.77), DASH (stop $178.86).
+Price now: DASH $180.47 at 9:40 CT (bought 10 at $182.43, stop $178.85, open -$19.65).
+Price now: GEHC $82.86 at 9:40 CT (bought 24 at $82.66, stop $81.76, open +$4.92).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
