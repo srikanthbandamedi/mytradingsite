@@ -124,3 +124,15 @@ Price now: GEHC $82.66 at 9:15 CT (bought 24 at $82.66, stop $81.76, open +$0.00
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:19 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought GEHC 24 shares at $82.66, stop $81.76.
+Bought CCL 67 shares at $29.84, stop $29.52.
+Price now: CCL $29.84 at 9:15 CT (bought 67 at $29.84, stop $29.52, open +$0.00).
+Price now: GEHC $82.66 at 9:15 CT (bought 24 at $82.66, stop $81.76, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
