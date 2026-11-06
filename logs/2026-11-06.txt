@@ -343,3 +343,14 @@ Price now: AMZN $263.26 at 10:15 CT (bought 7 at $263.61, stop $261.34, open -$2
 Day P&L: -$13.34 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:18 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought HIG 14 shares at $135.90, stop $135.09.
+Holding HIG (stop $135.10).
+Price now: HIG $135.90 at 10:15 CT (bought 14 at $135.90, stop $135.09, open +$0.00).
+
+Day P&L: -$10.97 realized.
+
+Time (CT)	Call	Seconds since previous
