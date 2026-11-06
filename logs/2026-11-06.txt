@@ -114,3 +114,13 @@ No trades. Holding: none.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:19 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought GEHC 24 shares at $82.66, stop $81.76.
+Price now: GEHC $82.66 at 9:15 CT (bought 24 at $82.66, stop $81.76, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
