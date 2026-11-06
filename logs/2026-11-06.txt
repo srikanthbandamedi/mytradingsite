@@ -374,3 +374,13 @@ Price now: AMZN $262.82 at 10:20 CT (bought 7 at $263.61, stop $261.34, open -$5
 Day P&L: -$13.34 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:27 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding AMZN (stop $261.34).
+Price now: AMZN $263.71 at 10:25 CT (bought 7 at $263.61, stop $261.34, open +$0.69).
+
+Day P&L: -$13.34 realized.
+
+Time (CT)	Call	Seconds since previous
