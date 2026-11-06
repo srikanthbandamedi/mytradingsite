@@ -227,3 +227,14 @@ Price now: GEHC $82.86 at 9:40 CT (bought 24 at $82.66, stop $81.76, open +$4.92
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:43 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding GEHC (stop $81.77), KHC (stop $24.62).
+Price now: GEHC $82.86 at 9:40 CT (bought 24 at $82.66, stop $81.76, open +$4.92).
+Price now: KHC $24.92 at 9:40 CT (bought 80 at $24.88, stop $24.62, open +$3.28).
+
+Day P&L: -$5.02 realized.
+
+Time (CT)	Call	Seconds since previous
