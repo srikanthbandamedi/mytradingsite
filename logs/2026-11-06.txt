@@ -204,3 +204,15 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 9:38:58	get_equity_historicals (ndx)	—
 9:38:58	get_equity_historicals (ndx)	0.1
+
+Live, 9:38 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought KHC 80 shares at $24.88, stop $24.62.
+Holding GEHC (stop $81.77), KHC (stop $24.62).
+Price now: GEHC $82.86 at 9:35 CT (bought 24 at $82.66, stop $81.76, open +$4.92).
+Price now: KHC $24.88 at 9:35 CT (bought 80 at $24.88, stop $24.62, open +$0.00).
+
+Day P&L: -$5.02 realized.
+
+Time (CT)	Call	Seconds since previous

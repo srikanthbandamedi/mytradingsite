@@ -1,10 +1,8 @@
 name: Update log index
 
-# Whenever new daily logs are pushed, rebuild logs/index.json so the site lists them.
+# Rebuild logs/index.json on demand. The bot's site_log.py already rebuilds it before every
+# push, so this no longer runs on each push (2026-11-06).
 on:
-  push:
-    branches: [main]
-    paths: ["logs/**", "scripts/build_index.py"]
   workflow_dispatch:
 
 permissions:
