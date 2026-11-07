@@ -9,4 +9,4 @@ Columns: `begins_at_utc` (bar start, UTC), `open`, `high`, `low`, `close`, `volu
 `session` is `reg` for regular hours. A few Nasdaq stocks also have `pre` / `post` bars from the extended-hours tests (Jul–Oct).
 Gap-fill (interpolated) bars were dropped.
 
-Shorter files: the 58 stocks added Nov 7 (from Sep 3); ABBV BRK.B CVX JNJ JPM LLY MA V WMT XOM (Jun 30 – Oct 23 only), TRI (from May 4), SNDQ (from Apr 23), MUZ (from Jun 9).
+Shorter files: the 58 stocks added Nov 7 (from Sep 3); ABBV BRK.B CVX JNJ JPM LLY MA V WMT XOM (from Jun 30), TRI (from May 4), SNDQ (from Apr 23), MUZ (from Jun 9).
