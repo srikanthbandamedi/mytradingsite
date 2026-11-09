@@ -1329,3 +1329,13 @@ Price now: WEC $117.28 at 2:05 CT (bought 17 at $116.77, stop $116.18, open +$8.
 Day P&L: $4.88 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:05 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding AZN, stop $188.89.
+Price now: AZN $189.69 at 2:05 CT (bought 10 at $189.84, stop $188.89, open -$1.45).
+
+Day P&L: $23.82 realized.
+
+Time (CT)	Call	Seconds since previous
