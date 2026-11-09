@@ -55,3 +55,12 @@ Sold TMUS 12 at $163.53 (-$18.12, stop order filled in the 8:50 bar). Holding: n
 Day P&L: -$18.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:03 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$10.03 realized.
+
+Time (CT)	Call	Seconds since previous
