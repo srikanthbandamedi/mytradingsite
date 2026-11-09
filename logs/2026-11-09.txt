@@ -177,3 +177,15 @@ No trades. Holding: none.
 Day P&L: -$10.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:33 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought TMUS 12 at $164.73 (9:25 bar, score 90), stop $163.12.
+Holding APP (stop $398.40), TMUS (stop $163.12).
+Price now: APP $408.52 at 9:30 CT (bought 4 at $406.54, stop $398.40, open +$7.94).
+Price now: TMUS $164.72 at 9:30 CT (bought 12 at $164.72, stop $163.12, open +$0.00).
+
+Day P&L: -$18.12 realized.
+
+Time (CT)	Call	Seconds since previous
