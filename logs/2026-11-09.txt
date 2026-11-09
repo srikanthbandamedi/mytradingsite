@@ -1530,3 +1530,12 @@ Sold DG 14 at $136.63 (-$5.04, trend fade). Holding: none.
 Day P&L: $1.04 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: $15.67 realized.
+
+Time (CT)	Call	Seconds since previous
