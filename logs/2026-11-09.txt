@@ -130,3 +130,12 @@ Price now: APP $405.90 at 9:15 CT (bought 4 at $406.54, stop $398.40, open -$2.5
 Day P&L: -$18.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:23 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$10.03 realized.
+
+Time (CT)	Call	Seconds since previous
