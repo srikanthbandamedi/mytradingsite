@@ -648,3 +648,14 @@ Price now: WEC $117.09 at 11:20 CT (bought 17 at $116.77, stop $116.18, open +$5
 Day P&L: -$10.66 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:25 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No changes; holding AEP, TMUS
+Price now: AEP $127.94 at 11:20 CT (bought 15 at $128.09, stop $127.44, open -$2.25).
+Price now: TMUS $167.16 at 11:20 CT (bought 12 at $164.72, stop $165.72, open +$29.22).
+
+Day P&L: -$22.94 realized.
+
+Time (CT)	Call	Seconds since previous
