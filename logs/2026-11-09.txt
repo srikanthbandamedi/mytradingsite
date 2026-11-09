@@ -447,3 +447,14 @@ Price now: WEC $116.92 at 10:35 CT (bought 17 at $116.77, stop $116.18, open +$2
 Day P&L: -$10.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:39 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding APP (stop $398.40), TMUS (stop $165.24).
+Price now: APP $405.68 at 10:35 CT (bought 4 at $406.54, stop $398.40, open -$3.44).
+Price now: TMUS $166.95 at 10:35 CT (bought 12 at $164.72, stop $165.24, open +$26.70).
+
+Day P&L: -$18.12 realized.
+
+Time (CT)	Call	Seconds since previous
