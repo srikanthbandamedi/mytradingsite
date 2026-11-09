@@ -1350,3 +1350,14 @@ Price now: WEC $117.29 at 2:15 CT (bought 17 at $116.77, stop $116.18, open +$8.
 Day P&L: $4.88 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:10 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold AZN 10 at $189.31 (-$5.30, trend fade).
+Bought AEP 15 at $128.50, stop $127.86.
+Price now: AEP $128.50 at 2:15 CT (bought 15 at $128.50, stop $127.85, open +$0.00).
+
+Day P&L: $18.52 realized.
+
+Time (CT)	Call	Seconds since previous
