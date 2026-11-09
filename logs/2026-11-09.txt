@@ -209,3 +209,12 @@ Price now: TMUS $165.34 at 9:35 CT (bought 12 at $164.72, stop $163.12, open +$7
 Day P&L: -$18.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:43 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$10.03 realized.
+
+Time (CT)	Call	Seconds since previous
