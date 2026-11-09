@@ -1011,3 +1011,14 @@ Price now: AZN $189.84 at 12:40 CT (bought 10 at $189.84, stop $188.89, open +$0
 Day P&L: $21.64 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No changes; holding DG, WEC
+Price now: DG $136.83 at 12:45 CT (bought 14 at $135.39, stop $136.50, open +$20.16).
+Price now: WEC $117.46 at 12:45 CT (bought 17 at $116.77, stop $116.18, open +$11.81).
+
+Day P&L: -$10.66 realized.
+
+Time (CT)	Call	Seconds since previous
