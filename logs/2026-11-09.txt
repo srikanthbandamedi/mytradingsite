@@ -1,0 +1,9 @@
+Live, 8:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold PAYX 17 at $116.50 (-$10.03, stop order filled at the 8:30 open bar). Passes started late at 8:51 (schedule had dropped).
+Holding: none.
+
+Day P&L: -$10.03 realized.
+
+Time (CT)	Call	Seconds since previous

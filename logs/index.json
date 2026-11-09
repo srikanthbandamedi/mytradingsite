@@ -2,8 +2,12 @@
   "days": [
     {
       "date": "2026-11-09",
-      "file": null,
-      "entries": 0,
+      "file": "2026-11-09.txt",
+      "entries": 1,
+      "tabs": {
+        "S&P 201-300": "-$10.03"
+      },
+      "pnl": "S&P -$10.03",
       "lists": "lists/2026-11-09.json"
     },
     {
