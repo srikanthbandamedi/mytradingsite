@@ -1436,3 +1436,12 @@ Price now: WEC $117.24 at 2:35 CT (bought 17 at $116.77, stop $116.18, open +$8.
 Day P&L: $0.38 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:30 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold AEP 15 at $128.31 (-$2.85, trend fade). Holding: none.
+
+Day P&L: $15.67 realized.
+
+Time (CT)	Call	Seconds since previous
