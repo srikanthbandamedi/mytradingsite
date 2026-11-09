@@ -1502,3 +1502,13 @@ No trades. Holding: none.
 Day P&L: $15.67 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding DG, stop $136.31.
+Price now: DG $137.05 at 2:55 CT (bought 14 at $136.99, stop $136.30, open +$0.84).
+
+Day P&L: $6.08 realized.
+
+Time (CT)	Call	Seconds since previous
