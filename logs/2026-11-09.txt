@@ -1445,3 +1445,13 @@ Sold AEP 15 at $128.31 (-$2.85, trend fade). Holding: none.
 Day P&L: $15.67 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:35 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold WEC 17 at $117.10 (+$5.70, trend fade). Holding DG, stop $136.31.
+Price now: DG $136.96 at 2:40 CT (bought 14 at $136.99, stop $136.30, open -$0.42).
+
+Day P&L: $6.08 realized.
+
+Time (CT)	Call	Seconds since previous
