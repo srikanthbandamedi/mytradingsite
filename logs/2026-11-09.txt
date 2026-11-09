@@ -1276,3 +1276,14 @@ Price now: AZN $189.62 at 1:50 CT (bought 10 at $189.84, stop $188.89, open -$2.
 Day P&L: $21.64 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding ACGL, stop $107.50; WEC, stop $116.18.
+Price now: ACGL $107.93 at 1:55 CT (bought 18 at $108.04, stop $107.49, open -$1.98).
+Price now: WEC $117.26 at 1:55 CT (bought 17 at $116.77, stop $116.18, open +$8.42).
+
+Day P&L: $4.88 realized.
+
+Time (CT)	Call	Seconds since previous
