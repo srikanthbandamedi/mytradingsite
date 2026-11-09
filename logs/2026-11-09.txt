@@ -857,3 +857,14 @@ Price now: TMUS $168.41 at 12:05 CT (bought 12 at $164.72, stop $166.80, open +$
 Day P&L: -$22.94 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:15 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+DG stop raised to 136.50; holding DG, WEC
+Price now: DG $137.18 at 12:10 CT (bought 14 at $135.39, stop $136.50, open +$25.06).
+Price now: WEC $117.48 at 12:10 CT (bought 17 at $116.77, stop $116.18, open +$12.16).
+
+Day P&L: -$10.66 realized.
+
+Time (CT)	Call	Seconds since previous
