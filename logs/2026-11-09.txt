@@ -46,3 +46,12 @@ No trades. Holding: none.
 Day P&L: -$10.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:58 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold TMUS 12 at $163.53 (-$18.12, stop order filled in the 8:50 bar). Holding: none.
+
+Day P&L: -$18.12 realized.
+
+Time (CT)	Call	Seconds since previous
