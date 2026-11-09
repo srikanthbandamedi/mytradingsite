@@ -7,3 +7,14 @@ Holding: none.
 Day P&L: -$10.03 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:50 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought TMUS 12 at $165.04 (8:45 bar, score 90), stop $163.53.
+Holding TMUS, stop $163.53.
+Price now: TMUS $165.04 at 8:50 CT (bought 12 at $165.04, stop $163.53, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
