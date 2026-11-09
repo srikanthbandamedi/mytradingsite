@@ -1361,3 +1361,14 @@ Price now: AEP $128.50 at 2:15 CT (bought 15 at $128.50, stop $127.85, open +$0.
 Day P&L: $18.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:15 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding ACGL, stop $107.50; WEC, stop $116.18.
+Price now: ACGL $107.95 at 2:20 CT (bought 18 at $108.04, stop $107.49, open -$1.62).
+Price now: WEC $117.33 at 2:20 CT (bought 17 at $116.77, stop $116.18, open +$9.60).
+
+Day P&L: $4.88 realized.
+
+Time (CT)	Call	Seconds since previous
