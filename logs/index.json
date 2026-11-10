@@ -1,6 +1,12 @@
 {
   "days": [
     {
+      "date": "2026-11-10",
+      "file": null,
+      "entries": 0,
+      "lists": "lists/2026-11-10.json"
+    },
+    {
       "date": "2026-11-09",
       "file": "2026-11-09.txt",
       "entries": 146,
