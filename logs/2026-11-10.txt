@@ -1375,3 +1375,12 @@ Dry run: no real orders.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:19 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Price now: ACGL $109.28 at 2:15 CT (bought 18 at $109.27, stop $108.71, open +$0.36).
+
+Day P&L: $12.14 realized.
+
+Time (CT)	Call	Seconds since previous
