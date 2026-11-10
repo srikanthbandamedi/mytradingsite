@@ -1520,3 +1520,11 @@ Price now: ACGL $109.18 at 2:55 CT (bought 18 at $109.27, stop $108.71, open -$1
 Day P&L: $12.14 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:59 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
