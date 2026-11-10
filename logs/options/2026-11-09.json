@@ -17,7 +17,7 @@
      "avg10": 23911,
      "signal": "favor",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -47,7 +47,7 @@
      "avg10": 161696,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -62,7 +62,7 @@
      "avg10": 48462,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -92,7 +92,8 @@
      "avg10": 15341,
      "signal": "low-volume",
      "lists": [
-      "NDX"
+      "NDX",
+      "S&P 100"
      ]
     },
     {
@@ -137,7 +138,7 @@
      "avg10": 7064,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -152,7 +153,7 @@
      "avg10": 7770,
      "signal": "low-volume",
      "lists": [
-      "S&P",
+      "S&P 201-300",
       "NDX"
      ]
     },
@@ -168,7 +169,7 @@
      "avg10": 1880,
      "signal": "low-volume",
      "lists": [
-      "S&P",
+      "S&P 201-300",
       "NDX"
      ]
     },
@@ -214,7 +215,7 @@
      "avg10": 804,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -229,7 +230,7 @@
      "avg10": 2455,
      "signal": "low-volume",
      "lists": [
-      "S&P",
+      "S&P 201-300",
       "NDX"
      ]
     },
@@ -245,7 +246,7 @@
      "avg10": 1553,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     },
     {
@@ -260,7 +261,7 @@
      "avg10": 1262,
      "signal": "low-volume",
      "lists": [
-      "S&P"
+      "S&P 201-300"
      ]
     }
    ]
