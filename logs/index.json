@@ -9,7 +9,8 @@
         "Nasdaq 100": "$15.67"
       },
       "pnl": "S&P $1.04 | NDX $15.67",
-      "lists": "lists/2026-11-09.json"
+      "lists": "lists/2026-11-09.json",
+      "options": "options/2026-11-09.json"
     },
     {
       "date": "2026-11-06",

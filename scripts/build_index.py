@@ -57,6 +57,14 @@ if LISTS.is_dir():
         if m:
             days.setdefault(m.group(1), {"date": m.group(1), "file": None, "entries": 0})["lists"] = "lists/" + f.name
 
+# Options calls vs puts snapshots (logs/options/YYYY-MM-DD.json, 2026-11-10) show as an "Options" tab.
+OPTS = LOGS / "options"
+if OPTS.is_dir():
+    for f in OPTS.iterdir():
+        m = re.match(r"^(\d{4}-\d{2}-\d{2})\.json$", f.name)
+        if m:
+            days.setdefault(m.group(1), {"date": m.group(1), "file": None, "entries": 0})["options"] = "options/" + f.name
+
 ordered = [days[d] for d in sorted(days, reverse=True)]
 (LOGS / "index.json").write_text(json.dumps({"days": ordered}, indent=2) + "\n")
 print(f"Indexed {len(ordered)} day(s)")

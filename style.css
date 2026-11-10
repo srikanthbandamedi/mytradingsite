@@ -87,3 +87,8 @@ footer { border-top:1px solid var(--border); margin-top:48px; padding-top:16px; 
 .toplist th, .toplist td { text-align:left; padding:8px 12px 8px 0; border-bottom:1px solid var(--border); font-variant-numeric: tabular-nums; }
 .toplist th { color:var(--muted); font-weight:600; font-size:.85rem; }
 .toplist .num { text-align:right; }
+
+/* Options tab (2026-11-10) */
+.toplist.options { max-width:none; }
+.toplist.options td { white-space:nowrap; }
+.toplist.options span.muted { color:var(--muted); }

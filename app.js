@@ -173,23 +173,66 @@
   // Top-10 tabs (2026-11-03): logs/lists/<date>.json from the 7:30 AM picker.
   const LIST_TAB = (name) => 'Top 10: ' + name;
 
-  function renderTextDay(date, all, lists) {
+  // Options tab (2026-11-10): logs/options/<date>.json, calls vs puts snapshots at 7:45, 8:45, 12:45 and the 3:00 close.
+  const OPT_TAB = 'Options';
+  let optTime = null;
+
+  function renderTextDay(date, all, lists, opts) {
     const names = [...TABS, 'Other'].filter((t) => all.some((e) => tabOf(e) === t));
     const listNames = lists ? Object.keys(lists.lists || {}).map(LIST_TAB) : [];
-    if (!listNames.length && names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
-    const allNames = [...names, ...listNames];
+    const optNames = opts && (opts.snapshots || []).length ? [OPT_TAB] : [];
+    if (!listNames.length && !optNames.length && names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
+    const allNames = [...names, ...listNames, ...optNames];
     if (!allNames.includes(tab)) tab = allNames[0];
     const tabBar = `<div class="tabs" role="tablist">${allNames.map((t) => {
       const es = all.filter((e) => tabOf(e) === t);
       const p = [...es].reverse().find((e) => e.pnl)?.pnl;
       return `<button role="tab" aria-selected="${t === tab}" data-tab="${esc(t)}" class="${t === tab ? 'on' : ''}">${esc(t === 'Other' ? 'Main bot' : t)}${p ? ` <span class="${pnlClass(p)}">${esc(p)}</span>` : ''}</button>`;
     }).join('')}</div>`;
-    if (listNames.includes(tab)) renderList(date, lists, tab.replace('Top 10: ', ''), tabBar);
+    if (tab === OPT_TAB) renderOptions(date, opts, tabBar, () => renderTextDay(date, all, lists, opts));
+    else if (listNames.includes(tab)) renderList(date, lists, tab.replace('Top 10: ', ''), tabBar);
     else renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
     viewEl.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
       tab = b.dataset.tab;
-      renderTextDay(date, all, lists);
+      renderTextDay(date, all, lists, opts);
     }));
+  }
+
+  const SIGNAL = {
+    favor: ['pos', 'Favor', 'Calls at least 2x puts on unusual volume'],
+    skip: ['neg', 'Skip', 'Puts at least 1.5x calls on unusual volume'],
+    neutral: ['', 'Neutral', 'Unusual volume, no clear side'],
+    'low-volume': ['muted', 'Low volume', 'Under 1,000 contracts or under 1.5x the 10-day average so far'],
+    'pre-open': ['muted', 'Pre-open', 'Before the 8:30 CT open'],
+  };
+  const int = (n) => (n == null ? '–' : Number(n).toLocaleString());
+
+  function renderOptions(date, opts, tabBar, rerender) {
+    const snaps = opts.snapshots;
+    const label = (s) => s.label === 'close' ? 'Close' : `${s.time} CT`;
+    if (!snaps.some((s) => label(s) === optTime)) optTime = label(snaps[snaps.length - 1]);
+    const snap = snaps.find((s) => label(s) === optTime);
+    viewEl.innerHTML = `
+      <h1>${esc(fmtDate(date))}</h1>
+      ${tabBar}
+      <p class="muted">Calls vs puts from Robinhood's options scanner, all expirations added up, for today's list stocks and anything the bot holds. The signal is a test filter only and does not change any trades.</p>
+      <div class="filters" role="group" aria-label="Snapshot time">
+        ${snaps.map((s) => `<button data-opt="${esc(label(s))}" class="${label(s) === optTime ? 'on' : ''}">${esc(label(s))}</button>`).join('')}
+      </div>
+      <div class="table-scroll"><table class="toplist options">
+        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls</th><th class="num">Puts</th><th class="num">Calls / puts</th><th class="num">10-day avg</th><th>Signal</th></tr></thead>
+        <tbody>${snap.rows.map((r) => {
+          const sg = SIGNAL[r.signal] || ['', r.signal || '–', ''];
+          return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
+            <td class="num">${money(r.last)}${r.pct_change != null ? ` <span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : ''}</td>
+            <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
+            <td class="num">${r.calls_to_puts == null ? '–' : Number(r.calls_to_puts).toFixed(2)}</td>
+            <td class="num">${int(r.avg10)}</td>
+            <td><span class="${sg[0]}" title="${esc(sg[2])}">${esc(sg[1])}</span></td></tr>`;
+        }).join('')}</tbody>
+      </table></div>
+      <p class="muted">Favor: calls at least 2x puts. Skip: puts at least 1.5x calls. Both only count with at least 1,000 contracts and 1.5x the 10-day average for this time of day.</p>`;
+    viewEl.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => { optTime = b.dataset.opt; rerender(); }));
   }
 
   function renderList(date, lists, name, tabBar) {
@@ -240,6 +283,7 @@
     try {
       const day = days.find((d) => d.date === date) || {};
       const lists = day.lists ? await getJSON(`logs/${day.lists}`).catch(() => null) : null;
+      const opts = day.options ? await getJSON(`logs/${day.options}`).catch(() => null) : null;
       const file = day.file === undefined ? `${date}.json` : day.file;
       if (!file || !file.endsWith('.json')) {
         let text = '';
@@ -250,8 +294,8 @@
         }
         if (current !== date) return;
         const entries = parseText(text);
-        if (!entries.length && !lists) throw new Error('empty');
-        renderTextDay(date, entries, lists);
+        if (!entries.length && !lists && !opts) throw new Error('empty');
+        renderTextDay(date, entries, lists, opts);
         return;
       }
       const data = await getJSON(`logs/${encodeURIComponent(file)}`);
