@@ -351,3 +351,14 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 10:19:41	get_equity_historicals (dry NDX)	—
 10:19:42	get_equity_historicals (dry NDX)	0.0
+
+Live, 10:24 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought PAYX 17 shares at $115.00, stop $114.36 (trend entry, score 90).
+Price now: PAYX $115.00 at 10:20 CT (bought 17 at $115.00, stop $114.36, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+10:24:34	get_equity_historicals (dry SP)	—
