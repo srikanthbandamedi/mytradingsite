@@ -14,7 +14,8 @@
      "calls_to_puts": 19.39,
      "call_oi": 234888,
      "put_oi": 152900,
-     "avg10": 23911,
+     "avg": 23911,
+     "avg_days": 10,
      "signal": "favor",
      "lists": [
       "S&P 201-300"
@@ -29,7 +30,8 @@
      "calls_to_puts": 1.61,
      "call_oi": 208851,
      "put_oi": 209151,
-     "avg10": 69504,
+     "avg": 69504,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX"
@@ -44,7 +46,8 @@
      "calls_to_puts": 2.18,
      "call_oi": 654023,
      "put_oi": 189176,
-     "avg10": 161696,
+     "avg": 161696,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"
@@ -59,7 +62,8 @@
      "calls_to_puts": 1.42,
      "call_oi": 411836,
      "put_oi": 578990,
-     "avg10": 48462,
+     "avg": 48462,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"
@@ -74,7 +78,8 @@
      "calls_to_puts": 1.01,
      "call_oi": 278008,
      "put_oi": 237737,
-     "avg10": 29832,
+     "avg": 29832,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX"
@@ -89,7 +94,8 @@
      "calls_to_puts": 1.56,
      "call_oi": 150824,
      "put_oi": 117408,
-     "avg10": 15341,
+     "avg": 15341,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX",
@@ -105,7 +111,8 @@
      "calls_to_puts": 19.42,
      "call_oi": 34096,
      "put_oi": 20330,
-     "avg10": 3470,
+     "avg": 3470,
+     "avg_days": 10,
      "signal": "favor",
      "lists": [
       "NDX"
@@ -120,7 +127,8 @@
      "calls_to_puts": 47.17,
      "call_oi": 48909,
      "put_oi": 25031,
-     "avg10": 5580,
+     "avg": 5580,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX"
@@ -135,7 +143,8 @@
      "calls_to_puts": 2.49,
      "call_oi": 37220,
      "put_oi": 38032,
-     "avg10": 7064,
+     "avg": 7064,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"
@@ -150,7 +159,8 @@
      "calls_to_puts": 1.36,
      "call_oi": 43573,
      "put_oi": 19775,
-     "avg10": 7770,
+     "avg": 7770,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300",
@@ -166,7 +176,8 @@
      "calls_to_puts": 0.98,
      "call_oi": 27732,
      "put_oi": 17938,
-     "avg10": 1880,
+     "avg": 1880,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300",
@@ -182,7 +193,8 @@
      "calls_to_puts": 1.39,
      "call_oi": 56120,
      "put_oi": 45074,
-     "avg10": 5028,
+     "avg": 5028,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX"
@@ -197,7 +209,8 @@
      "calls_to_puts": 0.44,
      "call_oi": 74442,
      "put_oi": 30389,
-     "avg10": 6744,
+     "avg": 6744,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "NDX"
@@ -212,7 +225,8 @@
      "calls_to_puts": 7.1,
      "call_oi": 5938,
      "put_oi": 3908,
-     "avg10": 804,
+     "avg": 804,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"
@@ -227,7 +241,8 @@
      "calls_to_puts": 1.21,
      "call_oi": 24752,
      "put_oi": 14089,
-     "avg10": 2455,
+     "avg": 2455,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300",
@@ -243,7 +258,8 @@
      "calls_to_puts": 1.09,
      "call_oi": 10157,
      "put_oi": 11562,
-     "avg10": 1553,
+     "avg": 1553,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"
@@ -258,7 +274,8 @@
      "calls_to_puts": 1.66,
      "call_oi": 4194,
      "put_oi": 3447,
-     "avg10": 1262,
+     "avg": 1262,
+     "avg_days": 10,
      "signal": "low-volume",
      "lists": [
       "S&P 201-300"

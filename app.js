@@ -202,7 +202,7 @@
     favor: ['pos', 'Favor', 'Calls at least 2x puts on unusual volume'],
     skip: ['neg', 'Skip', 'Puts at least 1.5x calls on unusual volume'],
     neutral: ['', 'Neutral', 'Unusual volume, no clear side'],
-    'low-volume': ['muted', 'Low volume', 'Under 1,000 contracts or under 1.5x the 10-day average so far'],
+    'low-volume': ['muted', 'Low volume', 'Under 1,000 contracts or under 1.5x the average so far'],
     'pre-open': ['muted', 'Pre-open', 'Before the 8:30 CT open'],
   };
   const int = (n) => (n == null ? '–' : Number(n).toLocaleString());
@@ -220,18 +220,18 @@
         ${snaps.map((s) => `<button data-opt="${esc(label(s))}" class="${label(s) === optTime ? 'on' : ''}">${esc(label(s))}</button>`).join('')}
       </div>
       <div class="table-scroll"><table class="toplist options">
-        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls</th><th class="num">Puts</th><th class="num">Calls / puts</th><th class="num">10-day avg</th><th>Signal</th></tr></thead>
+        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls</th><th class="num">Puts</th><th class="num">Calls / puts</th><th class="num">${snap.rows.some((r) => r.avg_days === 20) ? 20 : 10}-day avg</th><th>Signal</th></tr></thead>
         <tbody>${snap.rows.map((r) => {
           const sg = SIGNAL[r.signal] || ['', r.signal || '–', ''];
           return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
             <td class="num">${money(r.last)}${r.pct_change != null ? ` <span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : ''}</td>
             <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
             <td class="num">${r.calls_to_puts == null ? '–' : Number(r.calls_to_puts).toFixed(2)}</td>
-            <td class="num">${int(r.avg10)}</td>
+            <td class="num">${int(r.avg ?? r.avg10)}</td>
             <td><span class="${sg[0]}" title="${esc(sg[2])}">${esc(sg[1])}</span></td></tr>`;
         }).join('')}</tbody>
       </table></div>
-      <p class="muted">Favor: calls at least 2x puts. Skip: puts at least 1.5x calls. Both only count with at least 1,000 contracts and 1.5x the 10-day average for this time of day.</p>`;
+      <p class="muted">Favor: calls at least 2x puts. Skip: puts at least 1.5x calls. Both only count with at least 1,000 contracts and 1.5x the 20-day average (10-day before Nov 10) for this time of day.</p>`;
     viewEl.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => { optTime = b.dataset.opt; rerender(); }));
   }
 
