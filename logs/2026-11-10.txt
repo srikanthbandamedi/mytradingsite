@@ -1313,3 +1313,11 @@ Price now: DG $137.25 at 1:55 CT (bought 14 at $137.51, stop $136.82, open -$3.7
 Day P&L: $20.47 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:57 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
