@@ -811,3 +811,17 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 12:03:02	get_equity_historicals (dry NDX)	—
 12:03:02	get_equity_historicals (dry NDX)	0.1
+
+Live, 12:08 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold PAYX 17 at $115.82 (+$13.94, stop filled).
+Bought ACGL 18 shares at $109.27, stop $108.72 (trend entry, score 90).
+Holding ED, stop $118.38.
+Price now: ACGL $109.27 at 12:05 CT (bought 18 at $109.27, stop $108.71, open +$0.00).
+Price now: ED $119.46 at 12:05 CT (bought 16 at $118.97, stop $118.38, open +$7.76).
+
+Day P&L: $15.87 realized.
+
+Time (CT)	Call	Seconds since previous
+12:08:03	get_equity_historicals (dry SP)	—
