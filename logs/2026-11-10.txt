@@ -532,3 +532,17 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 11:04:32	get_equity_historicals (dry NDX)	—
 11:04:32	get_equity_historicals (dry NDX)	0.2
+
+Live, 11:08 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold EXC 43 at $45.68 (+$1.93, trend fade).
+Bought ED 16 shares at $118.98, stop $118.38 (trend entry, score 90).
+Holding PAYX, stop $115.58.
+Price now: ED $118.97 at 11:05 CT (bought 16 at $118.97, stop $118.38, open +$0.00).
+Price now: PAYX $116.15 at 11:05 CT (bought 17 at $115.00, stop $115.58, open +$19.55).
+
+Day P&L: $1.93 realized.
+
+Time (CT)	Call	Seconds since previous
+11:08:03	get_equity_historicals (dry SP)	—
