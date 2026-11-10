@@ -1249,3 +1249,13 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 13:38:01	get_equity_historicals (dry NDX)	—
 13:38:01	get_equity_historicals (dry NDX)	0.1
+
+Live, 1:42 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Price now: ACGL $109.50 at 1:40 CT (bought 18 at $109.27, stop $108.71, open +$4.23).
+Price now: DG $137.28 at 1:40 CT (bought 14 at $137.51, stop $136.82, open -$3.22).
+
+Day P&L: $20.47 realized.
+
+Time (CT)	Call	Seconds since previous
