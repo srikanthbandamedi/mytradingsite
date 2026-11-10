@@ -509,3 +509,15 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 10:57:59	get_equity_historicals (dry NDX)	—
 10:57:59	get_equity_historicals (dry NDX)	0.0
+
+Live, 11:04 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding PAYX, stop $115.58; EXC, stop $45.40.
+Price now: EXC $45.70 at 11:00 CT (bought 43 at $45.63, stop $45.40, open +$2.79).
+Price now: PAYX $116.09 at 11:00 CT (bought 17 at $115.00, stop $115.58, open +$18.53).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+11:04:29	get_equity_historicals (dry SP)	—
