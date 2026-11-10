@@ -173,23 +173,26 @@
   // Top-10 tabs (2026-11-03): logs/lists/<date>.json from the 7:30 AM picker.
   const LIST_TAB = (name) => 'Top 10: ' + name;
 
-  // Options tab (2026-11-10): logs/options/<date>.json, calls vs puts snapshots at 7:45, 8:45, 12:45 and the 3:00 close.
-  const OPT_TAB = 'Options';
+  // Options tabs (2026-11-10): logs/options/<date>.json. User asked for two tabs, near term and long term expiry,
+  // sorted by the calls-to-puts ratio, with no 10/20-day average filter. Robinhood's scanner can only split by
+  // expiry for dollar premium (up to 7 days out), so near = expiring within 7 days, long = everything later.
+  const OPT_TABS = { 'Options: near term': 'near', 'Options: long term': 'long' };
   let optTime = null;
 
   function renderTextDay(date, all, lists, opts) {
     const names = [...TABS, 'Other'].filter((t) => all.some((e) => tabOf(e) === t));
     const listNames = lists ? Object.keys(lists.lists || {}).map(LIST_TAB) : [];
-    const optNames = opts && (opts.snapshots || []).length ? [OPT_TAB] : [];
+    const optNames = opts && (opts.snapshots || []).length ? Object.keys(OPT_TABS) : [];
     if (!listNames.length && !optNames.length && names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
     const allNames = [...names, ...listNames, ...optNames];
+    if (tab === 'Options') tab = optNames[0];
     if (!allNames.includes(tab)) tab = allNames[0];
     const tabBar = `<div class="tabs" role="tablist">${allNames.map((t) => {
       const es = all.filter((e) => tabOf(e) === t);
       const p = [...es].reverse().find((e) => e.pnl)?.pnl;
       return `<button role="tab" aria-selected="${t === tab}" data-tab="${esc(t)}" class="${t === tab ? 'on' : ''}">${esc(t === 'Other' ? 'Main bot' : t)}${p ? ` <span class="${pnlClass(p)}">${esc(p)}</span>` : ''}</button>`;
     }).join('')}</div>`;
-    if (tab === OPT_TAB) renderOptions(date, opts, tabBar, () => renderTextDay(date, all, lists, opts));
+    if (OPT_TABS[tab]) renderOptions(date, opts, OPT_TABS[tab], tabBar, () => renderTextDay(date, all, lists, opts));
     else if (listNames.includes(tab)) renderList(date, lists, tab.replace('Top 10: ', ''), tabBar);
     else renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
     viewEl.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
@@ -198,40 +201,37 @@
     }));
   }
 
-  const SIGNAL = {
-    favor: ['pos', 'Favor', 'Calls at least 2x puts on unusual volume'],
-    skip: ['neg', 'Skip', 'Puts at least 1.5x calls on unusual volume'],
-    neutral: ['', 'Neutral', 'Unusual volume, no clear side'],
-    'low-volume': ['muted', 'Low volume', 'Under 1,000 contracts or under 1.5x the average so far'],
-    'pre-open': ['muted', 'Pre-open', 'Before the 8:30 CT open'],
-  };
   const int = (n) => (n == null ? '–' : Number(n).toLocaleString());
+  const usd = (n) => (n == null ? '–' : n >= 1e6 ? `$${(n / 1e6).toFixed(1)}M` : n >= 1e3 ? `$${Math.round(n / 1e3)}K` : `$${Math.round(n)}`);
+  // Highest calls-to-puts first; calls with no puts at the very top, no trades at the bottom.
+  const ratioKey = (x) => (!x || (!x.call_premium && !x.put_premium) ? -2 : x.put_premium ? x.ratio : x.call_premium ? Infinity : -1);
 
-  function renderOptions(date, opts, tabBar, rerender) {
-    const snaps = opts.snapshots;
+  function renderOptions(date, opts, term, tabBar, rerender) {
+    const snaps = opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
     const label = (s) => s.label === 'close' ? 'Close' : `${s.time} CT`;
+    const head = `<h1>${esc(fmtDate(date))}</h1>${tabBar}
+      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Sorted by calls to puts, measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Every stock is shown, with no volume or average filter.</p>`;
+    if (!snaps.length) { viewEl.innerHTML = `${head}<p class="empty">No near / long term split was recorded for this day (it started with the Nov 10 close).</p>`; return; }
     if (!snaps.some((s) => label(s) === optTime)) optTime = label(snaps[snaps.length - 1]);
     const snap = snaps.find((s) => label(s) === optTime);
-    viewEl.innerHTML = `
-      <h1>${esc(fmtDate(date))}</h1>
-      ${tabBar}
-      <p class="muted">Calls vs puts from Robinhood's options scanner, all expirations added up, for today's list stocks and anything the bot holds. The signal is a test filter only and does not change any trades.</p>
+    const rows = [...snap.rows].sort((a, b) => ratioKey(b[term]) - ratioKey(a[term]) || ((b[term]?.call_premium || 0) - (a[term]?.call_premium || 0)));
+    viewEl.innerHTML = `${head}
       <div class="filters" role="group" aria-label="Snapshot time">
         ${snaps.map((s) => `<button data-opt="${esc(label(s))}" class="${label(s) === optTime ? 'on' : ''}">${esc(label(s))}</button>`).join('')}
       </div>
       <div class="table-scroll"><table class="toplist options">
-        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls</th><th class="num">Puts</th><th class="num">Calls / puts</th><th class="num">${snap.rows.some((r) => r.avg_days === 20) ? 20 : 10}-day avg</th><th>Signal</th></tr></thead>
-        <tbody>${snap.rows.map((r) => {
-          const sg = SIGNAL[r.signal] || ['', r.signal || '–', ''];
+        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls $</th><th class="num">Puts $</th><th class="num">Calls / puts</th></tr></thead>
+        <tbody>${rows.map((r) => {
+          const x = r[term] || {};
+          const ratio = !x.call_premium && !x.put_premium ? '<span class="muted">no trades</span>'
+            : !x.put_premium ? '<span class="pos">calls only</span>'
+            : `<span class="${x.ratio >= 2 ? 'pos' : x.ratio <= 0.67 ? 'neg' : ''}">${Number(x.ratio).toFixed(2)}</span>`;
           return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
             <td class="num">${money(r.last)}${r.pct_change != null ? ` <span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : ''}</td>
-            <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
-            <td class="num">${r.calls_to_puts == null ? '–' : Number(r.calls_to_puts).toFixed(2)}</td>
-            <td class="num">${int(r.avg ?? r.avg10)}</td>
-            <td><span class="${sg[0]}" title="${esc(sg[2])}">${esc(sg[1])}</span></td></tr>`;
+            <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td></tr>`;
         }).join('')}</tbody>
       </table></div>
-      <p class="muted">Favor: calls at least 2x puts. Skip: puts at least 1.5x calls. Both only count with at least 1,000 contracts and 1.5x the 20-day average (10-day before Nov 10) for this time of day.</p>`;
+      <p class="muted">Green: calls at least 2x puts. Red: puts at least 1.5x calls. For information only; it does not change any trades.</p>`;
     viewEl.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => { optTime = b.dataset.opt; rerender(); }));
   }
 
