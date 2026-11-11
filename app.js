@@ -206,28 +206,51 @@
   // Highest calls-to-puts first; calls with no puts at the very top, no trades at the bottom.
   const ratioKey = (x) => (!x || (!x.call_premium && !x.put_premium) ? -2 : x.put_premium ? x.ratio : x.call_premium ? Infinity : -1);
 
+  // Every column header sorts (user request 2026-11-10). Default: dollar calls/puts ratio, highest first.
+  let optSort = { key: 'ratio', dir: -1 };
+  const cRatioKey = (r) => (r.calls_to_puts != null ? r.calls_to_puts : r.call_vol ? Infinity : -2);
+  const OPT_COLS = [
+    ['symbol', 'Stock', '', (r) => r.symbol],
+    ['list', 'List', '', (r) => (r.lists || []).join(', ') || 'held'],
+    ['price', 'Price', 'num', (r) => r.last],
+    ['chg', 'Change', 'num', (r) => r.pct_change ?? -Infinity],
+    ['callp', 'Calls $', 'num', (r, t) => r[t]?.call_premium ?? -1],
+    ['putp', 'Puts $', 'num', (r, t) => r[t]?.put_premium ?? -1],
+    ['ratio', 'Calls / puts $', 'num', (r, t) => ratioKey(r[t])],
+    ['callv', 'Calls #', 'num', (r) => r.call_vol],
+    ['putv', 'Puts #', 'num', (r) => r.put_vol],
+    ['cratio', 'Calls / puts #', 'num', cRatioKey],
+  ];
+
   function renderOptions(date, opts, term, tabBar, rerender) {
     const snaps = opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
     const label = (s) => s.label === 'close' ? 'Close' : `${s.time} CT`;
     const head = `<h1>${esc(fmtDate(date))}</h1>${tabBar}
-      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Sorted by calls to puts, measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Every stock is shown, with no volume or average filter. The last three columns count contracts across all expiries, since Robinhood only splits dollars by expiry.</p>`;
+      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Calls / puts is measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Click any column header to sort; click again to flip the order. Every stock is shown, with no volume or average filter. The # columns count contracts across all expiries, since Robinhood only splits dollars by expiry.</p>`;
     if (!snaps.length) { viewEl.innerHTML = `${head}<p class="empty">No near / long term split was recorded for this day (it started with the Nov 10 close).</p>`; return; }
     if (!snaps.some((s) => label(s) === optTime)) optTime = label(snaps[snaps.length - 1]);
     const snap = snaps.find((s) => label(s) === optTime);
-    const rows = [...snap.rows].sort((a, b) => ratioKey(b[term]) - ratioKey(a[term]) || ((b[term]?.call_premium || 0) - (a[term]?.call_premium || 0)));
+    const col = OPT_COLS.find((c) => c[0] === optSort.key) || OPT_COLS[6];
+    const cmp = (x, y) => (typeof x === 'string' ? x.localeCompare(y) : x === y ? 0 : x < y ? -1 : 1);
+    const rows = [...snap.rows].sort((a, b) => optSort.dir * cmp(col[3](a, term), col[3](b, term)) || a.symbol.localeCompare(b.symbol));
+    const th = (c) => {
+      const on = c[0] === optSort.key;
+      return `<th class="${c[2]} sortable" aria-sort="${on ? (optSort.dir > 0 ? 'ascending' : 'descending') : 'none'}"${c[0].endsWith('v') || c[0] === 'cratio' ? ' title="All expiries"' : ''}><button data-sort="${c[0]}">${esc(c[1])}${on ? (optSort.dir > 0 ? ' ▲' : ' ▼') : ''}</button></th>`;
+    };
     viewEl.innerHTML = `${head}
       <div class="filters" role="group" aria-label="Snapshot time">
         ${snaps.map((s) => `<button data-opt="${esc(label(s))}" class="${label(s) === optTime ? 'on' : ''}">${esc(label(s))}</button>`).join('')}
       </div>
       <div class="table-scroll"><table class="toplist options">
-        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls $</th><th class="num">Puts $</th><th class="num">Calls / puts</th><th class="num" title="All expiries">Calls (contracts)</th><th class="num" title="All expiries">Puts (contracts)</th><th class="num" title="All expiries">Contract ratio</th></tr></thead>
+        <thead><tr>${OPT_COLS.map(th).join('')}</tr></thead>
         <tbody>${rows.map((r) => {
           const x = r[term] || {};
           const ratio = !x.call_premium && !x.put_premium ? '<span class="muted">no trades</span>'
             : !x.put_premium ? '<span class="pos">calls only</span>'
             : `<span class="${x.ratio >= 2 ? 'pos' : x.ratio <= 0.67 ? 'neg' : ''}">${Number(x.ratio).toFixed(2)}</span>`;
           return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
-            <td class="num">${money(r.last)}${r.pct_change != null ? ` <span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : ''}</td>
+            <td class="num">${money(r.last)}</td>
+            <td class="num">${r.pct_change != null ? `<span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : '–'}</td>
             <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td>
             <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
             <td class="num">${r.calls_to_puts == null ? (r.call_vol ? '<span class="pos">calls only</span>' : '–') : `<span class="${r.calls_to_puts >= 2 ? 'pos' : r.calls_to_puts <= 0.67 ? 'neg' : ''}">${Number(r.calls_to_puts).toFixed(2)}</span>`}</td></tr>`;
@@ -235,6 +258,11 @@
       </table></div>
       <p class="muted">Green: calls at least 2x puts. Red: puts at least 1.5x calls. For information only; it does not change any trades.</p>`;
     viewEl.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => { optTime = b.dataset.opt; rerender(); }));
+    viewEl.querySelectorAll('[data-sort]').forEach((b) => b.addEventListener('click', () => {
+      const k = b.dataset.sort;
+      optSort = k === optSort.key ? { key: k, dir: -optSort.dir } : { key: k, dir: k === 'symbol' || k === 'list' ? 1 : -1 };
+      rerender();
+    }));
   }
 
   function renderList(date, lists, name, tabBar) {
