@@ -210,7 +210,7 @@
     const snaps = opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
     const label = (s) => s.label === 'close' ? 'Close' : `${s.time} CT`;
     const head = `<h1>${esc(fmtDate(date))}</h1>${tabBar}
-      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Sorted by calls to puts, measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Every stock is shown, with no volume or average filter.</p>`;
+      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Sorted by calls to puts, measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Every stock is shown, with no volume or average filter. The last three columns count contracts across all expiries, since Robinhood only splits dollars by expiry.</p>`;
     if (!snaps.length) { viewEl.innerHTML = `${head}<p class="empty">No near / long term split was recorded for this day (it started with the Nov 10 close).</p>`; return; }
     if (!snaps.some((s) => label(s) === optTime)) optTime = label(snaps[snaps.length - 1]);
     const snap = snaps.find((s) => label(s) === optTime);
@@ -220,7 +220,7 @@
         ${snaps.map((s) => `<button data-opt="${esc(label(s))}" class="${label(s) === optTime ? 'on' : ''}">${esc(label(s))}</button>`).join('')}
       </div>
       <div class="table-scroll"><table class="toplist options">
-        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls $</th><th class="num">Puts $</th><th class="num">Calls / puts</th></tr></thead>
+        <thead><tr><th>Stock</th><th>List</th><th class="num">Price</th><th class="num">Calls $</th><th class="num">Puts $</th><th class="num">Calls / puts</th><th class="num" title="All expiries">Calls (contracts)</th><th class="num" title="All expiries">Puts (contracts)</th><th class="num" title="All expiries">Contract ratio</th></tr></thead>
         <tbody>${rows.map((r) => {
           const x = r[term] || {};
           const ratio = !x.call_premium && !x.put_premium ? '<span class="muted">no trades</span>'
@@ -228,7 +228,9 @@
             : `<span class="${x.ratio >= 2 ? 'pos' : x.ratio <= 0.67 ? 'neg' : ''}">${Number(x.ratio).toFixed(2)}</span>`;
           return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
             <td class="num">${money(r.last)}${r.pct_change != null ? ` <span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : ''}</td>
-            <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td></tr>`;
+            <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td>
+            <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
+            <td class="num">${r.calls_to_puts == null ? (r.call_vol ? '<span class="pos">calls only</span>' : '–') : `<span class="${r.calls_to_puts >= 2 ? 'pos' : r.calls_to_puts <= 0.67 ? 'neg' : ''}">${Number(r.calls_to_puts).toFixed(2)}</span>`}</td></tr>`;
         }).join('')}</tbody>
       </table></div>
       <p class="muted">Green: calls at least 2x puts. Red: puts at least 1.5x calls. For information only; it does not change any trades.</p>`;
