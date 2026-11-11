@@ -1371,3 +1371,15 @@ Day P&L: -$17.88 realized.
 Time (CT)	Call	Seconds since previous
 14:57:36	get_equity_historicals (dry NDX QQQ)	—
 14:57:37	get_equity_historicals (dry NDX)	1.1
+
+Live, 3:02 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Market closed. Day realized -$32.84. Holding overnight: ACGL 18 @ $108.58 (stop $108.04), ZTS 24 @ $82.22 (stop $81.81).
+Price now: ACGL $109.17 at 3:00 CT (bought 18 at $108.58, stop $108.03, open +$10.62).
+Price now: ZTS $82.57 at 3:00 CT (bought 24 at $82.22, stop $81.80, open +$8.40).
+
+Day P&L: -$32.84 realized.
+
+Time (CT)	Call	Seconds since previous
+15:03:21	get_equity_historicals (dry SP)	—
