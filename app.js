@@ -8,6 +8,11 @@
   let current = null;
 
   const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+  // Every ticker links to Yahoo Finance (user request 2026-11-11). Yahoo writes BRK.B as BRK-B.
+  const tick = (s) => `<a class="ticker" href="https://finance.yahoo.com/quote/${encodeURIComponent(String(s).replace('.', '-'))}" target="_blank" rel="noopener">${esc(s)}</a>`;
+  const NOT_TICKERS = new Set(['CT', 'ET', 'AM', 'PM', 'UTC', 'VWAP', 'ADX', 'MACD', 'RSI', 'EMA', 'SMA', 'ATR', 'DI', 'API', 'BUY', 'SELL', 'ORDER', 'NDX', 'OK', 'GFD', 'GTC', 'US', 'USD', 'CSV', 'ID', 'NA', 'PNL']);
+  // Free text: escape it, then link capitalized 2-5 letter words that are tickers.
+  const linkText = (t) => esc(t).replace(/(^|[^A-Za-z0-9&;.\/-])([A-Z]{2,5}(?:\.[A-Z])?)(?![A-Za-z0-9&])/g, (m, pre, sym) => NOT_TICKERS.has(sym) ? m : pre + tick(sym));
   const money = (n) => (n == null || isNaN(n)) ? '–' : Number(n).toLocaleString(undefined, { style: 'currency', currency: 'USD' });
   const signed = (n) => (n > 0 ? '+' : '') + money(n);
 
@@ -98,11 +103,11 @@
         <article class="trade">
           <div class="trade-head">
             <span class="badge ${esc(t.action)}">${esc(t.action)}</span>
-            <span class="symbol">${esc(t.symbol)}</span>
+            <span class="symbol">${tick(t.symbol)}</span>
             <span class="time">${fmtTime(t.time)}</span>
             <span class="num">${t.qty ?? '–'} × ${money(t.price)}</span>
           </div>
-          ${t.reason ? `<p class="reason">${esc(t.reason)}</p>` : ''}
+          ${t.reason ? `<p class="reason">${linkText(t.reason)}</p>` : ''}
           ${t.pnl != null && !isNaN(t.pnl) ? `<div class="extra">P/L on this trade: <span class="${t.pnl >= 0 ? 'pos' : 'neg'}">${signed(t.pnl)}</span></div>` : ''}
         </article>`).join('') : '<p class="empty">No trades match this filter.</p>'}
     `;
@@ -253,7 +258,7 @@
           const ratio = !x.call_premium && !x.put_premium ? '<span class="muted">no trades</span>'
             : !x.put_premium ? '<span class="pos">calls only</span>'
             : `<span class="${x.ratio >= 2 ? 'pos' : x.ratio <= 0.67 ? 'neg' : ''}">${Number(x.ratio).toFixed(2)}</span>`;
-          return `<tr><td class="symbol">${esc(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
+          return `<tr><td class="symbol">${tick(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
             <td class="num">${money(r.last)}</td>
             <td class="num">${r.pct_change != null ? `<span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : '–'}</td>
             <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td>
@@ -278,7 +283,7 @@
       <p class="muted">The ${esc(name)} stocks the bot may buy today. Each morning it takes the 20 stocks with the highest 20-day average ADX, then keeps the 10 with the biggest 20-day price gain. Data through ${esc(L.data_through)}; ${esc(L.stocks_ranked)} stocks ranked.</p>
       <div class="table-scroll"><table class="toplist">
         <thead><tr><th>#</th><th>Stock</th><th class="num">20-day avg ADX</th><th class="num">20-day gain</th></tr></thead>
-        <tbody>${L.top10.map((r) => `<tr><td>${r.rank}</td><td class="symbol">${esc(r.symbol)}</td><td class="num">${Number(r.adx20).toFixed(1)}</td><td class="num ${r.mom20_pct >= 0 ? 'pos' : 'neg'}">${r.mom20_pct > 0 ? '+' : ''}${Number(r.mom20_pct).toFixed(1)}%</td></tr>`).join('')}</tbody>
+        <tbody>${L.top10.map((r) => `<tr><td>${r.rank}</td><td class="symbol">${tick(r.symbol)}</td><td class="num">${Number(r.adx20).toFixed(1)}</td><td class="num ${r.mom20_pct >= 0 ? 'pos' : 'neg'}">${r.mom20_pct > 0 ? '+' : ''}${Number(r.mom20_pct).toFixed(1)}%</td></tr>`).join('')}</tbody>
       </table></div>`;
   }
 
@@ -305,7 +310,7 @@
           </div>
           ${e.blocks.map((b) => b.type === 'table' ? renderTable(b.rows)
             : b.type === 'pnl' ? `<p class="day-pnl">${esc(b.text)}</p>`
-            : `<p class="${b.type}">${esc(b.text)}</p>`).join('')}
+            : `<p class="${b.type}">${linkText(b.text)}</p>`).join('')}
         </article>`).join('')}
     `;
   }
