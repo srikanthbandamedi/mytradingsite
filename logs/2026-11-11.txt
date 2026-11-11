@@ -698,3 +698,13 @@ No trades. Holding: none.
 Day P&L: -$27.72 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:28 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding BKNG, stop $159.66.
+Price now: BKNG $160.45 at 12:25 CT (bought 12 at $160.69, stop $159.65, open -$2.91).
+
+Day P&L: -$5.38 realized.
+
+Time (CT)	Call	Seconds since previous
