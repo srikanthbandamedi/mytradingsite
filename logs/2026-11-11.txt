@@ -622,3 +622,13 @@ No trades. Holding: none.
 Day P&L: -$27.72 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:08 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Dry BUY BKNG 12 @ $160.69 (trend entry, score 90, ranked #1). Stop $159.65.
+Price now: BKNG $160.69 at 12:05 CT (bought 12 at $160.69, stop $159.65, open +$0.00).
+
+Day P&L: -$5.38 realized.
+
+Time (CT)	Call	Seconds since previous
