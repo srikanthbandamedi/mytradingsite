@@ -1383,3 +1383,15 @@ Day P&L: -$32.84 realized.
 
 Time (CT)	Call	Seconds since previous
 15:03:21	get_equity_historicals (dry SP)	—
+
+Live, 3:02 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Market closed. Day realized -$17.88. Holding overnight: EXC 43 @ $45.59 (stop $45.36).
+Price now: EXC $45.60 at 3:00 CT (bought 43 at $45.59, stop $45.35, open +$0.65).
+
+Day P&L: -$17.88 realized.
+
+Time (CT)	Call	Seconds since previous
+15:03:20	get_equity_historicals (dry NDX QQQ)	—
+15:03:24	get_equity_historicals (dry NDX)	4.0
