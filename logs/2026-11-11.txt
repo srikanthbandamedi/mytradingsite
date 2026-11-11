@@ -1,0 +1,9 @@
+Live, 8:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold ACGL 18 at $107.72 (-$27.72, stop filled at the open; it gapped below the $108.72 stop).
+No other trades. Holding: none.
+
+Day P&L: -$27.72 realized.
+
+Time (CT)	Call	Seconds since previous
