@@ -1197,3 +1197,15 @@ Day P&L: -$5.38 realized.
 Time (CT)	Call	Seconds since previous
 14:22:40	get_equity_historicals (dry NDX QQQ)	—
 14:22:41	get_equity_historicals (dry NDX)	1.1
+
+Live, 2:28 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold CCL 64 @ $30.975 (trend fade, -$5.12). Bought ZTS 24 @ $82.22, stop $81.81. Holding ACGL and ZTS.
+Price now: ACGL $108.83 at 2:25 CT (bought 18 at $108.58, stop $108.03, open +$4.50).
+Price now: ZTS $82.22 at 2:25 CT (bought 24 at $82.22, stop $81.80, open +$0.00).
+
+Day P&L: -$32.84 realized.
+
+Time (CT)	Call	Seconds since previous
+14:28:14	get_equity_historicals (dry SP)	—
