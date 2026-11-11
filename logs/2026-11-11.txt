@@ -307,3 +307,12 @@ Sold EXC 43 at $45.455 (-$5.38, trend fade).
 Day P&L: -$5.38 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:32 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: -$27.72 realized.
+
+Time (CT)	Call	Seconds since previous
