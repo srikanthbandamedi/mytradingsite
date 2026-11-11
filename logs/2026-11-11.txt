@@ -241,3 +241,13 @@ No trades. Holding: none.
 Day P&L: -$27.72 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:11 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought EXC 43 shares at $45.58, stop $45.35 (trend entry, score 80).
+Price now: EXC $45.58 at 10:10 CT (bought 43 at $45.58, stop $45.35, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
