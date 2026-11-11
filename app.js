@@ -177,12 +177,15 @@
   // sorted by the calls-to-puts ratio, with no 10/20-day average filter. Robinhood's scanner can only split by
   // expiry for dollar premium (up to 7 days out), so near = expiring within 7 days, long = everything later.
   const OPT_TABS = { 'Options: near term': 'near', 'Options: long term': 'long' };
+  // Top 50 tabs (2026-11-10): whole S&P 500 ranks 1-300 + Nasdaq 100, not the picker lists. opts.wide from options/wide.py.
+  const WIDE_TABS = { 'Top 50 options: near term': 'near', 'Top 50 options: long term': 'long' };
   let optTime = null;
 
   function renderTextDay(date, all, lists, opts) {
     const names = [...TABS, 'Other'].filter((t) => all.some((e) => tabOf(e) === t));
     const listNames = lists ? Object.keys(lists.lists || {}).map(LIST_TAB) : [];
-    const optNames = opts && (opts.snapshots || []).length ? Object.keys(OPT_TABS) : [];
+    const optNames = [...(opts && (opts.snapshots || []).length ? Object.keys(OPT_TABS) : []),
+      ...(opts && (opts.wide || []).length ? Object.keys(WIDE_TABS) : [])];
     if (!listNames.length && !optNames.length && names.length < 2 && names[0] === 'Other') { renderEntries(date, all, ''); return; }
     const allNames = [...names, ...listNames, ...optNames];
     if (tab === 'Options') tab = optNames[0];
@@ -193,6 +196,7 @@
       return `<button role="tab" aria-selected="${t === tab}" data-tab="${esc(t)}" class="${t === tab ? 'on' : ''}">${esc(t === 'Other' ? 'Main bot' : t)}${p ? ` <span class="${pnlClass(p)}">${esc(p)}</span>` : ''}</button>`;
     }).join('')}</div>`;
     if (OPT_TABS[tab]) renderOptions(date, opts, OPT_TABS[tab], tabBar, () => renderTextDay(date, all, lists, opts));
+    else if (WIDE_TABS[tab]) renderOptions(date, opts, WIDE_TABS[tab], tabBar, () => renderTextDay(date, all, lists, opts), true);
     else if (listNames.includes(tab)) renderList(date, lists, tab.replace('Top 10: ', ''), tabBar);
     else renderEntries(date, all.filter((e) => tabOf(e) === tab), tabBar);
     viewEl.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => {
@@ -222,11 +226,12 @@
     ['cratio', 'Calls / puts #', 'num', cRatioKey],
   ];
 
-  function renderOptions(date, opts, term, tabBar, rerender) {
-    const snaps = opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
+  function renderOptions(date, opts, term, tabBar, rerender, wide = false) {
+    const snaps = wide ? (opts.wide || []).map((s) => ({ ...s, rows: s[term] || [] }))
+      : opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
     const label = (s) => s.label === 'close' ? 'Close' : `${s.time} CT`;
     const head = `<h1>${esc(fmtDate(date))}</h1>${tabBar}
-      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, for today's list stocks and anything the bot holds. Calls / puts is measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Click any column header to sort; click again to flip the order. Every stock is shown, with no volume or average filter. The # columns count contracts across all expiries, since Robinhood only splits dollars by expiry.</p>`;
+      <p class="muted">${term === 'near' ? 'Options expiring within 7 days' : 'Options expiring more than 7 days out'}, from Robinhood's options scanner, ${wide ? 'for <strong>the 50 stocks with the highest calls / puts $</strong> out of the whole S&P 500 ranks 1-300 (by market cap) plus the Nasdaq 100, about 320 stocks. Not limited to the 7:30 AM lists; # is the S&P market-cap rank. Stocks with no option trades in this window are left out.' : 'for today\'s list stocks and anything the bot holds. Every stock is shown, with no volume or average filter.'} Calls / puts is measured in dollars traded (Robinhood splits only dollars, not contracts, by expiry). Click any column header to sort; click again to flip the order. The # columns count contracts across all expiries, since Robinhood only splits dollars by expiry.</p>`;
     if (!snaps.length) { viewEl.innerHTML = `${head}<p class="empty">No near / long term split was recorded for this day (it started with the Nov 10 close).</p>`; return; }
     if (!snaps.some((s) => label(s) === optTime)) optTime = label(snaps[snaps.length - 1]);
     const snap = snaps.find((s) => label(s) === optTime);
