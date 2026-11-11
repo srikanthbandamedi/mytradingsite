@@ -708,3 +708,13 @@ Price now: BKNG $160.45 at 12:25 CT (bought 12 at $160.69, stop $159.65, open -$
 Day P&L: -$5.38 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:32 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Dry BUY CCL 64 @ $31.06 (trend entry, score 90, ranked #1). Stop $30.89.
+Price now: CCL $31.05 at 12:30 CT (bought 64 at $31.05, stop $30.89, open +$0.00).
+
+Day P&L: -$27.72 realized.
+
+Time (CT)	Call	Seconds since previous
