@@ -128,3 +128,14 @@ Day P&L: $30.24 realized.
 Time (CT)	Call	Seconds since previous
 9:03:47	get_equity_historicals (dry SP extra+QQQ)	—
 9:03:48	get_equity_historicals (dry SP)	0.9
+
+Live, 9:03 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Holding BKNG.
+Price now: BKNG $162.65 at 9:00 CT (bought 12 at $162.97, stop $161.49, open -$3.84).
+
+Day P&L: $12.25 realized.
+
+Time (CT)	Call	Seconds since previous
+9:03:51	get_equity_historicals (dry NDX)	—
