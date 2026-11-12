@@ -251,3 +251,13 @@ No change
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:35 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold APP 4 @ $402.83 (below VWAP), -$15.30
+Price now: BKNG $164.94 at 9:35 CT (bought 12 at $162.97, stop $163.45, open +$23.58).
+
+Day P&L: -$3.05 realized.
+
+Time (CT)	Call	Seconds since previous
