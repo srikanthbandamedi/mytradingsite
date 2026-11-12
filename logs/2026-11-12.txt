@@ -1532,3 +1532,14 @@ Day P&L: -$3.27 realized.
 
 Time (CT)	Call	Seconds since previous
 14:58:25	get_equity_historicals (dry NDX)	—
+
+Live, 3:00 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Dry sell KHC 81 @ 24.49 (stop filled in 2:55 bar), -10.53. Day realized +42.69, flat.
+
+Day P&L: $42.69 realized.
+
+Time (CT)	Call	Seconds since previous
+15:03:02	get_equity_historicals (dry SP extra+QQQ)	—
+15:03:02	get_equity_historicals (dry SP)	0.2
