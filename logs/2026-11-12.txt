@@ -69,3 +69,15 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 8:48:16	get_equity_historicals (dry NDX)	—
+
+Live, 8:53 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold ACGL 18 @ $110.26 (below VWAP, +$30.24). ZTS stop raised to $82.74. Holding ZTS.
+Price now: ZTS $83.16 at 8:50 CT (bought 24 at $82.22, stop $82.74, open +$22.56).
+
+Day P&L: $30.24 realized.
+
+Time (CT)	Call	Seconds since previous
+8:53:01	get_equity_historicals (dry SP extra+QQQ)	—
+8:53:01	get_equity_historicals (dry SP)	0.4
