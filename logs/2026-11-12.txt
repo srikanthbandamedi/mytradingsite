@@ -722,3 +722,12 @@ Sold ADSK 7 @ $260.70 (trend fade), -$3.18
 Day P&L: $53.22 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:40 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold ADSK 7 @ $260.70 (trend fade), -$3.18
+
+Day P&L: -$3.27 realized.
+
+Time (CT)	Call	Seconds since previous
