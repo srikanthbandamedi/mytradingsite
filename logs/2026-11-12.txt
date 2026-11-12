@@ -162,3 +162,13 @@ Day P&L: $12.25 realized.
 
 Time (CT)	Call	Seconds since previous
 9:10:04	get_equity_historicals (dry NDX)	—
+
+Live, 9:15 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Raised ZTS stop to $83.31
+Price now: ZTS $83.72 at 9:15 CT (bought 24 at $82.22, stop $83.31, open +$36.12).
+
+Day P&L: $30.24 realized.
+
+Time (CT)	Call	Seconds since previous
