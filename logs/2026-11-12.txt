@@ -703,3 +703,13 @@ Price now: ADSK $260.94 at 11:35 CT (bought 7 at $261.15, stop $259.82, open -$1
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:35 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No change
+Price now: ADSK $260.94 at 11:35 CT (bought 7 at $261.15, stop $259.82, open -$1.47).
+
+Day P&L: -$0.09 realized.
+
+Time (CT)	Call	Seconds since previous
