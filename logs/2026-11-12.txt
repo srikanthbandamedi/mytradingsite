@@ -191,3 +191,14 @@ Sold ZTS 24 @ $83.31 (stop filled), +$26.16
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:20 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought APP 4 @ $406.65, stop $401.63
+Price now: APP $406.65 at 9:20 CT (bought 4 at $406.65, stop $401.62, open +$0.00).
+Price now: BKNG $164.32 at 9:20 CT (bought 12 at $162.97, stop $163.45, open +$16.20).
+
+Day P&L: $12.25 realized.
+
+Time (CT)	Call	Seconds since previous
