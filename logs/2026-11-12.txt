@@ -172,3 +172,13 @@ Price now: ZTS $83.72 at 9:15 CT (bought 24 at $82.22, stop $83.31, open +$36.12
 Day P&L: $30.24 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:15 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Raised BKNG stop to $163.45
+Price now: BKNG $164.93 at 9:15 CT (bought 12 at $162.97, stop $163.45, open +$23.52).
+
+Day P&L: $12.25 realized.
+
+Time (CT)	Call	Seconds since previous
