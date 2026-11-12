@@ -242,3 +242,12 @@ Price now: BKNG $165.06 at 9:30 CT (bought 12 at $162.97, stop $163.45, open +$2
 Day P&L: $12.25 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:35 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No change
+
+Day P&L: $56.4 realized.
+
+Time (CT)	Call	Seconds since previous
