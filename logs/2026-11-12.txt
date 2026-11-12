@@ -1368,3 +1368,13 @@ Day P&L: $53.22 realized.
 Time (CT)	Call	Seconds since previous
 14:23:14	get_equity_historicals (dry SP extra+QQQ)	—
 14:23:15	get_equity_historicals (dry SP)	0.7
+
+Live, 2:20 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades this pass.
+
+Day P&L: -$3.27 realized.
+
+Time (CT)	Call	Seconds since previous
+14:23:18	get_equity_historicals (dry NDX)	—
