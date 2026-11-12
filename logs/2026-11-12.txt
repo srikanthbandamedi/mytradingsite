@@ -308,3 +308,12 @@ No change
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:50 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold BKNG 12 @ $163.45 (stop filled), +$5.76
+
+Day P&L: $2.71 realized.
+
+Time (CT)	Call	Seconds since previous
