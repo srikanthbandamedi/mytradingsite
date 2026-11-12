@@ -34,3 +34,14 @@ Day P&L: $0 realized.
 Time (CT)	Call	Seconds since previous
 8:42:52	get_equity_historicals (dry SP extra+QQQ)	—
 8:42:52	get_equity_historicals (dry SP)	0.4
+
+Live, 8:42 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No new trades. Holding EXC.
+Price now: EXC $45.84 at 8:40 CT (bought 43 at $45.59, stop $45.35, open +$11.18).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:42:53	get_equity_historicals (dry NDX)	—
