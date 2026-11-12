@@ -1224,3 +1224,15 @@ Day P&L: -$3.27 realized.
 
 Time (CT)	Call	Seconds since previous
 13:48:21	get_equity_historicals (dry NDX)	—
+
+Live, 1:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades this pass. Holding KHC.
+Price now: KHC $24.64 at 1:50 CT (bought 81 at $24.62, stop $24.49, open +$1.22).
+
+Day P&L: $53.22 realized.
+
+Time (CT)	Call	Seconds since previous
+13:52:41	get_equity_historicals (dry SP extra+QQQ)	—
+13:52:41	get_equity_historicals (dry SP)	0.3
