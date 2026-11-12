@@ -398,3 +398,12 @@ No change
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:15 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No change
+
+Day P&L: $2.71 realized.
+
+Time (CT)	Call	Seconds since previous
