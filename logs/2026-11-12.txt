@@ -530,3 +530,12 @@ No change
 Day P&L: $56.4 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:50 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold APP 4 @ $406.98 (trend fade), -$2.80
+
+Day P&L: -$0.09 realized.
+
+Time (CT)	Call	Seconds since previous
