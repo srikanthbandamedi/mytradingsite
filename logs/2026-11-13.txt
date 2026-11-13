@@ -732,3 +732,13 @@ No trades.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought PEP 13 shares at $145.21, stop $144.48 (trend entry, score 80).
+Price now: PEP $145.21 at 2:45 CT (bought 13 at $145.21, stop $144.47, open +$0.00).
+
+Day P&L: -$2.75 realized.
+
+Time (CT)	Call	Seconds since previous
