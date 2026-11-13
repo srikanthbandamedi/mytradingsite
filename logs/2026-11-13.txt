@@ -395,3 +395,12 @@ Sold PEP 13 shares at $144.78 (trend fade), +$0.18.
 Day P&L: $0.18 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:51 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
