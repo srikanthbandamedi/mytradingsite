@@ -132,3 +132,12 @@ Lists refreshed at 11:15 (user request). No trades. Holding: none.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:16 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Lists refreshed at 11:15 (user request). No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
