@@ -1,0 +1,8 @@
+Live, 9:37 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Robinhood was down 7:45-9:35 AM CT, so the first pass ran at 9:37. No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
