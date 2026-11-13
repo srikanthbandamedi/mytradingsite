@@ -9,7 +9,8 @@
         "Nasdaq 100": "$0"
       },
       "pnl": "S&P $0 | NDX $0",
-      "lists": "lists/2026-11-13.json"
+      "lists": "lists/2026-11-13.json",
+      "options": "options/2026-11-13.json"
     },
     {
       "date": "2026-11-12",
