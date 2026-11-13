@@ -15,3 +15,12 @@ Robinhood was down 7:45-9:35 AM CT, so the first pass ran at 9:37. No trades. Ho
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:53 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Holding: none.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
