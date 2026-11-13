@@ -386,3 +386,12 @@ No trades.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold PEP 13 shares at $144.78 (trend fade), +$0.18.
+
+Day P&L: $0.18 realized.
+
+Time (CT)	Call	Seconds since previous
