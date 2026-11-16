@@ -363,3 +363,12 @@ No trades. Flat.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold AVGO 5 @ $336.79 (trend fade), +$1.63. Flat.
+
+Day P&L: $21.06 realized.
+
+Time (CT)	Call	Seconds since previous
