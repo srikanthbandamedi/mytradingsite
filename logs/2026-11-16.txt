@@ -418,3 +418,13 @@ No trades. Flat.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:05 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+No trades. Holding APP 4, stop $412.69.
+Price now: APP $415.93 at 11:05 CT (bought 4 at $417.49, stop $412.69, open -$6.24).
+
+Day P&L: $21.06 realized.
+
+Time (CT)	Call	Seconds since previous
