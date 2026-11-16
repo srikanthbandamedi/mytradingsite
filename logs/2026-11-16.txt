@@ -304,3 +304,14 @@ No trades. Flat.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:25 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought AVGO 5 @ $336.46 (stop $332.61) and KLAC 13 @ $147.37 (stop $145.18).
+Price now: AVGO $336.46 at 10:25 CT (bought 5 at $336.46, stop $332.61, open +$0.00).
+Price now: KLAC $147.37 at 10:25 CT (bought 13 at $147.37, stop $145.18, open +$0.00).
+
+Day P&L: $29.44 realized.
+
+Time (CT)	Call	Seconds since previous
