@@ -315,3 +315,12 @@ Price now: KLAC $147.37 at 10:25 CT (bought 13 at $147.37, stop $145.18, open +$
 Day P&L: $29.44 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:35 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Flat.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
