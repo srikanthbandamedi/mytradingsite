@@ -196,3 +196,12 @@ No trades. Flat.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold PEP 13 @ $147.47 (stop filled in 9:40 bar), +$29.44. Flat.
+
+Day P&L: $29.44 realized.
+
+Time (CT)	Call	Seconds since previous
