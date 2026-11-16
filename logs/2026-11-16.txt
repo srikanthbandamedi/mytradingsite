@@ -842,3 +842,12 @@ No trades. Flat.
 Day P&L: $18.1 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:45 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+no trades, flat
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
