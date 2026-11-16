@@ -354,3 +354,12 @@ Price now: AVGO $336.32 at 10:40 CT (bought 5 at $336.46, stop $332.61, open -$0
 Day P&L: $19.43 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:45 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+No trades. Flat.
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
