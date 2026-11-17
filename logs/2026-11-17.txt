@@ -494,3 +494,13 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:30 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding META
+Price now: META $621.61 at 11:30 CT (bought 3 at $621.32, stop $616.32, open +$0.87).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
