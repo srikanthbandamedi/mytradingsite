@@ -523,3 +523,12 @@ Price now: META $620.74 at 11:35 CT (bought 3 at $621.32, stop $616.32, open -$1
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:40 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+no trades
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
