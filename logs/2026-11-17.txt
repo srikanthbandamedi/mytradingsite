@@ -893,3 +893,13 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:20 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding CRWD
+Price now: CRWD $220.00 at 1:20 CT (bought 9 at $219.99, stop $217.59, open +$0.09).
+
+Day P&L: -$3.39 realized.
+
+Time (CT)	Call	Seconds since previous
