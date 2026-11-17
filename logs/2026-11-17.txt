@@ -921,3 +921,12 @@ holding CRWD
 Day P&L: -$9.88 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:30 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+no trades
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
