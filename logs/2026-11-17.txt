@@ -1146,3 +1146,12 @@ dry pass, no new signal
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:30 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+dry pass, no new signal
+
+Day P&L: -$9.88 realized.
+
+Time (CT)	Call	Seconds since previous
