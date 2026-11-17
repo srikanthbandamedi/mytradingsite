@@ -532,3 +532,12 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:40 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding META
+
+Day P&L: -$3.39 realized.
+
+Time (CT)	Call	Seconds since previous
