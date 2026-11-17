@@ -1155,3 +1155,12 @@ dry pass, no new signal
 Day P&L: -$9.88 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:35 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+dry pass, no new signal
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
