@@ -91,6 +91,7 @@ Time (CT)	Call	Seconds since previous
 Live, 9:00 CT (dry run, S&P 201-300)
 
 Dry run: no real orders.
+Bought KDP: 56 at $35.24, stop $34.97.
 holding KDP
 Price now: KDP $35.24 at 9:00 CT (bought 56 at $35.24, stop $34.97, open +$0.00).
 
