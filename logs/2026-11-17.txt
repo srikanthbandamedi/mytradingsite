@@ -460,7 +460,8 @@ Time (CT)	Call	Seconds since previous
 Live, 11:20 CT (dry run, Nasdaq 100)
 
 Dry run: no real orders.
-no trades
+Bought META: 3 at $621.32, stop $616.32.
+holding META
 Price now: META $621.32 at 11:20 CT (bought 3 at $621.32, stop $616.32, open +$0.00).
 
 Day P&L: $0 realized.
@@ -536,7 +537,8 @@ Time (CT)	Call	Seconds since previous
 Live, 11:40 CT (dry run, Nasdaq 100)
 
 Dry run: no real orders.
-holding META
+Sold META: 3 at $620.19 (trend fade), -$3.39.
+flat
 
 Day P&L: -$3.39 realized.
 
@@ -878,7 +880,8 @@ Time (CT)	Call	Seconds since previous
 Live, 1:15 CT (dry run, Nasdaq 100)
 
 Dry run: no real orders.
-flat
+Bought CRWD: 9 at $219.99, stop $217.59.
+holding CRWD
 Price now: CRWD $219.99 at 1:15 CT (bought 9 at $219.99, stop $217.59, open +$0.00).
 
 Day P&L: -$3.39 realized.
@@ -916,7 +919,8 @@ Time (CT)	Call	Seconds since previous
 Live, 1:25 CT (dry run, Nasdaq 100)
 
 Dry run: no real orders.
-holding CRWD
+Sold CRWD: 9 at $219.27 (below opening range), -$6.49.
+flat
 
 Day P&L: -$9.88 realized.
 
