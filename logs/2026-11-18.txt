@@ -766,3 +766,13 @@ Price now: AMD $516.28 at 11:50 CT (bought 3 at $516.33, stop $508.18, open -$0.
 Day P&L: -$13.80 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding KDP
+Price now: KDP $35.16 at 11:55 CT (bought 56 at $35.16, stop $34.97, open -$0.56).
+
+Day P&L: -$15.12 realized.
+
+Time (CT)	Call	Seconds since previous
