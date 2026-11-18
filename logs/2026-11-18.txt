@@ -268,3 +268,13 @@ flat
 Day P&L: -$15.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AVGO
+Price now: AVGO $351.68 at 9:45 CT (bought 5 at $352.72, stop $347.24, open -$5.20).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
