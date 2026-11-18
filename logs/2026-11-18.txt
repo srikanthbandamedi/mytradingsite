@@ -1447,3 +1447,12 @@ Price now: AMD $525.52 at 2:50 CT (bought 3 at $526.30, stop $520.99, open -$2.3
 Day P&L: -$10.25 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 2:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: -$21.84 realized.
+
+Time (CT)	Call	Seconds since previous
