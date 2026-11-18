@@ -458,3 +458,13 @@ flat
 Day P&L: -$15.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:35 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold AVGO: 5 at $349.78 (below VWAP), -$14.70.
+flat
+
+Day P&L: -$14.70 realized.
+
+Time (CT)	Call	Seconds since previous
