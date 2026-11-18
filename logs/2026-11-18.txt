@@ -745,3 +745,13 @@ Price now: APP $399.92 at 11:45 CT (bought 4 at $400.11, stop $395.71, open -$0.
 Day P&L: -$14.70 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding KDP
+Price now: KDP $35.19 at 11:50 CT (bought 56 at $35.16, stop $34.97, open +$1.39).
+
+Day P&L: -$15.12 realized.
+
+Time (CT)	Call	Seconds since previous
