@@ -1127,3 +1127,13 @@ flat
 Day P&L: -$21.84 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 1:25 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding MSFT
+Price now: MSFT $508.11 at 1:25 CT (bought 3 at $506.86, stop $504.20, open +$3.76).
+
+Day P&L: -$14.37 realized.
+
+Time (CT)	Call	Seconds since previous
