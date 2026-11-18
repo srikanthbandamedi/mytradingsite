@@ -862,3 +862,13 @@ flat
 Day P&L: -$10.20 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:20 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Sold KDP: 56 at $35.05 (trend fade), -$6.72.
+flat
+
+Day P&L: -$21.84 realized.
+
+Time (CT)	Call	Seconds since previous
