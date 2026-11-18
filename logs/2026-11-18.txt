@@ -776,3 +776,13 @@ Price now: KDP $35.16 at 11:55 CT (bought 56 at $35.16, stop $34.97, open -$0.56
 Day P&L: -$15.12 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold AMD: 3 at $517.53 (trend fade), +$3.60.
+flat
+
+Day P&L: -$10.20 realized.
+
+Time (CT)	Call	Seconds since previous
