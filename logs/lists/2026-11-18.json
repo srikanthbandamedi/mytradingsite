@@ -1,0 +1,192 @@
+{
+ "day": "2026-11-18",
+ "built_at": "2026-11-18T13:39:25Z",
+ "lists": {
+  "S&P 201-300": {
+   "data_through": "2026-11-17",
+   "stocks_ranked": 4,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "KDP",
+     "adx20": 25.5,
+     "mom20_pct": 0.4,
+     "dollar_vol_m": 534
+    },
+    {
+     "rank": 2,
+     "symbol": "VST",
+     "adx20": 28.8,
+     "mom20_pct": -15.5,
+     "dollar_vol_m": 529
+    },
+    {
+     "rank": 3,
+     "symbol": "TER",
+     "adx20": 27.0,
+     "mom20_pct": -30.3,
+     "dollar_vol_m": 549
+    },
+    {
+     "rank": 4,
+     "symbol": "COIN",
+     "adx20": 26.5,
+     "mom20_pct": -32.7,
+     "dollar_vol_m": 575
+    }
+   ]
+  },
+  "Nasdaq 100": {
+   "data_through": "2026-11-17",
+   "stocks_ranked": 43,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "APP",
+     "adx20": 28.9,
+     "mom20_pct": 46.5,
+     "dollar_vol_m": 1508
+    },
+    {
+     "rank": 2,
+     "symbol": "REGN",
+     "adx20": 26.9,
+     "mom20_pct": 18.6,
+     "dollar_vol_m": 504
+    },
+    {
+     "rank": 3,
+     "symbol": "TMUS",
+     "adx20": 29.3,
+     "mom20_pct": 6.5,
+     "dollar_vol_m": 543
+    },
+    {
+     "rank": 4,
+     "symbol": "PEP",
+     "adx20": 30.6,
+     "mom20_pct": 6.0,
+     "dollar_vol_m": 648
+    },
+    {
+     "rank": 5,
+     "symbol": "CEG",
+     "adx20": 27.7,
+     "mom20_pct": 3.6,
+     "dollar_vol_m": 596
+    },
+    {
+     "rank": 6,
+     "symbol": "AVGO",
+     "adx20": 27.3,
+     "mom20_pct": 2.2,
+     "dollar_vol_m": 5199
+    },
+    {
+     "rank": 7,
+     "symbol": "MSFT",
+     "adx20": 29.1,
+     "mom20_pct": -4.9,
+     "dollar_vol_m": 7263
+    },
+    {
+     "rank": 8,
+     "symbol": "BKNG",
+     "adx20": 28.9,
+     "mom20_pct": -5.8,
+     "dollar_vol_m": 634
+    },
+    {
+     "rank": 9,
+     "symbol": "AMD",
+     "adx20": 28.8,
+     "mom20_pct": -5.8,
+     "dollar_vol_m": 11702
+    },
+    {
+     "rank": 10,
+     "symbol": "ADBE",
+     "adx20": 27.3,
+     "mom20_pct": -8.3,
+     "dollar_vol_m": 501
+    }
+   ]
+  },
+  "S&P 100": {
+   "data_through": "2026-11-17",
+   "stocks_ranked": 73,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "BRK.B",
+     "adx20": 28.5,
+     "mom20_pct": 8.7,
+     "dollar_vol_m": 985
+    },
+    {
+     "rank": 2,
+     "symbol": "WMT",
+     "adx20": 28.2,
+     "mom20_pct": 8.1,
+     "dollar_vol_m": 1427
+    },
+    {
+     "rank": 3,
+     "symbol": "JNJ",
+     "adx20": 28.7,
+     "mom20_pct": 7.5,
+     "dollar_vol_m": 1002
+    },
+    {
+     "rank": 4,
+     "symbol": "TMUS",
+     "adx20": 29.3,
+     "mom20_pct": 6.5,
+     "dollar_vol_m": 543
+    },
+    {
+     "rank": 5,
+     "symbol": "PEP",
+     "adx20": 30.6,
+     "mom20_pct": 6.0,
+     "dollar_vol_m": 648
+    },
+    {
+     "rank": 6,
+     "symbol": "MA",
+     "adx20": 28.6,
+     "mom20_pct": 4.0,
+     "dollar_vol_m": 1131
+    },
+    {
+     "rank": 7,
+     "symbol": "APH",
+     "adx20": 29.5,
+     "mom20_pct": -3.8,
+     "dollar_vol_m": 707
+    },
+    {
+     "rank": 8,
+     "symbol": "MSFT",
+     "adx20": 29.1,
+     "mom20_pct": -4.9,
+     "dollar_vol_m": 7263
+    },
+    {
+     "rank": 9,
+     "symbol": "AMD",
+     "adx20": 28.8,
+     "mom20_pct": -5.8,
+     "dollar_vol_m": 11702
+    },
+    {
+     "rank": 10,
+     "symbol": "CVS",
+     "adx20": 28.5,
+     "mom20_pct": -9.4,
+     "dollar_vol_m": 575
+    }
+   ]
+  }
+ }
+}
