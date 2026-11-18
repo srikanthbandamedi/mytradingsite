@@ -979,3 +979,12 @@ Price now: MSFT $509.98 at 12:45 CT (bought 3 at $506.86, stop $504.20, open +$9
 Day P&L: -$10.20 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:50 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: -$21.84 realized.
+
+Time (CT)	Call	Seconds since previous
