@@ -63,3 +63,15 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:50 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Bought MSFT: 3 at $525.35, stop $520.59.
+holding AMD, MSFT
+Price now: AMD $554.48 at 8:50 CT (bought 3 at $526.30, stop $549.16, open +$84.51).
+Price now: MSFT $525.35 at 8:50 CT (bought 3 at $525.35, stop $520.59, open +$0.00).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
