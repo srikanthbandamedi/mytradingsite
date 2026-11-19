@@ -44,3 +44,13 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:45 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AMD
+Price now: AMD $549.71 at 8:45 CT (bought 3 at $526.30, stop $520.99, open +$70.20).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
