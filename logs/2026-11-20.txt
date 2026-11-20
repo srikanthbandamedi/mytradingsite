@@ -531,3 +531,12 @@ Price now: KDP $35.38 at 10:50 CT (bought 56 at $35.16, stop $35.28, open +$12.0
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+flat
+
+Day P&L: -$30.09 realized.
+
+Time (CT)	Call	Seconds since previous
