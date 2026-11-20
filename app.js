@@ -231,6 +231,20 @@
     ['cratio', 'Calls / puts #', 'num', cRatioKey],
   ];
 
+  // Info icon pop-up (user request 2026-11-20): why a ticker's calls or puts were elevated, AMGN-style write-up.
+  const infoOpen = new Set();
+  function infoHTML(date, opts, sym) {
+    const A = opts && opts.analysis;
+    if (!A) return `<p class="muted">${date < '2026-11-19' ? 'Analysis started with Nov 19.' : 'Analysis is written after the close.'}</p>`;
+    const t = (A.tickers || {})[sym];
+    if (!t) return '<p class="muted">No analysis for this stock today (it was not on an options tab at the close).</p>';
+    const list = (title, xs) => (xs && xs.length ? `<h4>${esc(title)}</h4><ul>${xs.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : '');
+    const table = t.table && t.table.rows.length ? `<h4>Busiest strikes</h4><div class="table-scroll"><table class="info-table"><thead><tr>${t.table.cols.map((c, i) => `<th class="${i > 1 ? 'num' : ''}">${esc(c)}</th>`).join('')}</tr></thead><tbody>${t.table.rows.map((r) => `<tr>${r.map((v, i) => `<td class="${i > 1 ? 'num' : ''}">${esc(v)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>` : '';
+    return `<div class="info-box"><p class="info-head"><strong>${esc(sym)}:</strong> ${esc(t.headline)}</p>
+      ${list('What traded', t.facts)}${list('Possible catalysts', t.catalysts)}${table}${list('What it suggests', t.reads)}${list('Gaps', t.gaps)}
+      <p class="muted small">Written from the after-close data (about 3 PM CT), whichever snapshot time is picked above. For information only.</p></div>`;
+  }
+
   function renderOptions(date, opts, term, tabBar, rerender, wide = false) {
     const snaps = wide ? (opts.wide || []).map((s) => ({ ...s, rows: s[term] || [] }))
       : opts.snapshots.filter((s) => s.rows.some((r) => r[term]));
@@ -258,16 +272,26 @@
           const ratio = !x.call_premium && !x.put_premium ? '<span class="muted">no trades</span>'
             : !x.put_premium ? '<span class="pos">calls only</span>'
             : `<span class="${x.ratio >= 2 ? 'pos' : x.ratio <= 0.67 ? 'neg' : ''}">${Number(x.ratio).toFixed(2)}</span>`;
-          return `<tr><td class="symbol">${tick(r.symbol)}</td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
+          const open = infoOpen.has(r.symbol);
+          return `<tr><td class="symbol">${tick(r.symbol)}<button class="info-btn" data-info="${esc(r.symbol)}" aria-expanded="${open}" aria-label="Why ${esc(r.symbol)} options were busy" title="Why were calls or puts elevated?">i</button></td><td>${esc((r.lists || []).join(', ') || 'held')}</td>
             <td class="num">${money(r.last)}</td>
             <td class="num">${r.pct_change != null ? `<span class="${r.pct_change >= 0 ? 'pos' : 'neg'}">${r.pct_change > 0 ? '+' : ''}${Number(r.pct_change).toFixed(1)}%</span>` : '–'}</td>
             <td class="num">${usd(x.call_premium)}</td><td class="num">${usd(x.put_premium)}</td><td class="num">${ratio}</td>
             <td class="num">${int(r.call_vol)}</td><td class="num">${int(r.put_vol)}</td>
-            <td class="num">${r.calls_to_puts == null ? (r.call_vol ? '<span class="pos">calls only</span>' : '–') : `<span class="${r.calls_to_puts >= 2 ? 'pos' : r.calls_to_puts <= 0.67 ? 'neg' : ''}">${Number(r.calls_to_puts).toFixed(2)}</span>`}</td></tr>`;
+            <td class="num">${r.calls_to_puts == null ? (r.call_vol ? '<span class="pos">calls only</span>' : '–') : `<span class="${r.calls_to_puts >= 2 ? 'pos' : r.calls_to_puts <= 0.67 ? 'neg' : ''}">${Number(r.calls_to_puts).toFixed(2)}</span>`}</td></tr>
+            <tr class="info-row" data-info-row="${esc(r.symbol)}"${open ? '' : ' hidden'}><td colspan="${OPT_COLS.length}">${infoHTML(date, opts, r.symbol)}</td></tr>`;
         }).join('')}</tbody>
       </table></div>
       <p class="muted">Green: calls at least 2x puts. Red: puts at least 1.5x calls. For information only; it does not change any trades.</p>`;
     viewEl.querySelectorAll('[data-opt]').forEach((b) => b.addEventListener('click', () => { optTime = b.dataset.opt; rerender(); }));
+    viewEl.querySelectorAll('[data-info]').forEach((b) => b.addEventListener('click', () => {
+      const sym = b.dataset.info;
+      const row = viewEl.querySelector(`[data-info-row="${CSS.escape(sym)}"]`);
+      const open = row.hidden;
+      row.hidden = !open;
+      b.setAttribute('aria-expanded', String(open));
+      if (open) infoOpen.add(sym); else infoOpen.delete(sym);
+    }));
     viewEl.querySelectorAll('[data-sort]').forEach((b) => b.addEventListener('click', () => {
       const k = b.dataset.sort;
       optSort = k === optSort.key ? { key: k, dir: -optSort.dir } : { key: k, dir: k === 'symbol' || k === 'list' ? 1 : -1 };
@@ -324,6 +348,8 @@
       const day = days.find((d) => d.date === date) || {};
       const lists = day.lists ? await getJSON(`logs/${day.lists}`).catch(() => null) : null;
       const opts = day.options ? await getJSON(`logs/${day.options}`).catch(() => null) : null;
+      // Info icons (2026-11-20): per-ticker analysis written after the close by options/analyze.py.
+      if (opts) opts.analysis = await getJSON(`logs/options/analysis/${date}.json`).catch(() => null);
       const file = day.file === undefined ? `${date}.json` : day.file;
       if (!file || !file.endsWith('.json')) {
         let text = '';
