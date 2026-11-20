@@ -28,3 +28,14 @@ Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
 8:43:45	get_equity_historicals (dry SP)	—
+
+Live, 8:40 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+no trades
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
+8:43:45	get_equity_historicals (dry NDX)	—
+8:43:45	get_equity_historicals (dry NDX)	0.1
