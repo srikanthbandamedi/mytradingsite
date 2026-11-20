@@ -693,3 +693,13 @@ flat
 Day P&L: -$30.09 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:40 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding KDP
+Price now: KDP $35.33 at 11:35 CT (bought 56 at $35.16, stop $35.28, open +$9.24).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
