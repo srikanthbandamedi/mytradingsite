@@ -128,3 +128,14 @@ Price now: KDP $35.20 at 9:05 CT (bought 56 at $35.16, stop $34.92, open +$1.96)
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:05 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AMZN, MSFT
+Price now: AMZN $258.61 at 9:05 CT (bought 7 at $259.29, stop $256.11, open -$4.78).
+Price now: MSFT $502.80 at 9:05 CT (bought 3 at $502.21, stop $497.58, open +$1.77).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
