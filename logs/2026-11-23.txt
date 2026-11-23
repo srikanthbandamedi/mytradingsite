@@ -323,3 +323,14 @@ Price now: KDP $35.30 at 10:05 CT (bought 56 at $35.19, stop $34.95, open +$6.72
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:07 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding ISRG, TSLA
+Price now: ISRG $414.07 at 10:05 CT (bought 4 at $413.80, stop $408.95, open +$1.08).
+Price now: TSLA $389.69 at 10:05 CT (bought 5 at $390.12, stop $382.31, open -$2.13).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
