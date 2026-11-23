@@ -564,3 +564,12 @@ Price now: TSLA $390.24 at 11:00 CT (bought 5 at $390.12, stop $382.31, open +$0
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:08 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: $2.52 realized.
+
+Time (CT)	Call	Seconds since previous
