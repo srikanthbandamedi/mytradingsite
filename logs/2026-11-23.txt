@@ -633,3 +633,14 @@ flat
 Day P&L: $2.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:23 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding ISRG, TSLA
+Price now: ISRG $417.46 at 11:20 CT (bought 4 at $413.80, stop $408.95, open +$14.64).
+Price now: TSLA $390.25 at 11:20 CT (bought 5 at $390.12, stop $382.31, open +$0.70).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
