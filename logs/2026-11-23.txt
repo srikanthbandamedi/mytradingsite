@@ -868,3 +868,14 @@ flat
 Day P&L: $2.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:24 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding ISRG, PEP
+Price now: ISRG $416.26 at 12:20 CT (bought 4 at $413.80, stop $408.95, open +$9.84).
+Price now: PEP $140.52 at 12:20 CT (bought 14 at $140.52, stop $139.81, open +$0.00).
+
+Day P&L: -$12.97 realized.
+
+Time (CT)	Call	Seconds since previous
