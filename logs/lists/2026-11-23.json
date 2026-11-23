@@ -1,0 +1,185 @@
+{
+ "day": "2026-11-23",
+ "built_at": "2026-11-23T13:40:07Z",
+ "lists": {
+  "S&P 201-300": {
+   "data_through": "2026-11-20",
+   "stocks_ranked": 3,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "TTWO",
+     "adx20": 27.0,
+     "mom20_pct": 3.2,
+     "dollar_vol_m": 551
+    },
+    {
+     "rank": 2,
+     "symbol": "KDP",
+     "adx20": 25.3,
+     "mom20_pct": 0.5,
+     "dollar_vol_m": 518
+    },
+    {
+     "rank": 3,
+     "symbol": "COIN",
+     "adx20": 25.6,
+     "mom20_pct": -38.0,
+     "dollar_vol_m": 546
+    }
+   ]
+  },
+  "Nasdaq 100": {
+   "data_through": "2026-11-20",
+   "stocks_ranked": 40,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "APP",
+     "adx20": 30.5,
+     "mom20_pct": 33.9,
+     "dollar_vol_m": 1351
+    },
+    {
+     "rank": 2,
+     "symbol": "COST",
+     "adx20": 28.4,
+     "mom20_pct": 10.0,
+     "dollar_vol_m": 1167
+    },
+    {
+     "rank": 3,
+     "symbol": "PEP",
+     "adx20": 29.5,
+     "mom20_pct": 3.5,
+     "dollar_vol_m": 634
+    },
+    {
+     "rank": 4,
+     "symbol": "TTWO",
+     "adx20": 27.0,
+     "mom20_pct": 3.2,
+     "dollar_vol_m": 551
+    },
+    {
+     "rank": 5,
+     "symbol": "AVGO",
+     "adx20": 28.3,
+     "mom20_pct": -5.3,
+     "dollar_vol_m": 5165
+    },
+    {
+     "rank": 6,
+     "symbol": "BKNG",
+     "adx20": 27.7,
+     "mom20_pct": -6.9,
+     "dollar_vol_m": 558
+    },
+    {
+     "rank": 7,
+     "symbol": "TSLA",
+     "adx20": 26.8,
+     "mom20_pct": -7.0,
+     "dollar_vol_m": 8548
+    },
+    {
+     "rank": 8,
+     "symbol": "MSFT",
+     "adx20": 28.7,
+     "mom20_pct": -7.5,
+     "dollar_vol_m": 7564
+    },
+    {
+     "rank": 9,
+     "symbol": "ADI",
+     "adx20": 27.2,
+     "mom20_pct": -11.6,
+     "dollar_vol_m": 817
+    },
+    {
+     "rank": 10,
+     "symbol": "ISRG",
+     "adx20": 27.0,
+     "mom20_pct": -11.7,
+     "dollar_vol_m": 535
+    }
+   ]
+  },
+  "S&P 100": {
+   "data_through": "2026-11-20",
+   "stocks_ranked": 71,
+   "top10": [
+    {
+     "rank": 1,
+     "symbol": "COST",
+     "adx20": 28.4,
+     "mom20_pct": 10.0,
+     "dollar_vol_m": 1167
+    },
+    {
+     "rank": 2,
+     "symbol": "BRK.B",
+     "adx20": 29.5,
+     "mom20_pct": 5.1,
+     "dollar_vol_m": 978
+    },
+    {
+     "rank": 3,
+     "symbol": "PEP",
+     "adx20": 29.5,
+     "mom20_pct": 3.5,
+     "dollar_vol_m": 634
+    },
+    {
+     "rank": 4,
+     "symbol": "MA",
+     "adx20": 29.5,
+     "mom20_pct": 0.4,
+     "dollar_vol_m": 1105
+    },
+    {
+     "rank": 5,
+     "symbol": "V",
+     "adx20": 28.3,
+     "mom20_pct": -1.4,
+     "dollar_vol_m": 1702
+    },
+    {
+     "rank": 6,
+     "symbol": "TJX",
+     "adx20": 29.8,
+     "mom20_pct": -3.7,
+     "dollar_vol_m": 520
+    },
+    {
+     "rank": 7,
+     "symbol": "AVGO",
+     "adx20": 28.3,
+     "mom20_pct": -5.3,
+     "dollar_vol_m": 5165
+    },
+    {
+     "rank": 8,
+     "symbol": "APH",
+     "adx20": 29.7,
+     "mom20_pct": -5.9,
+     "dollar_vol_m": 651
+    },
+    {
+     "rank": 9,
+     "symbol": "MSFT",
+     "adx20": 28.7,
+     "mom20_pct": -7.5,
+     "dollar_vol_m": 7564
+    },
+    {
+     "rank": 10,
+     "symbol": "MRK",
+     "adx20": 28.2,
+     "mom20_pct": -8.0,
+     "dollar_vol_m": 621
+    }
+   ]
+  }
+ }
+}
