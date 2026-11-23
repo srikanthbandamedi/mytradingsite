@@ -292,3 +292,13 @@ Price now: TSLA $389.80 at 9:55 CT (bought 5 at $390.12, stop $382.31, open -$1.
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:02 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding KDP
+Price now: KDP $35.30 at 10:00 CT (bought 56 at $35.19, stop $34.95, open +$6.44).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
