@@ -1123,3 +1123,12 @@ Price now: COST $1100.74 at 1:25 CT (bought 1 at $1101.21, stop $1095.70, open -
 Day P&L: -$12.01 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:34 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: $2.52 realized.
+
+Time (CT)	Call	Seconds since previous
