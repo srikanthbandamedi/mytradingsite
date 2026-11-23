@@ -908,3 +908,13 @@ flat
 Day P&L: $2.52 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:34 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding ISRG
+Price now: ISRG $415.70 at 12:30 CT (bought 4 at $413.80, stop $408.95, open +$7.60).
+
+Day P&L: -$12.20 realized.
+
+Time (CT)	Call	Seconds since previous
