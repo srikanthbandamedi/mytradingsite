@@ -1382,3 +1382,13 @@ Price now: KDP $35.45 at 2:35 CT (bought 56 at $35.49, stop $35.31, open -$2.80)
 Day P&L: -$2.80 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 14:39 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AVGO
+Price now: AVGO $312.72 at 2:35 CT (bought 6 at $312.74, stop $309.92, open -$0.12).
+
+Day P&L: -$13.06 realized.
+
+Time (CT)	Call	Seconds since previous
