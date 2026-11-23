@@ -743,3 +743,12 @@ Price now: ISRG $415.14 at 11:45 CT (bought 4 at $413.80, stop $408.95, open +$5
 Day P&L: -$12.97 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:53 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: $2.52 realized.
+
+Time (CT)	Call	Seconds since previous
