@@ -1206,3 +1206,14 @@ flat
 Day P&L: -$2.80 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:54 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+flat
+
+Day P&L: -$13.06 realized.
+
+Time (CT)	Call	Seconds since previous
+13:54:33	get_equity_historicals (dry NDX)	—
+13:54:33	get_equity_historicals (dry NDX)	0.1
