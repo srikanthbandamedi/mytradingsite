@@ -236,3 +236,13 @@ Price now: TTWO $219.31 at 9:30 CT (bought 9 at $217.29, stop $218.65, open +$18
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:30 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding PEP
+Price now: PEP $142.46 at 9:30 CT (bought 14 at $141.90, stop $141.18, open +$7.91).
+
+Day P&L: $11.13 realized.
+
+Time (CT)	Call	Seconds since previous
