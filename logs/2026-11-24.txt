@@ -73,3 +73,13 @@ Price now: APP $378.50 at 8:50 CT (bought 5 at $378.50, stop $374.19, open +$0.0
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TTWO
+Price now: TTWO $217.84 at 8:55 CT (bought 9 at $217.29, stop $214.25, open +$4.91).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
