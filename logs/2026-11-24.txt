@@ -729,3 +729,14 @@ Price now: TTWO $223.41 at 11:30 CT (bought 8 at $222.50, stop $219.56, open +$7
 Day P&L: $13.95 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:30 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding APP, TSLA
+Price now: APP $386.00 at 11:30 CT (bought 5 at $385.58, stop $380.86, open +$2.10).
+Price now: TSLA $383.00 at 11:30 CT (bought 5 at $382.39, stop $378.63, open +$3.03).
+
+Day P&L: $22.39 realized.
+
+Time (CT)	Call	Seconds since previous
