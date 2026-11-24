@@ -455,3 +455,13 @@ Price now: PEP $143.44 at 10:20 CT (bought 14 at $141.90, stop $142.70, open +$2
 Day P&L: $11.13 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:25 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding KDP
+Price now: KDP $36.23 at 10:25 CT (bought 55 at $35.95, stop $35.70, open +$14.85).
+
+Day P&L: $16.7 realized.
+
+Time (CT)	Call	Seconds since previous
