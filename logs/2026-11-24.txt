@@ -1081,3 +1081,13 @@ flat
 Day P&L: $20.08 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:55 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold TSLA: 5 at $383.27 (trend fade), +$4.42.
+flat
+
+Day P&L: $28.44 realized.
+
+Time (CT)	Call	Seconds since previous
