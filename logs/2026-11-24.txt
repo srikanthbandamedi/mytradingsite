@@ -966,3 +966,14 @@ flat
 Day P&L: $20.08 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:25 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+Sold APP: 5 at $385.90 (trend fade), +$1.62.
+holding TSLA
+Price now: TSLA $384.10 at 12:25 CT (bought 5 at $382.39, stop $378.63, open +$8.55).
+
+Day P&L: $24.02 realized.
+
+Time (CT)	Call	Seconds since previous
