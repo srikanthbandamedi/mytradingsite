@@ -782,3 +782,15 @@ Price now: TSLA $384.01 at 11:40 CT (bought 5 at $382.39, stop $378.63, open +$8
 Day P&L: $22.39 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:45 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought KDP: 55 at $36.19, stop $36.00.
+holding KDP, TTWO
+Price now: KDP $36.19 at 11:45 CT (bought 55 at $36.19, stop $36.00, open +$0.00).
+Price now: TTWO $225.30 at 11:45 CT (bought 8 at $222.50, stop $222.73, open +$22.36).
+
+Day P&L: $13.95 realized.
+
+Time (CT)	Call	Seconds since previous
