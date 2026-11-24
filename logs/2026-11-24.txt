@@ -495,3 +495,15 @@ Price now: PEP $143.43 at 10:30 CT (bought 14 at $141.90, stop $142.70, open +$2
 Day P&L: $11.13 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:35 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+Bought TTWO: 8 at $222.50, stop $219.56.
+holding KDP, TTWO
+Price now: KDP $36.06 at 10:35 CT (bought 55 at $35.95, stop $35.70, open +$5.78).
+Price now: TTWO $222.50 at 10:35 CT (bought 8 at $222.50, stop $219.56, open +$0.00).
+
+Day P&L: $16.7 realized.
+
+Time (CT)	Call	Seconds since previous
