@@ -579,3 +579,13 @@ Price now: PEP $142.85 at 10:50 CT (bought 14 at $141.90, stop $142.70, open +$1
 Day P&L: $11.13 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:55 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TTWO
+Price now: TTWO $221.93 at 10:55 CT (bought 8 at $222.50, stop $219.56, open -$4.60).
+
+Day P&L: $13.95 realized.
+
+Time (CT)	Call	Seconds since previous
