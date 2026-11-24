@@ -1024,3 +1024,13 @@ flat
 Day P&L: $20.08 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:40 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding TSLA
+Price now: TSLA $383.50 at 12:40 CT (bought 5 at $382.39, stop $378.63, open +$5.53).
+
+Day P&L: $24.02 realized.
+
+Time (CT)	Call	Seconds since previous
