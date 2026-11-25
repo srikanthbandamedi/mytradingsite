@@ -547,3 +547,12 @@ Price now: PEP $144.81 at 10:55 CT (bought 13 at $144.60, stop $143.82, open +$2
 Day P&L: $14.21 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:03 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+flat
+
+Day P&L: -$5.53 realized.
+
+Time (CT)	Call	Seconds since previous
