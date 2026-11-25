@@ -1374,3 +1374,13 @@ Day P&L: $106.38 realized.
 
 Time (CT)	Call	Seconds since previous
 14:08:35	get_equity_historicals (dry NDX)	—
+
+Live, 14:13 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TER
+Price now: TER $210.32 at 2:10 CT (bought 9 at $211.44, stop $207.68, open -$10.04).
+
+Day P&L: $110.09 realized.
+
+Time (CT)	Call	Seconds since previous
