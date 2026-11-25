@@ -712,3 +712,14 @@ Price now: TTWO $224.70 at 11:35 CT (bought 8 at $224.10, stop $221.70, open +$4
 Day P&L: -$5.53 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:38 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding PEP, QCOM
+Price now: PEP $145.14 at 11:35 CT (bought 13 at $144.60, stop $143.82, open +$6.98).
+Price now: QCOM $162.61 at 11:35 CT (bought 12 at $159.88, stop $161.27, open +$32.76).
+
+Day P&L: $14.21 realized.
+
+Time (CT)	Call	Seconds since previous
