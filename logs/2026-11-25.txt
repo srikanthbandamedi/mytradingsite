@@ -635,3 +635,14 @@ Day P&L: $14.21 realized.
 Time (CT)	Call	Seconds since previous
 11:18:36	get_equity_historicals (dry NDX)	—
 11:18:36	get_equity_historicals (dry NDX)	0.1
+
+Live, 11:23 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding COIN, TTWO
+Price now: COIN $99.87 at 11:20 CT (bought 20 at $97.83, stop $98.37, open +$40.70).
+Price now: TTWO $224.49 at 11:20 CT (bought 8 at $224.10, stop $221.70, open +$3.12).
+
+Day P&L: -$5.53 realized.
+
+Time (CT)	Call	Seconds since previous
