@@ -192,3 +192,13 @@ no trades
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:28 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding PEP
+Price now: PEP $144.34 at 9:25 CT (bought 13 at $144.60, stop $143.82, open -$3.40).
+
+Day P&L: $14.21 realized.
+
+Time (CT)	Call	Seconds since previous
