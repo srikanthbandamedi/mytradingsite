@@ -1032,3 +1032,14 @@ Price now: QCOM $166.47 at 12:45 CT (bought 12 at $159.88, stop $164.14, open +$
 Day P&L: $17.18 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 12:53 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding COIN, TTWO
+Price now: COIN $102.76 at 12:50 CT (bought 20 at $97.83, stop $101.26, open +$98.46).
+Price now: TTWO $227.49 at 12:50 CT (bought 8 at $224.10, stop $225.09, open +$27.12).
+
+Day P&L: -$5.53 realized.
+
+Time (CT)	Call	Seconds since previous
