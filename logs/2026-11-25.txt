@@ -1131,3 +1131,14 @@ Price now: TTWO $225.75 at 1:10 CT (bought 8 at $224.10, stop $225.09, open +$13
 Day P&L: -$5.53 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:13 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding MSFT, QCOM
+Price now: MSFT $492.51 at 1:10 CT (bought 4 at $487.28, stop $488.84, open +$20.92).
+Price now: QCOM $168.05 at 1:10 CT (bought 12 at $159.88, stop $165.72, open +$98.04).
+
+Day P&L: $17.18 realized.
+
+Time (CT)	Call	Seconds since previous
