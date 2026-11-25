@@ -1263,3 +1263,14 @@ Price now: TER $212.00 at 1:40 CT (bought 9 at $211.44, stop $207.68, open +$5.1
 Day P&L: $2.39 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:43 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding MSFT, QCOM
+Price now: MSFT $492.37 at 1:40 CT (bought 4 at $487.28, stop $489.63, open +$20.36).
+Price now: QCOM $168.01 at 1:40 CT (bought 12 at $159.88, stop $166.01, open +$97.56).
+
+Day P&L: $17.18 realized.
+
+Time (CT)	Call	Seconds since previous
