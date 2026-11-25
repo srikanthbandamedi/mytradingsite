@@ -1186,3 +1186,14 @@ Price now: QCOM $167.63 at 1:20 CT (bought 12 at $159.88, stop $165.72, open +$9
 Day P&L: $17.18 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:28 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding COIN, TER
+Price now: COIN $103.82 at 1:25 CT (bought 20 at $97.83, stop $102.25, open +$119.70).
+Price now: TER $211.87 at 1:25 CT (bought 9 at $211.44, stop $207.68, open +$3.92).
+
+Day P&L: $2.39 realized.
+
+Time (CT)	Call	Seconds since previous
