@@ -1451,3 +1451,14 @@ flat
 Day P&L: $106.38 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 14:33 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TER, TTWO
+Price now: TER $209.73 at 2:30 CT (bought 9 at $211.44, stop $207.68, open -$15.35).
+Price now: TTWO $226.71 at 2:30 CT (bought 8 at $225.93, stop $224.40, open +$6.28).
+
+Day P&L: $110.09 realized.
+
+Time (CT)	Call	Seconds since previous
