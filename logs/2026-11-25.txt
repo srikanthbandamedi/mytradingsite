@@ -1305,3 +1305,13 @@ Price now: TER $209.03 at 1:50 CT (bought 9 at $211.44, stop $207.68, open -$21.
 Day P&L: $110.09 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 13:53 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding MSFT
+Price now: MSFT $490.61 at 1:50 CT (bought 4 at $487.28, stop $489.63, open +$13.32).
+
+Day P&L: $96.98 realized.
+
+Time (CT)	Call	Seconds since previous
