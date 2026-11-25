@@ -1567,3 +1567,13 @@ flat
 Day P&L: $106.38 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 15:03 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TTWO
+Price now: TTWO $227.26 at 3:00 CT (bought 8 at $225.93, stop $224.40, open +$10.68).
+
+Day P&L: $76.29 realized.
+
+Time (CT)	Call	Seconds since previous
