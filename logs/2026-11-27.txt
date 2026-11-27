@@ -410,3 +410,14 @@ no trades
 Day P&L: $34.36 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 10:23 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding QCOM, TSLA
+Price now: QCOM $176.97 at 10:20 CT (bought 11 at $176.28, stop $173.27, open +$7.59).
+Price now: TSLA $398.16 at 10:20 CT (bought 5 at $397.70, stop $392.53, open +$2.30).
+
+Day P&L: -$12.60 realized.
+
+Time (CT)	Call	Seconds since previous
