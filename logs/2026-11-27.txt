@@ -298,3 +298,13 @@ Price now: TSLA $398.74 at 9:50 CT (bought 5 at $397.70, stop $392.53, open +$5.
 Day P&L: -$12.60 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:58 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TTWO
+Price now: TTWO $231.75 at 9:55 CT (bought 8 at $225.93, stop $230.22, open +$46.56).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
