@@ -3,12 +3,12 @@
     {
       "date": "2026-11-27",
       "file": "2026-11-27.txt",
-      "entries": 67,
+      "entries": 68,
       "tabs": {
         "S&P 201-300": "$34.36",
-        "Nasdaq 100": "-$12.60"
+        "Nasdaq 100": "$12.15"
       },
-      "pnl": "S&P $34.36 | NDX -$12.60",
+      "pnl": "S&P $34.36 | NDX $12.15",
       "lists": "lists/2026-11-27.json",
       "options": "options/2026-11-27.json"
     },

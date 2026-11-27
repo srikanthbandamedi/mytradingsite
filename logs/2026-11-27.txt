@@ -682,3 +682,14 @@ Price now: MCHP $59.48 at 11:25 CT (bought 33 at $59.38, stop $58.65, open +$3.3
 Day P&L: $34.36 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:29 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AMGN, TSLA
+Price now: AMGN $474.75 at 11:25 CT (bought 4 at $474.75, stop $472.38, open +$0.00).
+Price now: TSLA $399.83 at 11:25 CT (bought 5 at $397.70, stop $392.53, open +$10.65).
+
+Day P&L: $12.15 realized.
+
+Time (CT)	Call	Seconds since previous
