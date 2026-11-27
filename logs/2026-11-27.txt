@@ -640,3 +640,14 @@ Price now: MCHP $59.61 at 11:15 CT (bought 33 at $59.38, stop $58.65, open +$7.5
 Day P&L: $34.36 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:19 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding QCOM, TSLA
+Price now: QCOM $178.95 at 11:15 CT (bought 11 at $176.28, stop $177.22, open +$29.37).
+Price now: TSLA $398.90 at 11:15 CT (bought 5 at $397.70, stop $392.53, open +$6.00).
+
+Day P&L: -$12.60 realized.
+
+Time (CT)	Call	Seconds since previous
