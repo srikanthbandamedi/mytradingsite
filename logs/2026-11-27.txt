@@ -172,3 +172,13 @@ Price now: QCOM $175.93 at 9:20 CT (bought 11 at $176.28, stop $173.27, open -$3
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:28 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding TTWO
+Price now: TTWO $230.65 at 9:25 CT (bought 8 at $225.93, stop $229.26, open +$37.80).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
