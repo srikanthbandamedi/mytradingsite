@@ -15627,6 +15627,2433 @@
      "rank": 50
     }
    ]
+  },
+  {
+   "time": "12:45",
+   "label": "intraday",
+   "universe": 318,
+   "near": [
+    {
+     "symbol": "PGR",
+     "lists": [
+      "S&P #87"
+     ],
+     "last": 239.14,
+     "pct_change": 0.184,
+     "call_vol": 805,
+     "put_vol": 323,
+     "calls_to_puts": 2.49,
+     "call_oi": 30213,
+     "put_oi": 28032,
+     "near": {
+      "call_premium": 1516419,
+      "put_premium": 2259,
+      "ratio": 671.28
+     },
+     "long": {
+      "call_premium": 448102,
+      "put_premium": 100406,
+      "ratio": 4.46
+     },
+     "rank": 1
+    },
+    {
+     "symbol": "AFL",
+     "lists": [
+      "S&P #199"
+     ],
+     "last": 127.44,
+     "pct_change": -0.055,
+     "call_vol": 917,
+     "put_vol": 61,
+     "calls_to_puts": 15.03,
+     "call_oi": 34550,
+     "put_oi": 26690,
+     "near": {
+      "call_premium": 515347,
+      "put_premium": 2838,
+      "ratio": 181.59
+     },
+     "long": {
+      "call_premium": 70467,
+      "put_premium": 15095,
+      "ratio": 4.67
+     },
+     "rank": 2
+    },
+    {
+     "symbol": "HLT",
+     "lists": [
+      "S&P #154"
+     ],
+     "last": 369.94,
+     "pct_change": 1.021,
+     "call_vol": 537,
+     "put_vol": 147,
+     "calls_to_puts": 3.65,
+     "call_oi": 17820,
+     "put_oi": 14100,
+     "near": {
+      "call_premium": 457786,
+      "put_premium": 3529,
+      "ratio": 129.72
+     },
+     "long": {
+      "call_premium": 1381422,
+      "put_premium": 102518,
+      "ratio": 13.47
+     },
+     "rank": 3
+    },
+    {
+     "symbol": "IRM",
+     "lists": [
+      "S&P #297"
+     ],
+     "last": 104.14,
+     "pct_change": 0.077,
+     "call_vol": 775,
+     "put_vol": 107,
+     "calls_to_puts": 7.24,
+     "call_oi": 9989,
+     "put_oi": 23333,
+     "near": {
+      "call_premium": 2261271,
+      "put_premium": 17645,
+      "ratio": 128.15
+     },
+     "long": {
+      "call_premium": 9615,
+      "put_premium": 21376,
+      "ratio": 0.45
+     },
+     "rank": 4
+    },
+    {
+     "symbol": "AMGN",
+     "lists": [
+      "S&P #45",
+      "NDX"
+     ],
+     "last": 474.0,
+     "pct_change": 1.014,
+     "call_vol": 1662,
+     "put_vol": 683,
+     "calls_to_puts": 2.43,
+     "call_oi": 58149,
+     "put_oi": 58714,
+     "near": {
+      "call_premium": 3264790,
+      "put_premium": 46737,
+      "ratio": 69.85
+     },
+     "long": {
+      "call_premium": 1848934,
+      "put_premium": 423991,
+      "ratio": 4.36
+     },
+     "rank": 5
+    },
+    {
+     "symbol": "CAH",
+     "lists": [
+      "S&P #193"
+     ],
+     "last": 282.86,
+     "pct_change": -0.018,
+     "call_vol": 659,
+     "put_vol": 346,
+     "calls_to_puts": 1.9,
+     "call_oi": 18356,
+     "put_oi": 13605,
+     "near": {
+      "call_premium": 3074257,
+      "put_premium": 51338,
+      "ratio": 59.88
+     },
+     "long": {
+      "call_premium": 256597,
+      "put_premium": 15288,
+      "ratio": 16.78
+     },
+     "rank": 6
+    },
+    {
+     "symbol": "CL",
+     "lists": [
+      "S&P #159"
+     ],
+     "last": 99.45,
+     "pct_change": -0.211,
+     "call_vol": 1000,
+     "put_vol": 358,
+     "calls_to_puts": 2.79,
+     "call_oi": 38157,
+     "put_oi": 40556,
+     "near": {
+      "call_premium": 843507,
+      "put_premium": 14695,
+      "ratio": 57.4
+     },
+     "long": {
+      "call_premium": 30711,
+      "put_premium": 31360,
+      "ratio": 0.98
+     },
+     "rank": 7
+    },
+    {
+     "symbol": "PYPL",
+     "lists": [
+      "S&P #233",
+      "NDX"
+     ],
+     "last": 59.0,
+     "pct_change": 2.058,
+     "call_vol": 53223,
+     "put_vol": 4941,
+     "calls_to_puts": 10.77,
+     "call_oi": 1082001,
+     "put_oi": 377795,
+     "near": {
+      "call_premium": 4216785,
+      "put_premium": 74724,
+      "ratio": 56.43
+     },
+     "long": {
+      "call_premium": 2744029,
+      "put_premium": 844733,
+      "ratio": 3.25
+     },
+     "rank": 8
+    },
+    {
+     "symbol": "CMG",
+     "lists": [
+      "S&P #250"
+     ],
+     "last": 37.2232,
+     "pct_change": -0.473,
+     "call_vol": 20215,
+     "put_vol": 2842,
+     "calls_to_puts": 7.11,
+     "call_oi": 376620,
+     "put_oi": 431293,
+     "near": {
+      "call_premium": 1739806,
+      "put_premium": 34011,
+      "ratio": 51.15
+     },
+     "long": {
+      "call_premium": 2712808,
+      "put_premium": 147498,
+      "ratio": 18.39
+     },
+     "rank": 9
+    },
+    {
+     "symbol": "REGN",
+     "lists": [
+      "S&P #123",
+      "NDX"
+     ],
+     "last": 992.14,
+     "pct_change": 1.046,
+     "call_vol": 324,
+     "put_vol": 143,
+     "calls_to_puts": 2.27,
+     "call_oi": 17145,
+     "put_oi": 12032,
+     "near": {
+      "call_premium": 708269,
+      "put_premium": 14580,
+      "ratio": 48.58
+     },
+     "long": {
+      "call_premium": 1111409,
+      "put_premium": 368724,
+      "ratio": 3.01
+     },
+     "rank": 10
+    },
+    {
+     "symbol": "TGT",
+     "lists": [
+      "S&P #165"
+     ],
+     "last": 171.7325,
+     "pct_change": -0.283,
+     "call_vol": 6696,
+     "put_vol": 6771,
+     "calls_to_puts": 0.99,
+     "call_oi": 165323,
+     "put_oi": 190135,
+     "near": {
+      "call_premium": 10784924,
+      "put_premium": 256276,
+      "ratio": 42.08
+     },
+     "long": {
+      "call_premium": 1792150,
+      "put_premium": 1392737,
+      "ratio": 1.29
+     },
+     "rank": 11
+    },
+    {
+     "symbol": "LOW",
+     "lists": [
+      "S&P #89"
+     ],
+     "last": 236.46,
+     "pct_change": 0.344,
+     "call_vol": 1221,
+     "put_vol": 756,
+     "calls_to_puts": 1.62,
+     "call_oi": 58205,
+     "put_oi": 60684,
+     "near": {
+      "call_premium": 383059,
+      "put_premium": 9133,
+      "ratio": 41.94
+     },
+     "long": {
+      "call_premium": 932895,
+      "put_premium": 348027,
+      "ratio": 2.68
+     },
+     "rank": 12
+    },
+    {
+     "symbol": "KLAC",
+     "lists": [
+      "S&P #58",
+      "NDX"
+     ],
+     "last": 138.4,
+     "pct_change": 3.13,
+     "call_vol": 17304,
+     "put_vol": 3914,
+     "calls_to_puts": 4.42,
+     "call_oi": 173654,
+     "put_oi": 208002,
+     "near": {
+      "call_premium": 4623607,
+      "put_premium": 145697,
+      "ratio": 31.73
+     },
+     "long": {
+      "call_premium": 3247032,
+      "put_premium": 5427076,
+      "ratio": 0.6
+     },
+     "rank": 13
+    },
+    {
+     "symbol": "PEP",
+     "lists": [
+      "S&P #59",
+      "NDX"
+     ],
+     "last": 144.8799,
+     "pct_change": 0.66,
+     "call_vol": 9729,
+     "put_vol": 3786,
+     "calls_to_puts": 2.57,
+     "call_oi": 224513,
+     "put_oi": 149413,
+     "near": {
+      "call_premium": 5611984,
+      "put_premium": 179264,
+      "ratio": 31.31
+     },
+     "long": {
+      "call_premium": 1454756,
+      "put_premium": 599835,
+      "ratio": 2.43
+     },
+     "rank": 14
+    },
+    {
+     "symbol": "KR",
+     "lists": [
+      "S&P #264"
+     ],
+     "last": 69.36,
+     "pct_change": -0.673,
+     "call_vol": 14884,
+     "put_vol": 737,
+     "calls_to_puts": 20.2,
+     "call_oi": 85755,
+     "put_oi": 55725,
+     "near": {
+      "call_premium": 1547021,
+      "put_premium": 49425,
+      "ratio": 31.3
+     },
+     "long": {
+      "call_premium": 41471,
+      "put_premium": 32534,
+      "ratio": 1.27
+     },
+     "rank": 15
+    },
+    {
+     "symbol": "ABT",
+     "lists": [
+      "S&P #60"
+     ],
+     "last": 109.0,
+     "pct_change": 0.926,
+     "call_vol": 4046,
+     "put_vol": 1057,
+     "calls_to_puts": 3.83,
+     "call_oi": 141623,
+     "put_oi": 82524,
+     "near": {
+      "call_premium": 613948,
+      "put_premium": 23141,
+      "ratio": 26.53
+     },
+     "long": {
+      "call_premium": 669620,
+      "put_premium": 400564,
+      "ratio": 1.67
+     },
+     "rank": 16
+    },
+    {
+     "symbol": "T",
+     "lists": [
+      "S&P #78"
+     ],
+     "last": 23.21,
+     "pct_change": 1.045,
+     "call_vol": 29202,
+     "put_vol": 8578,
+     "calls_to_puts": 3.4,
+     "call_oi": 681805,
+     "put_oi": 420290,
+     "near": {
+      "call_premium": 1252543,
+      "put_premium": 49125,
+      "ratio": 25.5
+     },
+     "long": {
+      "call_premium": 699731,
+      "put_premium": 744058,
+      "ratio": 0.94
+     },
+     "rank": 17
+    },
+    {
+     "symbol": "QCOM",
+     "lists": [
+      "S&P #65",
+      "NDX"
+     ],
+     "last": 177.6,
+     "pct_change": 5.301,
+     "call_vol": 55592,
+     "put_vol": 19003,
+     "calls_to_puts": 2.93,
+     "call_oi": 443521,
+     "put_oi": 432042,
+     "near": {
+      "call_premium": 28330267,
+      "put_premium": 1437783,
+      "ratio": 19.7
+     },
+     "long": {
+      "call_premium": 11217653,
+      "put_premium": 5115651,
+      "ratio": 2.19
+     },
+     "rank": 18
+    },
+    {
+     "symbol": "CNC",
+     "lists": [
+      "S&P #289"
+     ],
+     "last": 65.78,
+     "pct_change": 1.606,
+     "call_vol": 1725,
+     "put_vol": 247,
+     "calls_to_puts": 6.98,
+     "call_oi": 152063,
+     "put_oi": 142088,
+     "near": {
+      "call_premium": 734538,
+      "put_premium": 38380,
+      "ratio": 19.14
+     },
+     "long": {
+      "call_premium": 653559,
+      "put_premium": 63763,
+      "ratio": 10.25
+     },
+     "rank": 19
+    },
+    {
+     "symbol": "SO",
+     "lists": [
+      "S&P #106"
+     ],
+     "last": 95.04,
+     "pct_change": 0.042,
+     "call_vol": 2046,
+     "put_vol": 372,
+     "calls_to_puts": 5.5,
+     "call_oi": 65057,
+     "put_oi": 49558,
+     "near": {
+      "call_premium": 83230,
+      "put_premium": 4918,
+      "ratio": 16.92
+     },
+     "long": {
+      "call_premium": 460347,
+      "put_premium": 35846,
+      "ratio": 12.84
+     },
+     "rank": 20
+    },
+    {
+     "symbol": "MRNA",
+     "lists": [
+      "S&P #107",
+      "NDX"
+     ],
+     "last": 227.9978,
+     "pct_change": 3.241,
+     "call_vol": 60500,
+     "put_vol": 12224,
+     "calls_to_puts": 4.95,
+     "call_oi": 318663,
+     "put_oi": 454688,
+     "near": {
+      "call_premium": 32591284,
+      "put_premium": 1939304,
+      "ratio": 16.81
+     },
+     "long": {
+      "call_premium": 8733806,
+      "put_premium": 3512592,
+      "ratio": 2.49
+     },
+     "rank": 21
+    },
+    {
+     "symbol": "GEHC",
+     "lists": [
+      "S&P #273",
+      "NDX"
+     ],
+     "last": 84.21,
+     "pct_change": 1.056,
+     "call_vol": 434,
+     "put_vol": 196,
+     "calls_to_puts": 2.21,
+     "call_oi": 41267,
+     "put_oi": 18710,
+     "near": {
+      "call_premium": 152941,
+      "put_premium": 9320,
+      "ratio": 16.41
+     },
+     "long": {
+      "call_premium": 124218,
+      "put_premium": 58370,
+      "ratio": 2.13
+     },
+     "rank": 22
+    },
+    {
+     "symbol": "GILD",
+     "lists": [
+      "S&P #53",
+      "NDX"
+     ],
+     "last": 177.0075,
+     "pct_change": 0.151,
+     "call_vol": 1678,
+     "put_vol": 1933,
+     "calls_to_puts": 0.87,
+     "call_oi": 97942,
+     "put_oi": 91377,
+     "near": {
+      "call_premium": 289992,
+      "put_premium": 18084,
+      "ratio": 16.04
+     },
+     "long": {
+      "call_premium": 1577788,
+      "put_premium": 1739774,
+      "ratio": 0.91
+     },
+     "rank": 23
+    },
+    {
+     "symbol": "GD",
+     "lists": [
+      "S&P #119"
+     ],
+     "last": 363.36,
+     "pct_change": 0.858,
+     "call_vol": 189,
+     "put_vol": 24,
+     "calls_to_puts": 7.88,
+     "call_oi": 14076,
+     "put_oi": 9771,
+     "near": {
+      "call_premium": 44059,
+      "put_premium": 2756,
+      "ratio": 15.99
+     },
+     "long": {
+      "call_premium": 121543,
+      "put_premium": 4050,
+      "ratio": 30.01
+     },
+     "rank": 24
+    },
+    {
+     "symbol": "HON",
+     "lists": [
+      "S&P #172",
+      "NDX"
+     ],
+     "last": 228.09,
+     "pct_change": 1.328,
+     "call_vol": 663,
+     "put_vol": 247,
+     "calls_to_puts": 2.68,
+     "call_oi": 24476,
+     "put_oi": 17169,
+     "near": {
+      "call_premium": 55698,
+      "put_premium": 3488,
+      "ratio": 15.97
+     },
+     "long": {
+      "call_premium": 330632,
+      "put_premium": 53993,
+      "ratio": 6.12
+     },
+     "rank": 25
+    },
+    {
+     "symbol": "ROST",
+     "lists": [
+      "S&P #164",
+      "NDX"
+     ],
+     "last": 224.16,
+     "pct_change": 0.403,
+     "call_vol": 401,
+     "put_vol": 115,
+     "calls_to_puts": 3.49,
+     "call_oi": 18778,
+     "put_oi": 27442,
+     "near": {
+      "call_premium": 78337,
+      "put_premium": 5521,
+      "ratio": 14.19
+     },
+     "long": {
+      "call_premium": 43238,
+      "put_premium": 21600,
+      "ratio": 2.0
+     },
+     "rank": 26
+    },
+    {
+     "symbol": "HUM",
+     "lists": [
+      "S&P #226"
+     ],
+     "last": 405.46,
+     "pct_change": -0.258,
+     "call_vol": 1259,
+     "put_vol": 2020,
+     "calls_to_puts": 0.62,
+     "call_oi": 50978,
+     "put_oi": 62727,
+     "near": {
+      "call_premium": 695865,
+      "put_premium": 52207,
+      "ratio": 13.33
+     },
+     "long": {
+      "call_premium": 1394212,
+      "put_premium": 4039467,
+      "ratio": 0.35
+     },
+     "rank": 27
+    },
+    {
+     "symbol": "XYZ",
+     "lists": [
+      "S&P #219"
+     ],
+     "last": 77.75,
+     "pct_change": 2.168,
+     "call_vol": 27575,
+     "put_vol": 2392,
+     "calls_to_puts": 11.53,
+     "call_oi": 250423,
+     "put_oi": 169927,
+     "near": {
+      "call_premium": 2164711,
+      "put_premium": 163965,
+      "ratio": 13.2
+     },
+     "long": {
+      "call_premium": 748583,
+      "put_premium": 680264,
+      "ratio": 1.1
+     },
+     "rank": 28
+    },
+    {
+     "symbol": "GM",
+     "lists": [
+      "S&P #163"
+     ],
+     "last": 85.56,
+     "pct_change": 1.869,
+     "call_vol": 2731,
+     "put_vol": 2615,
+     "calls_to_puts": 1.04,
+     "call_oi": 160009,
+     "put_oi": 127497,
+     "near": {
+      "call_premium": 810274,
+      "put_premium": 62554,
+      "ratio": 12.95
+     },
+     "long": {
+      "call_premium": 277076,
+      "put_premium": 217439,
+      "ratio": 1.27
+     },
+     "rank": 29
+    },
+    {
+     "symbol": "TMO",
+     "lists": [
+      "S&P #40"
+     ],
+     "last": 683.03,
+     "pct_change": -0.363,
+     "call_vol": 846,
+     "put_vol": 1143,
+     "calls_to_puts": 0.74,
+     "call_oi": 25895,
+     "put_oi": 27849,
+     "near": {
+      "call_premium": 276626,
+      "put_premium": 22740,
+      "ratio": 12.16
+     },
+     "long": {
+      "call_premium": 912718,
+      "put_premium": 807057,
+      "ratio": 1.13
+     },
+     "rank": 30
+    },
+    {
+     "symbol": "IBM",
+     "lists": [
+      "S&P #49"
+     ],
+     "last": 247.5775,
+     "pct_change": 1.687,
+     "call_vol": 15998,
+     "put_vol": 7215,
+     "calls_to_puts": 2.22,
+     "call_oi": 276439,
+     "put_oi": 223984,
+     "near": {
+      "call_premium": 2521038,
+      "put_premium": 208403,
+      "ratio": 12.1
+     },
+     "long": {
+      "call_premium": 6757986,
+      "put_premium": 5634711,
+      "ratio": 1.2
+     },
+     "rank": 31
+    },
+    {
+     "symbol": "SLB",
+     "lists": [
+      "S&P #170"
+     ],
+     "last": 49.7,
+     "pct_change": 2.432,
+     "call_vol": 4950,
+     "put_vol": 1308,
+     "calls_to_puts": 3.78,
+     "call_oi": 377061,
+     "put_oi": 197019,
+     "near": {
+      "call_premium": 453636,
+      "put_premium": 37829,
+      "ratio": 11.99
+     },
+     "long": {
+      "call_premium": 717643,
+      "put_premium": 68122,
+      "ratio": 10.53
+     },
+     "rank": 32
+    },
+    {
+     "symbol": "MA",
+     "lists": [
+      "S&P #18"
+     ],
+     "last": 666.0,
+     "pct_change": 0.914,
+     "call_vol": 3002,
+     "put_vol": 3618,
+     "calls_to_puts": 0.83,
+     "call_oi": 67532,
+     "put_oi": 69305,
+     "near": {
+      "call_premium": 3089333,
+      "put_premium": 278286,
+      "ratio": 11.1
+     },
+     "long": {
+      "call_premium": 3168676,
+      "put_premium": 2290589,
+      "ratio": 1.38
+     },
+     "rank": 33
+    },
+    {
+     "symbol": "PLTR",
+     "lists": [
+      "S&P #23",
+      "NDX"
+     ],
+     "last": 172.2497,
+     "pct_change": 5.294,
+     "call_vol": 208804,
+     "put_vol": 83485,
+     "calls_to_puts": 2.5,
+     "call_oi": 1551036,
+     "put_oi": 1548615,
+     "near": {
+      "call_premium": 73622672,
+      "put_premium": 6869229,
+      "ratio": 10.72
+     },
+     "long": {
+      "call_premium": 53650251,
+      "put_premium": 23807087,
+      "ratio": 2.25
+     },
+     "rank": 34
+    },
+    {
+     "symbol": "KMB",
+     "lists": [
+      "S&P #180"
+     ],
+     "last": 109.11,
+     "pct_change": -0.311,
+     "call_vol": 1572,
+     "put_vol": 1507,
+     "calls_to_puts": 1.04,
+     "call_oi": 59752,
+     "put_oi": 42591,
+     "near": {
+      "call_premium": 137592,
+      "put_premium": 13151,
+      "ratio": 10.46
+     },
+     "long": {
+      "call_premium": 1631121,
+      "put_premium": 430819,
+      "ratio": 3.79
+     },
+     "rank": 35
+    },
+    {
+     "symbol": "HSY",
+     "lists": [
+      "S&P #286"
+     ],
+     "last": 183.85,
+     "pct_change": 0.701,
+     "call_vol": 643,
+     "put_vol": 264,
+     "calls_to_puts": 2.44,
+     "call_oi": 19813,
+     "put_oi": 14159,
+     "near": {
+      "call_premium": 68182,
+      "put_premium": 6637,
+      "ratio": 10.27
+     },
+     "long": {
+      "call_premium": 248323,
+      "put_premium": 50006,
+      "ratio": 4.97
+     },
+     "rank": 36
+    },
+    {
+     "symbol": "CVNA",
+     "lists": [
+      "S&P #151"
+     ],
+     "last": 70.0802,
+     "pct_change": 3.302,
+     "call_vol": 24216,
+     "put_vol": 9882,
+     "calls_to_puts": 2.45,
+     "call_oi": 441686,
+     "put_oi": 400963,
+     "near": {
+      "call_premium": 5122298,
+      "put_premium": 512278,
+      "ratio": 10.0
+     },
+     "long": {
+      "call_premium": 965955,
+      "put_premium": 1432214,
+      "ratio": 0.67
+     },
+     "rank": 37
+    },
+    {
+     "symbol": "DIS",
+     "lists": [
+      "S&P #54"
+     ],
+     "last": 127.2818,
+     "pct_change": 1.339,
+     "call_vol": 40886,
+     "put_vol": 15203,
+     "calls_to_puts": 2.69,
+     "call_oi": 343452,
+     "put_oi": 221425,
+     "near": {
+      "call_premium": 2429856,
+      "put_premium": 253683,
+      "ratio": 9.58
+     },
+     "long": {
+      "call_premium": 11764140,
+      "put_premium": 2888954,
+      "ratio": 4.07
+     },
+     "rank": 38
+    },
+    {
+     "symbol": "PDD",
+     "lists": [
+      "NDX"
+     ],
+     "last": 88.1673,
+     "pct_change": 0.855,
+     "call_vol": 26476,
+     "put_vol": 6752,
+     "calls_to_puts": 3.92,
+     "call_oi": 609748,
+     "put_oi": 453521,
+     "near": {
+      "call_premium": 868065,
+      "put_premium": 93433,
+      "ratio": 9.29
+     },
+     "long": {
+      "call_premium": 6599710,
+      "put_premium": 2031087,
+      "ratio": 3.25
+     },
+     "rank": 39
+    },
+    {
+     "symbol": "XOM",
+     "lists": [
+      "S&P #17"
+     ],
+     "last": 160.18,
+     "pct_change": 1.328,
+     "call_vol": 38348,
+     "put_vol": 7464,
+     "calls_to_puts": 5.14,
+     "call_oi": 643260,
+     "put_oi": 406634,
+     "near": {
+      "call_premium": 1615199,
+      "put_premium": 179870,
+      "ratio": 8.98
+     },
+     "long": {
+      "call_premium": 3046599,
+      "put_premium": 1671513,
+      "ratio": 1.82
+     },
+     "rank": 40
+    },
+    {
+     "symbol": "LLY",
+     "lists": [
+      "S&P #9"
+     ],
+     "last": 1393.1001,
+     "pct_change": 0.063,
+     "call_vol": 11412,
+     "put_vol": 12465,
+     "calls_to_puts": 0.92,
+     "call_oi": 138422,
+     "put_oi": 189904,
+     "near": {
+      "call_premium": 23274885,
+      "put_premium": 2607027,
+      "ratio": 8.93
+     },
+     "long": {
+      "call_premium": 32874513,
+      "put_premium": 18518400,
+      "ratio": 1.78
+     },
+     "rank": 41
+    },
+    {
+     "symbol": "V",
+     "lists": [
+      "S&P #15"
+     ],
+     "last": 430.403,
+     "pct_change": 1.417,
+     "call_vol": 10537,
+     "put_vol": 7269,
+     "calls_to_puts": 1.45,
+     "call_oi": 220781,
+     "put_oi": 209504,
+     "near": {
+      "call_premium": 3004276,
+      "put_premium": 357589,
+      "ratio": 8.4
+     },
+     "long": {
+      "call_premium": 7147979,
+      "put_premium": 2898638,
+      "ratio": 2.47
+     },
+     "rank": 42
+    },
+    {
+     "symbol": "AXP",
+     "lists": [
+      "S&P #52"
+     ],
+     "last": 316.4,
+     "pct_change": 1.284,
+     "call_vol": 3518,
+     "put_vol": 6187,
+     "calls_to_puts": 0.57,
+     "call_oi": 156105,
+     "put_oi": 89285,
+     "near": {
+      "call_premium": 1087128,
+      "put_premium": 130472,
+      "ratio": 8.33
+     },
+     "long": {
+      "call_premium": 934639,
+      "put_premium": 1424224,
+      "ratio": 0.66
+     },
+     "rank": 43
+    },
+    {
+     "symbol": "VZ",
+     "lists": [
+      "S&P #62"
+     ],
+     "last": 47.6155,
+     "pct_change": 0.71,
+     "call_vol": 23361,
+     "put_vol": 10037,
+     "calls_to_puts": 2.33,
+     "call_oi": 560557,
+     "put_oi": 450006,
+     "near": {
+      "call_premium": 1360506,
+      "put_premium": 164883,
+      "ratio": 8.25
+     },
+     "long": {
+      "call_premium": 1186717,
+      "put_premium": 503120,
+      "ratio": 2.36
+     },
+     "rank": 44
+    },
+    {
+     "symbol": "SHOP",
+     "lists": [
+      "NDX"
+     ],
+     "last": 141.7485,
+     "pct_change": 6.258,
+     "call_vol": 12066,
+     "put_vol": 5665,
+     "calls_to_puts": 2.13,
+     "call_oi": 277519,
+     "put_oi": 256349,
+     "near": {
+      "call_premium": 2059732,
+      "put_premium": 257372,
+      "ratio": 8.0
+     },
+     "long": {
+      "call_premium": 6143916,
+      "put_premium": 2199201,
+      "ratio": 2.79
+     },
+     "rank": 45
+    },
+    {
+     "symbol": "URI",
+     "lists": [
+      "S&P #178"
+     ],
+     "last": 1034.72,
+     "pct_change": 1.871,
+     "call_vol": 773,
+     "put_vol": 1764,
+     "calls_to_puts": 0.44,
+     "call_oi": 11787,
+     "put_oi": 12472,
+     "near": {
+      "call_premium": 1094799,
+      "put_premium": 139063,
+      "ratio": 7.87
+     },
+     "long": {
+      "call_premium": 883118,
+      "put_premium": 1996259,
+      "ratio": 0.44
+     },
+     "rank": 46
+    },
+    {
+     "symbol": "TMUS",
+     "lists": [
+      "S&P #68",
+      "NDX"
+     ],
+     "last": 169.95,
+     "pct_change": 2.226,
+     "call_vol": 2264,
+     "put_vol": 439,
+     "calls_to_puts": 5.16,
+     "call_oi": 152946,
+     "put_oi": 121885,
+     "near": {
+      "call_premium": 112627,
+      "put_premium": 14480,
+      "ratio": 7.78
+     },
+     "long": {
+      "call_premium": 298350,
+      "put_premium": 226037,
+      "ratio": 1.32
+     },
+     "rank": 47
+    },
+    {
+     "symbol": "USB",
+     "lists": [
+      "S&P #124"
+     ],
+     "last": 59.29,
+     "pct_change": 1.264,
+     "call_vol": 2443,
+     "put_vol": 622,
+     "calls_to_puts": 3.93,
+     "call_oi": 113834,
+     "put_oi": 85652,
+     "near": {
+      "call_premium": 352226,
+      "put_premium": 46323,
+      "ratio": 7.6
+     },
+     "long": {
+      "call_premium": 139118,
+      "put_premium": 43699,
+      "ratio": 3.18
+     },
+     "rank": 48
+    },
+    {
+     "symbol": "DHI",
+     "lists": [
+      "S&P #257"
+     ],
+     "last": 156.8,
+     "pct_change": -0.045,
+     "call_vol": 1065,
+     "put_vol": 198,
+     "calls_to_puts": 5.38,
+     "call_oi": 19839,
+     "put_oi": 16220,
+     "near": {
+      "call_premium": 48537,
+      "put_premium": 7050,
+      "ratio": 6.88
+     },
+     "long": {
+      "call_premium": 1224810,
+      "put_premium": 54105,
+      "ratio": 22.64
+     },
+     "rank": 49
+    },
+    {
+     "symbol": "BSX",
+     "lists": [
+      "S&P #192"
+     ],
+     "last": 45.0344,
+     "pct_change": -0.19,
+     "call_vol": 2365,
+     "put_vol": 20488,
+     "calls_to_puts": 0.12,
+     "call_oi": 401174,
+     "put_oi": 301755,
+     "near": {
+      "call_premium": 164988,
+      "put_premium": 24213,
+      "ratio": 6.81
+     },
+     "long": {
+      "call_premium": 251972,
+      "put_premium": 8363183,
+      "ratio": 0.03
+     },
+     "rank": 50
+    }
+   ],
+   "long": [
+    {
+     "symbol": "MTD",
+     "lists": [
+      "S&P #285"
+     ],
+     "last": 1680.49,
+     "pct_change": 0.958,
+     "call_vol": 112,
+     "put_vol": 0,
+     "calls_to_puts": null,
+     "call_oi": 1608,
+     "put_oi": 989,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 297742,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "rank": 1
+    },
+    {
+     "symbol": "WAT",
+     "lists": [
+      "S&P #244"
+     ],
+     "last": 460.88,
+     "pct_change": 1.308,
+     "call_vol": 13,
+     "put_vol": 0,
+     "calls_to_puts": null,
+     "call_oi": 2161,
+     "put_oi": 997,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 54996,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "rank": 2
+    },
+    {
+     "symbol": "NTRS",
+     "lists": [
+      "S&P #300"
+     ],
+     "last": 169.35,
+     "pct_change": 0.798,
+     "call_vol": 4,
+     "put_vol": 0,
+     "calls_to_puts": null,
+     "call_oi": 3065,
+     "put_oi": 1367,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 8000,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "rank": 3
+    },
+    {
+     "symbol": "VTR",
+     "lists": [
+      "S&P #241"
+     ],
+     "last": 88.59,
+     "pct_change": 1.408,
+     "call_vol": 23,
+     "put_vol": 0,
+     "calls_to_puts": null,
+     "call_oi": 3942,
+     "put_oi": 2692,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 7262,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "rank": 4
+    },
+    {
+     "symbol": "NOC",
+     "lists": [
+      "S&P #162"
+     ],
+     "last": 561.38,
+     "pct_change": 1.006,
+     "call_vol": 633,
+     "put_vol": 36,
+     "calls_to_puts": 17.58,
+     "call_oi": 12624,
+     "put_oi": 11887,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 9219084,
+      "put_premium": 27619,
+      "ratio": 333.79
+     },
+     "rank": 5
+    },
+    {
+     "symbol": "AME",
+     "lists": [
+      "S&P #216"
+     ],
+     "last": 232.6,
+     "pct_change": 2.246,
+     "call_vol": 604,
+     "put_vol": 5,
+     "calls_to_puts": 120.8,
+     "call_oi": 7708,
+     "put_oi": 2419,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 181610,
+      "put_premium": 1465,
+      "ratio": 123.97
+     },
+     "rank": 6
+    },
+    {
+     "symbol": "CBOE",
+     "lists": [
+      "S&P #279"
+     ],
+     "last": 352.5,
+     "pct_change": 0.199,
+     "call_vol": 748,
+     "put_vol": 256,
+     "calls_to_puts": 2.92,
+     "call_oi": 29290,
+     "put_oi": 18944,
+     "near": {
+      "call_premium": 153384,
+      "put_premium": 384818,
+      "ratio": 0.4
+     },
+     "long": {
+      "call_premium": 6709951,
+      "put_premium": 80661,
+      "ratio": 83.19
+     },
+     "rank": 7
+    },
+    {
+     "symbol": "APD",
+     "lists": [
+      "S&P #179"
+     ],
+     "last": 319.09,
+     "pct_change": 1.537,
+     "call_vol": 258,
+     "put_vol": 9,
+     "calls_to_puts": 28.67,
+     "call_oi": 14629,
+     "put_oi": 6710,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 86038,
+      "put_premium": 1329,
+      "ratio": 64.74
+     },
+     "rank": 8
+    },
+    {
+     "symbol": "ALL",
+     "lists": [
+      "S&P #196"
+     ],
+     "last": 272.51,
+     "pct_change": 0.413,
+     "call_vol": 1655,
+     "put_vol": 388,
+     "calls_to_puts": 4.27,
+     "call_oi": 14518,
+     "put_oi": 16870,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 12463178,
+      "put_premium": 196430,
+      "ratio": 63.45
+     },
+     "rank": 9
+    },
+    {
+     "symbol": "RJF",
+     "lists": [
+      "S&P #299"
+     ],
+     "last": 165.15,
+     "pct_change": 1.419,
+     "call_vol": 447,
+     "put_vol": 9,
+     "calls_to_puts": 49.67,
+     "call_oi": 4926,
+     "put_oi": 2732,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 247536,
+      "put_premium": 4500,
+      "ratio": 55.01
+     },
+     "rank": 10
+    },
+    {
+     "symbol": "KEYS",
+     "lists": [
+      "S&P #236"
+     ],
+     "last": 278.74,
+     "pct_change": 4.128,
+     "call_vol": 261,
+     "put_vol": 23,
+     "calls_to_puts": 11.35,
+     "call_oi": 15935,
+     "put_oi": 13317,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 1777376,
+      "put_premium": 43547,
+      "ratio": 40.82
+     },
+     "rank": 11
+    },
+    {
+     "symbol": "XEL",
+     "lists": [
+      "S&P #225",
+      "NDX"
+     ],
+     "last": 81.99,
+     "pct_change": 1.085,
+     "call_vol": 203,
+     "put_vol": 20,
+     "calls_to_puts": 10.15,
+     "call_oi": 36621,
+     "put_oi": 171607,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 84009,
+      "put_premium": 2179,
+      "ratio": 38.55
+     },
+     "rank": 12
+    },
+    {
+     "symbol": "BDX",
+     "lists": [
+      "S&P #207"
+     ],
+     "last": 219.36,
+     "pct_change": -0.85,
+     "call_vol": 136,
+     "put_vol": 14,
+     "calls_to_puts": 9.71,
+     "call_oi": 9921,
+     "put_oi": 4432,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 178394,
+      "put_premium": 4748,
+      "ratio": 37.57
+     },
+     "rank": 13
+    },
+    {
+     "symbol": "FITB",
+     "lists": [
+      "S&P #237"
+     ],
+     "last": 51.91,
+     "pct_change": 0.387,
+     "call_vol": 44,
+     "put_vol": 2,
+     "calls_to_puts": 22.0,
+     "call_oi": 20646,
+     "put_oi": 11209,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 4638,
+      "put_premium": 125,
+      "ratio": 37.1
+     },
+     "rank": 14
+    },
+    {
+     "symbol": "TRI",
+     "lists": [
+      "NDX"
+     ],
+     "last": 111.35,
+     "pct_change": 1.829,
+     "call_vol": 854,
+     "put_vol": 26,
+     "calls_to_puts": 32.85,
+     "call_oi": 3629,
+     "put_oi": 4715,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 355942,
+      "put_premium": 10334,
+      "ratio": 34.44
+     },
+     "rank": 15
+    },
+    {
+     "symbol": "CTAS",
+     "lists": [
+      "S&P #141",
+      "NDX"
+     ],
+     "last": 228.58,
+     "pct_change": 0.409,
+     "call_vol": 571,
+     "put_vol": 145,
+     "calls_to_puts": 3.94,
+     "call_oi": 16403,
+     "put_oi": 9095,
+     "near": {
+      "call_premium": 12309,
+      "put_premium": 9973,
+      "ratio": 1.23
+     },
+     "long": {
+      "call_premium": 447423,
+      "put_premium": 14582,
+      "ratio": 30.68
+     },
+     "rank": 16
+    },
+    {
+     "symbol": "WEC",
+     "lists": [
+      "S&P #270"
+     ],
+     "last": 119.08,
+     "pct_change": -0.008,
+     "call_vol": 26,
+     "put_vol": 9,
+     "calls_to_puts": 2.89,
+     "call_oi": 3653,
+     "put_oi": 2384,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 26564,
+      "put_premium": 877,
+      "ratio": 30.29
+     },
+     "rank": 17
+    },
+    {
+     "symbol": "GD",
+     "lists": [
+      "S&P #119"
+     ],
+     "last": 363.36,
+     "pct_change": 0.858,
+     "call_vol": 189,
+     "put_vol": 24,
+     "calls_to_puts": 7.88,
+     "call_oi": 14076,
+     "put_oi": 9771,
+     "near": {
+      "call_premium": 44059,
+      "put_premium": 2756,
+      "ratio": 15.99
+     },
+     "long": {
+      "call_premium": 121543,
+      "put_premium": 4050,
+      "ratio": 30.01
+     },
+     "rank": 18
+    },
+    {
+     "symbol": "MSCI",
+     "lists": [
+      "S&P #243"
+     ],
+     "last": 637.41,
+     "pct_change": 0.697,
+     "call_vol": 4,
+     "put_vol": 3,
+     "calls_to_puts": 1.33,
+     "call_oi": 3338,
+     "put_oi": 3395,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 28724,
+      "put_premium": 1000,
+      "ratio": 28.72
+     },
+     "rank": 19
+    },
+    {
+     "symbol": "CSX",
+     "lists": [
+      "S&P #128",
+      "NDX"
+     ],
+     "last": 51.38,
+     "pct_change": 0.43,
+     "call_vol": 1249,
+     "put_vol": 267,
+     "calls_to_puts": 4.68,
+     "call_oi": 104666,
+     "put_oi": 59744,
+     "near": {
+      "call_premium": 54777,
+      "put_premium": 15306,
+      "ratio": 3.58
+     },
+     "long": {
+      "call_premium": 554555,
+      "put_premium": 20299,
+      "ratio": 27.32
+     },
+     "rank": 20
+    },
+    {
+     "symbol": "DHI",
+     "lists": [
+      "S&P #257"
+     ],
+     "last": 156.8,
+     "pct_change": -0.045,
+     "call_vol": 1065,
+     "put_vol": 198,
+     "calls_to_puts": 5.38,
+     "call_oi": 19839,
+     "put_oi": 16220,
+     "near": {
+      "call_premium": 48537,
+      "put_premium": 7050,
+      "ratio": 6.88
+     },
+     "long": {
+      "call_premium": 1224810,
+      "put_premium": 54105,
+      "ratio": 22.64
+     },
+     "rank": 21
+    },
+    {
+     "symbol": "CMG",
+     "lists": [
+      "S&P #250"
+     ],
+     "last": 37.2232,
+     "pct_change": -0.473,
+     "call_vol": 20215,
+     "put_vol": 2842,
+     "calls_to_puts": 7.11,
+     "call_oi": 376620,
+     "put_oi": 431293,
+     "near": {
+      "call_premium": 1739806,
+      "put_premium": 34011,
+      "ratio": 51.15
+     },
+     "long": {
+      "call_premium": 2712808,
+      "put_premium": 147498,
+      "ratio": 18.39
+     },
+     "rank": 22
+    },
+    {
+     "symbol": "CCEP",
+     "lists": [
+      "NDX"
+     ],
+     "last": 117.35,
+     "pct_change": -0.542,
+     "call_vol": 43,
+     "put_vol": 1,
+     "calls_to_puts": 43.0,
+     "call_oi": 4331,
+     "put_oi": 1129,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 8684,
+      "put_premium": 495,
+      "ratio": 17.54
+     },
+     "rank": 23
+    },
+    {
+     "symbol": "MCK",
+     "lists": [
+      "S&P #97"
+     ],
+     "last": 1075.66,
+     "pct_change": -0.154,
+     "call_vol": 54,
+     "put_vol": 30,
+     "calls_to_puts": 1.8,
+     "call_oi": 11352,
+     "put_oi": 8158,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 293063,
+      "put_premium": 16733,
+      "ratio": 17.51
+     },
+     "rank": 24
+    },
+    {
+     "symbol": "CAH",
+     "lists": [
+      "S&P #193"
+     ],
+     "last": 282.86,
+     "pct_change": -0.018,
+     "call_vol": 659,
+     "put_vol": 346,
+     "calls_to_puts": 1.9,
+     "call_oi": 18356,
+     "put_oi": 13605,
+     "near": {
+      "call_premium": 3074257,
+      "put_premium": 51338,
+      "ratio": 59.88
+     },
+     "long": {
+      "call_premium": 256597,
+      "put_premium": 15288,
+      "ratio": 16.78
+     },
+     "rank": 25
+    },
+    {
+     "symbol": "AJG",
+     "lists": [
+      "S&P #175"
+     ],
+     "last": 292.5,
+     "pct_change": 0.038,
+     "call_vol": 131,
+     "put_vol": 16,
+     "calls_to_puts": 8.19,
+     "call_oi": 7873,
+     "put_oi": 2883,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 129579,
+      "put_premium": 7836,
+      "ratio": 16.54
+     },
+     "rank": 26
+    },
+    {
+     "symbol": "SPG",
+     "lists": [
+      "S&P #167"
+     ],
+     "last": 235.27,
+     "pct_change": 0.551,
+     "call_vol": 194,
+     "put_vol": 55,
+     "calls_to_puts": 3.53,
+     "call_oi": 18504,
+     "put_oi": 23630,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 343114,
+      "put_premium": 20862,
+      "ratio": 16.45
+     },
+     "rank": 27
+    },
+    {
+     "symbol": "ECL",
+     "lists": [
+      "S&P #148"
+     ],
+     "last": 311.67,
+     "pct_change": 0.9,
+     "call_vol": 392,
+     "put_vol": 244,
+     "calls_to_puts": 1.61,
+     "call_oi": 7094,
+     "put_oi": 3695,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 1130276,
+      "put_premium": 81855,
+      "ratio": 13.81
+     },
+     "rank": 28
+    },
+    {
+     "symbol": "PAYX",
+     "lists": [
+      "S&P #263",
+      "NDX"
+     ],
+     "last": 118.13,
+     "pct_change": -0.304,
+     "call_vol": 707,
+     "put_vol": 200,
+     "calls_to_puts": 3.54,
+     "call_oi": 25128,
+     "put_oi": 13386,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 427834,
+      "put_premium": 31190,
+      "ratio": 13.72
+     },
+     "rank": 29
+    },
+    {
+     "symbol": "HLT",
+     "lists": [
+      "S&P #154"
+     ],
+     "last": 369.94,
+     "pct_change": 1.021,
+     "call_vol": 537,
+     "put_vol": 147,
+     "calls_to_puts": 3.65,
+     "call_oi": 17820,
+     "put_oi": 14100,
+     "near": {
+      "call_premium": 457786,
+      "put_premium": 3529,
+      "ratio": 129.72
+     },
+     "long": {
+      "call_premium": 1381422,
+      "put_premium": 102518,
+      "ratio": 13.47
+     },
+     "rank": 30
+    },
+    {
+     "symbol": "COR",
+     "lists": [
+      "S&P #186"
+     ],
+     "last": 354.34,
+     "pct_change": 0.082,
+     "call_vol": 34,
+     "put_vol": 7,
+     "calls_to_puts": 4.86,
+     "call_oi": 8442,
+     "put_oi": 6810,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 55094,
+      "put_premium": 4100,
+      "ratio": 13.44
+     },
+     "rank": 31
+    },
+    {
+     "symbol": "SRE",
+     "lists": [
+      "S&P #224"
+     ],
+     "last": 79.05,
+     "pct_change": -0.051,
+     "call_vol": 376,
+     "put_vol": 37,
+     "calls_to_puts": 10.16,
+     "call_oi": 12527,
+     "put_oi": 4621,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 58480,
+      "put_premium": 4428,
+      "ratio": 13.21
+     },
+     "rank": 32
+    },
+    {
+     "symbol": "SO",
+     "lists": [
+      "S&P #106"
+     ],
+     "last": 95.04,
+     "pct_change": 0.042,
+     "call_vol": 2046,
+     "put_vol": 372,
+     "calls_to_puts": 5.5,
+     "call_oi": 65057,
+     "put_oi": 49558,
+     "near": {
+      "call_premium": 83230,
+      "put_premium": 4918,
+      "ratio": 16.92
+     },
+     "long": {
+      "call_premium": 460347,
+      "put_premium": 35846,
+      "ratio": 12.84
+     },
+     "rank": 33
+    },
+    {
+     "symbol": "EOG",
+     "lists": [
+      "S&P #161"
+     ],
+     "last": 148.7,
+     "pct_change": 0.263,
+     "call_vol": 509,
+     "put_vol": 176,
+     "calls_to_puts": 2.89,
+     "call_oi": 48616,
+     "put_oi": 25354,
+     "near": {
+      "call_premium": 57098,
+      "put_premium": 10575,
+      "ratio": 5.4
+     },
+     "long": {
+      "call_premium": 248474,
+      "put_premium": 20104,
+      "ratio": 12.36
+     },
+     "rank": 34
+    },
+    {
+     "symbol": "EMR",
+     "lists": [
+      "S&P #125"
+     ],
+     "last": 162.29,
+     "pct_change": 3.218,
+     "call_vol": 1761,
+     "put_vol": 328,
+     "calls_to_puts": 5.37,
+     "call_oi": 49972,
+     "put_oi": 23417,
+     "near": {
+      "call_premium": 34518,
+      "put_premium": 16931,
+      "ratio": 2.04
+     },
+     "long": {
+      "call_premium": 691961,
+      "put_premium": 60710,
+      "ratio": 11.4
+     },
+     "rank": 35
+    },
+    {
+     "symbol": "IR",
+     "lists": [
+      "S&P #294"
+     ],
+     "last": 85.12,
+     "pct_change": 2.382,
+     "call_vol": 7,
+     "put_vol": 4,
+     "calls_to_puts": 1.75,
+     "call_oi": 17037,
+     "put_oi": 5694,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 1955,
+      "put_premium": 181,
+      "ratio": 10.8
+     },
+     "rank": 36
+    },
+    {
+     "symbol": "SLB",
+     "lists": [
+      "S&P #170"
+     ],
+     "last": 49.7,
+     "pct_change": 2.432,
+     "call_vol": 4950,
+     "put_vol": 1308,
+     "calls_to_puts": 3.78,
+     "call_oi": 377061,
+     "put_oi": 197019,
+     "near": {
+      "call_premium": 453636,
+      "put_premium": 37829,
+      "ratio": 11.99
+     },
+     "long": {
+      "call_premium": 717643,
+      "put_premium": 68122,
+      "ratio": 10.53
+     },
+     "rank": 37
+    },
+    {
+     "symbol": "CNC",
+     "lists": [
+      "S&P #289"
+     ],
+     "last": 65.78,
+     "pct_change": 1.606,
+     "call_vol": 1725,
+     "put_vol": 247,
+     "calls_to_puts": 6.98,
+     "call_oi": 152063,
+     "put_oi": 142088,
+     "near": {
+      "call_premium": 734538,
+      "put_premium": 38380,
+      "ratio": 19.14
+     },
+     "long": {
+      "call_premium": 653559,
+      "put_premium": 63763,
+      "ratio": 10.25
+     },
+     "rank": 38
+    },
+    {
+     "symbol": "O",
+     "lists": [
+      "S&P #209"
+     ],
+     "last": 60.4,
+     "pct_change": 0.249,
+     "call_vol": 4115,
+     "put_vol": 1092,
+     "calls_to_puts": 3.77,
+     "call_oi": 87475,
+     "put_oi": 57219,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 1272685,
+      "put_premium": 148629,
+      "ratio": 8.56
+     },
+     "rank": 39
+    },
+    {
+     "symbol": "FAST",
+     "lists": [
+      "S&P #198",
+      "NDX"
+     ],
+     "last": 53.41,
+     "pct_change": 0.907,
+     "call_vol": 333,
+     "put_vol": 142,
+     "calls_to_puts": 2.35,
+     "call_oi": 55350,
+     "put_oi": 19255,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 77021,
+      "put_premium": 9932,
+      "ratio": 7.75
+     },
+     "rank": 40
+    },
+    {
+     "symbol": "ALNY",
+     "lists": [
+      "NDX"
+     ],
+     "last": 163.25,
+     "pct_change": -0.898,
+     "call_vol": 475,
+     "put_vol": 30,
+     "calls_to_puts": 15.83,
+     "call_oi": 39197,
+     "put_oi": 24634,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 915045,
+      "put_premium": 124276,
+      "ratio": 7.36
+     },
+     "rank": 41
+    },
+    {
+     "symbol": "IBKR",
+     "lists": [
+      "S&P #284"
+     ],
+     "last": 78.27,
+     "pct_change": 4.723,
+     "call_vol": 2956,
+     "put_vol": 1493,
+     "calls_to_puts": 1.98,
+     "call_oi": 69428,
+     "put_oi": 60735,
+     "near": {
+      "call_premium": 130292,
+      "put_premium": 50767,
+      "ratio": 2.57
+     },
+     "long": {
+      "call_premium": 1356147,
+      "put_premium": 186036,
+      "ratio": 7.29
+     },
+     "rank": 42
+    },
+    {
+     "symbol": "KO",
+     "lists": [
+      "S&P #21"
+     ],
+     "last": 97.46,
+     "pct_change": -0.133,
+     "call_vol": 27573,
+     "put_vol": 23220,
+     "calls_to_puts": 1.19,
+     "call_oi": 414406,
+     "put_oi": 391280,
+     "near": {
+      "call_premium": 1789673,
+      "put_premium": 504594,
+      "ratio": 3.55
+     },
+     "long": {
+      "call_premium": 17466795,
+      "put_premium": 2465262,
+      "ratio": 7.09
+     },
+     "rank": 43
+    },
+    {
+     "symbol": "A",
+     "lists": [
+      "S&P #227"
+     ],
+     "last": 180.05,
+     "pct_change": 0.902,
+     "call_vol": 358,
+     "put_vol": 31,
+     "calls_to_puts": 11.55,
+     "call_oi": 12028,
+     "put_oi": 8717,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 242326,
+      "put_premium": 34232,
+      "ratio": 7.08
+     },
+     "rank": 44
+    },
+    {
+     "symbol": "PSA",
+     "lists": [
+      "S&P #194"
+     ],
+     "last": 338.2,
+     "pct_change": 0.065,
+     "call_vol": 80,
+     "put_vol": 14,
+     "calls_to_puts": 5.71,
+     "call_oi": 2986,
+     "put_oi": 3461,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 265649,
+      "put_premium": 38134,
+      "ratio": 6.97
+     },
+     "rank": 45
+    },
+    {
+     "symbol": "RSG",
+     "lists": [
+      "S&P #166"
+     ],
+     "last": 253.26,
+     "pct_change": -0.354,
+     "call_vol": 43,
+     "put_vol": 27,
+     "calls_to_puts": 1.59,
+     "call_oi": 4553,
+     "put_oi": 2387,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 66051,
+      "put_premium": 9480,
+      "ratio": 6.97
+     },
+     "rank": 46
+    },
+    {
+     "symbol": "EL",
+     "lists": [
+      "S&P #262"
+     ],
+     "last": 111.5,
+     "pct_change": 1.724,
+     "call_vol": 626,
+     "put_vol": 231,
+     "calls_to_puts": 2.71,
+     "call_oi": 164262,
+     "put_oi": 156705,
+     "near": {
+      "call_premium": 62121,
+      "put_premium": 38718,
+      "ratio": 1.6
+     },
+     "long": {
+      "call_premium": 1172963,
+      "put_premium": 169084,
+      "ratio": 6.94
+     },
+     "rank": 47
+    },
+    {
+     "symbol": "EQIX",
+     "lists": [
+      "S&P #113"
+     ],
+     "last": 984.87,
+     "pct_change": 0.68,
+     "call_vol": 27,
+     "put_vol": 18,
+     "calls_to_puts": 1.5,
+     "call_oi": 6174,
+     "put_oi": 11381,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 151871,
+      "put_premium": 23288,
+      "ratio": 6.52
+     },
+     "rank": 48
+    },
+    {
+     "symbol": "TEL",
+     "lists": [
+      "S&P #197"
+     ],
+     "last": 218.15,
+     "pct_change": 3.154,
+     "call_vol": 240,
+     "put_vol": 32,
+     "calls_to_puts": 7.5,
+     "call_oi": 12081,
+     "put_oi": 5700,
+     "near": {
+      "call_premium": 0,
+      "put_premium": 0,
+      "ratio": null
+     },
+     "long": {
+      "call_premium": 76954,
+      "put_premium": 11882,
+      "ratio": 6.48
+     },
+     "rank": 49
+    },
+    {
+     "symbol": "ABBV",
+     "lists": [
+      "S&P #19"
+     ],
+     "last": 293.0,
+     "pct_change": -0.503,
+     "call_vol": 5406,
+     "put_vol": 4075,
+     "calls_to_puts": 1.33,
+     "call_oi": 144037,
+     "put_oi": 152970,
+     "near": {
+      "call_premium": 409925,
+      "put_premium": 297004,
+      "ratio": 1.38
+     },
+     "long": {
+      "call_premium": 5316739,
+      "put_premium": 830665,
+      "ratio": 6.4
+     },
+     "rank": 50
+    }
+   ]
   }
  ]
 }
