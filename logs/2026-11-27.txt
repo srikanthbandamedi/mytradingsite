@@ -224,3 +224,14 @@ Price now: TTWO $230.27 at 9:35 CT (bought 8 at $225.93, stop $229.26, open +$34
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:38 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding QCOM, TSLA
+Price now: QCOM $175.41 at 9:35 CT (bought 11 at $176.28, stop $173.27, open -$9.57).
+Price now: TSLA $398.25 at 9:35 CT (bought 5 at $397.70, stop $392.53, open +$2.75).
+
+Day P&L: -$12.60 realized.
+
+Time (CT)	Call	Seconds since previous
