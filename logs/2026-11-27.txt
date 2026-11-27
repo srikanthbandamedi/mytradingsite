@@ -7,3 +7,12 @@ Price now: TTWO $227.60 at 8:45 CT (bought 8 at $225.93, stop $224.40, open +$13
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 8:47 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+no trades
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
