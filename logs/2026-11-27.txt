@@ -567,3 +567,13 @@ Price now: TSLA $400.59 at 10:55 CT (bought 5 at $397.70, stop $392.53, open +$1
 Day P&L: -$12.60 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:03 CT (dry run, S&P 201-300)
+
+Dry run: no real orders.
+holding MCHP
+Price now: MCHP $59.44 at 11:00 CT (bought 33 at $59.38, stop $58.65, open +$1.98).
+
+Day P&L: $34.36 realized.
+
+Time (CT)	Call	Seconds since previous
