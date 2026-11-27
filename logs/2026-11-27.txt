@@ -724,3 +724,14 @@ Price now: MCHP $59.29 at 11:35 CT (bought 33 at $59.38, stop $58.65, open -$2.9
 Day P&L: $34.36 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 11:39 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding ISRG, TSLA
+Price now: ISRG $430.71 at 11:35 CT (bought 4 at $430.69, stop $428.53, open +$0.08).
+Price now: TSLA $398.80 at 11:35 CT (bought 5 at $397.70, stop $392.53, open +$5.50).
+
+Day P&L: $6.35 realized.
+
+Time (CT)	Call	Seconds since previous
