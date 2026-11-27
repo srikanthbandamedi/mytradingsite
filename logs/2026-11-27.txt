@@ -182,3 +182,14 @@ Price now: TTWO $230.65 at 9:25 CT (bought 8 at $225.93, stop $229.26, open +$37
 Day P&L: $0 realized.
 
 Time (CT)	Call	Seconds since previous
+
+Live, 9:28 CT (dry run, Nasdaq 100)
+
+Dry run: no real orders.
+holding AVGO, QCOM
+Price now: AVGO $309.20 at 9:25 CT (bought 6 at $309.41, stop $304.91, open -$1.26).
+Price now: QCOM $175.48 at 9:25 CT (bought 11 at $176.28, stop $173.27, open -$8.80).
+
+Day P&L: $0 realized.
+
+Time (CT)	Call	Seconds since previous
